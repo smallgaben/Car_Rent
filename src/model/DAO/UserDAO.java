@@ -5,7 +5,7 @@ import model.entities.User;
 import java.util.Set;
 
 public interface UserDAO {
-    User add(User user);
+    User create(User user);
 
     User readById(int id);
 
@@ -13,7 +13,7 @@ public interface UserDAO {
 
     Set<User> readAll();
 
-    User update(int id);
+    void update(User user);
 
     void delete(int id);
 

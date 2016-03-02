@@ -5,6 +5,8 @@ import java.util.Set;
 
 public class Status implements Serializable {
     private static final long serialVersionUID = -1121205141512192760L;
+    public static final int DEFAULT_CHECK_STATUS=4;
+
 
     private int id;
     private String name;
@@ -12,6 +14,16 @@ public class Status implements Serializable {
     private Set<Car> cars;
 
     private Set<Order> orders;
+
+    private Set<Check> checks;
+
+    public Set<Check> getChecks() {
+        return checks;
+    }
+
+    public void setChecks(Set<Check> checks) {
+        this.checks = checks;
+    }
 
     public Set<Order> getOrders() {
         return orders;
@@ -56,6 +68,7 @@ public class Status implements Serializable {
                 ", name='" + name + '\'' +
                 ", cars=" + cars +
                 ", orders=" + orders +
+                ", checks=" + checks +
                 '}';
     }
 }

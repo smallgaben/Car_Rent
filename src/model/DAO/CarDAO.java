@@ -13,7 +13,7 @@ public interface CarDAO {
 
     Set<Car> readAll();
 
-    Car update(int id);
+    void update(Car car);
 
     void delete(int id);
 }

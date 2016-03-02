@@ -20,6 +20,8 @@ INSERT INTO Statuses VALUES (0,'enable');
 INSERT INTO Statuses VALUES (1,'disable');
 INSERT INTO Statuses VALUES (2,'rent');
 INSERT INTO Statuses VALUES (3,'repair');
+INSERT INTO Statuses VALUES (4,'not paid');
+INSERT INTO Statuses VALUES (5,'paid');
 
 CREATE TABLE Roles(
   id INTEGER NOT NULL PRIMARY KEY,
@@ -54,7 +56,7 @@ CREATE TABLE Cars (
   status INTEGER NOT NULL REFERENCES Statuses
 );
 
-INSERT INTO Cars(mark,name,cost,class,status) VALUES ('Audi', 'A3', 1000, 3, 0);
+INSERT INTO Cars (mark,name,cost,class,status) VALUES ('Audi', 'A3', 1000, 3, 0);
 INSERT INTO Cars (mark,name,cost,class,status) VALUES('Audi', 'A4', 1200, 3, 0);
 INSERT INTO Cars (mark,name,cost,class,status) VALUES('Audi', 'TT', 2000, 2, 0);
 INSERT INTO Cars (mark,name,cost,class,status) VALUES('Audi', 'A5', 2100, 5, 0);
@@ -103,6 +105,7 @@ CREATE TABLE Checks(
   date DATE NOT NULL DEFAULT CURRENT_DATE,
   desription VARCHAR (300),
   order_id INTEGER NOT NULL,
-  price INTEGER NOT NULL
+  price INTEGER NOT NULL,
+  status INTEGER NOT NULL REFERENCES Statuses(id)
 );
 

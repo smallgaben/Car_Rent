@@ -15,9 +15,6 @@ public class Order implements Serializable {
     private boolean driver;
     private Status status;
 
-    //One To One
-    private Check check;
-
     public static long getSerialVersionUID() {
         return serialVersionUID;
     }
@@ -86,14 +83,6 @@ public class Order implements Serializable {
         this.status = status;
     }
 
-    public Check getCheck() {
-        return check;
-    }
-
-    public void setCheck(Check check) {
-        this.check = check;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -108,7 +97,7 @@ public class Order implements Serializable {
         if (!car.equals(order.car)) return false;
         if (!startDate.equals(order.startDate)) return false;
         if (!finishDate.equals(order.finishDate)) return false;
-        return status.equals(order.status) && check.equals(order.check);
+        return status.equals(order.status);
 
     }
 
@@ -122,7 +111,6 @@ public class Order implements Serializable {
         result = 31 * result + finishDate.hashCode();
         result = 31 * result + (driver ? 1 : 0);
         result = 31 * result + status.hashCode();
-        result = 31 * result + check.hashCode();
         return result;
     }
 
@@ -137,7 +125,6 @@ public class Order implements Serializable {
                 ", finishDate=" + finishDate +
                 ", driver=" + driver +
                 ", status=" + status +
-                ", check=" + check +
                 '}';
     }
 }

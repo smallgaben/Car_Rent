@@ -5,11 +5,14 @@ import java.util.Date;
 
 public class Check implements Serializable {
     private static final long serialVersionUID = 5333068964774944352L;
+    public static final int DEFAULT_PRICE=1000;
 
     private int id;
     private Date date;
     private String description;
     private int price;
+    private Order order;
+    private Status status;
 
     public int getPrice() {
         return price;
@@ -20,7 +23,6 @@ public class Check implements Serializable {
     }
 
     //One To One
-    private Order order;
 
     public static long getSerialVersionUID() {
         return serialVersionUID;
@@ -56,6 +58,14 @@ public class Check implements Serializable {
 
     public void setOrder(Order order) {
         this.order = order;
+    }
+
+    public Status getStatus() {
+        return status;
+    }
+
+    public void setStatus(Status status) {
+        this.status = status;
     }
 
     @Override

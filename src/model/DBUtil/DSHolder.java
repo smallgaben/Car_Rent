@@ -7,7 +7,9 @@ import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import javax.sql.DataSource;
 import java.sql.Connection;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 public class DSHolder {
     private static final Logger logger=Logger.getLogger(DSHolder.class);
@@ -53,5 +55,75 @@ public class DSHolder {
         }
         return connection;
     }
+
+    /**
+     * Closes connection
+     */
+
+    public static void close(Connection con) {
+        if (con != null) {
+            try {
+                con.close();
+            } catch (SQLException e) {
+                logger.error("Unable to close connection "+e);
+                e.printStackTrace();
+            }
+        }
+    }
+
+    /**
+     * Closes statement.
+     */
+    public static void close(Statement statement) {
+        if (statement != null) {
+            try {
+                statement.close();
+            } catch (SQLException e) {
+               logger.error("Can't close statement "+ e);
+                e.printStackTrace();
+            }
+        }
+    }
+
+    /**
+     * Closes  ResultSet.
+     */
+    public static void close(ResultSet rs) {
+        if (rs != null) {
+            try {
+                rs.close();
+            } catch (SQLException e) {
+                logger.error("Can't close ResultSet "+e);
+                e.printStackTrace();
+            }
+        }
+    }
+
+    /**
+     * Closes resources.
+     */
+    public static void close(Connection con, Statement stmt, ResultSet rs) {
+        close(rs);
+        close(stmt);
+        close(con);
+    }
+
+    /**
+     * Rollbacks a connection.
+     *
+     * @param con
+     *            Connection for rollback
+     */
+    public static void rollback(Connection con) {
+        if (con != null) {
+            try {
+                con.rollback();
+            } catch (SQLException e) {
+                logger.error("Can't rollback connection "+e);
+                e.printStackTrace();
+            }
+        }
+    }
+
 
 }
