@@ -1,1 +1,3 @@
 2016-03-01 23:52:00 INFO  TestClass:14 - Logger started
+2016-03-02 09:44:29 INFO  DSHolder:25 - Making Data Source
+2016-03-02 09:44:29 INFO  DSHolder:31 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@521cc3fe

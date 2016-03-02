@@ -93,6 +93,7 @@ CREATE TABLE Orders(
   car INTEGER NOT NULL REFERENCES Cars(id),
   startdate DATE NOT NULL,
   finishdate DATE NOT NULL,
+  driver BOOLEAN NOT NULL,
   status INTEGER NOT NULL REFERENCES Statuses(id)
 );
 
@@ -101,6 +102,7 @@ CREATE TABLE Checks(
   id INTEGER NOT NULL auto_increment PRIMARY KEY,
   date DATE NOT NULL DEFAULT CURRENT_DATE,
   desription VARCHAR (300),
-  order_id INTEGER NOT NULL REFERENCES Orders(id)
+  order_id INTEGER NOT NULL,
+  price INTEGER NOT NULL
 );
 
