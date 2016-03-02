@@ -42,7 +42,7 @@ public class StatusDAOImp implements StatusDAO {
 
     @Override
     public Status read(int id) {
-        String sql="SELECT FROM Statuses WHERE id=?";
+        String sql="SELECT *FROM Statuses WHERE id=?";
         Status status=null;
         try{
             ps=DSHolder.getInstance().getConnection().prepareStatement(sql);

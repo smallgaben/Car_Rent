@@ -13,7 +13,7 @@ public class User implements Serializable {
     private String lastName;
 
     private Role role;
-    private Set<Check> users;
+    private Set<Check> checks;
 
     public Role getRole() {
         return role;
@@ -67,12 +67,12 @@ public class User implements Serializable {
         this.lastName = lastName;
     }
 
-    public Set<Check> getUsers() {
-        return users;
+    public Set<Check> getChecks() {
+        return checks;
     }
 
-    public void setUsers(Set<Check> users) {
-        this.users = users;
+    public void setChecks(Set<Check> checks) {
+        this.checks = checks;
     }
 
     @Override
@@ -88,7 +88,7 @@ public class User implements Serializable {
         if (!password.equals(user.password)) return false;
         if (!firstName.equals(user.firstName)) return false;
         if (!lastName.equals(user.lastName)) return false;
-        return role.equals(user.role) && users.equals(user.users);
+        return role.equals(user.role) && checks.equals(user.checks);
 
     }
 
@@ -100,7 +100,7 @@ public class User implements Serializable {
         result = 31 * result + firstName.hashCode();
         result = 31 * result + lastName.hashCode();
         result = 31 * result + role.hashCode();
-        result = 31 * result + users.hashCode();
+        result = 31 * result + checks.hashCode();
         return result;
     }
 
@@ -113,7 +113,7 @@ public class User implements Serializable {
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", role=" + role +
-                ", users=" + users +
+                ", users=" + checks +
                 '}';
     }
 }

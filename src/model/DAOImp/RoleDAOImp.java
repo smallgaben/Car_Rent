@@ -45,7 +45,7 @@ public class RoleDAOImp implements RoleDAO {
 
     @Override
     public Role read(int id) {
-        String sql="SELECT FROM Roles WHERE id=?";
+        String sql="SELECT *FROM Roles WHERE id=?";
         Role role=null;
         try{
             ps=DSHolder.getInstance().getConnection().prepareStatement(sql);

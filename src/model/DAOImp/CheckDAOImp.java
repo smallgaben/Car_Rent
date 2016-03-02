@@ -50,7 +50,7 @@ public class CheckDAOImp implements CheckDAO {
     @Override
     public Check readByOrderId(int id) {
         Check check=null;
-        String sql="SELECT FROM Checks WHERE order_id=?";
+        String sql="SELECT *FROM Checks WHERE order_id=?";
         try{
             ps=DSHolder.getInstance().getConnection().prepareStatement(sql);
             ps.setInt(1,id);
@@ -75,7 +75,7 @@ public class CheckDAOImp implements CheckDAO {
         Set<Check> checks=null;
         try{
             statement=DSHolder.getInstance().getConnection().createStatement();
-            statement.executeQuery(sql);
+            resultSet=statement.executeQuery(sql);
             checks = new HashSet<>();
             while(resultSet.next()){
                 checks.add(executeCheck(resultSet));

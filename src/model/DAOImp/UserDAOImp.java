@@ -9,9 +9,6 @@ import java.sql.*;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- * Created by miroslav on 02.03.16.
- */
 public class UserDAOImp implements UserDAO {
     private static final Logger logger=Logger.getLogger(UserDAOImp.class);
     Connection connection=null;
@@ -35,7 +32,7 @@ public class UserDAOImp implements UserDAO {
             resultSet=ps.getGeneratedKeys();
             if(resultSet.next()){
                 int id=resultSet.getInt(1);
-                logger.debug("Created User with id: "+id);
+                logger.info("Created User with id: " + id);
                 user.setId(id);
             }
         }catch (SQLException e){
@@ -52,7 +49,7 @@ public class UserDAOImp implements UserDAO {
     @Override
     public User readById(int id) {
         User user=null;
-        String sql="SELECT FROM Users WHERE id=?";
+        String sql="SELECT *FROM Users WHERE id=?";
         try{
             ps=DSHolder.getInstance().getConnection().prepareStatement(sql);
             ps.setInt(1,id);
@@ -74,7 +71,7 @@ public class UserDAOImp implements UserDAO {
     @Override
     public User readByName(String name) {
         User user=null;
-        String sql="SELECT FROM Users WHERE username=?";
+        String sql="SELECT *FROM Users WHERE username IS ?";
         try{
             ps=DSHolder.getInstance().getConnection().prepareStatement(sql);
             ps.setString(1, name);
@@ -99,7 +96,7 @@ public class UserDAOImp implements UserDAO {
         Set<User> users=null;
         try{
             statement=DSHolder.getInstance().getConnection().createStatement();
-            statement.executeQuery(sql);
+            resultSet=statement.executeQuery(sql);
             users = new HashSet<>();
             while(resultSet.next()){
                 users.add(executeUser(resultSet));

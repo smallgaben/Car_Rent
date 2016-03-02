@@ -54,7 +54,7 @@ public class OrderDAOImp implements OrderDAO {
     @Override
     public Order readById(int id) {
         Order order=null;
-        String sql="SELECT FROM Orders WHERE id=?";
+        String sql="SELECT *FROM Orders WHERE id=?";
         try{
             ps=DSHolder.getInstance().getConnection().prepareStatement(sql);
             ps.setInt(1,id);
@@ -77,7 +77,7 @@ public class OrderDAOImp implements OrderDAO {
     @Override
     public Order readByName(String name) {
         Order order=null;
-        String sql="SELECT FROM Orders WHERE name=?";
+        String sql="SELECT *FROM Orders WHERE name=?";
         try{
             ps=DSHolder.getInstance().getConnection().prepareStatement(sql);
             ps.setString(1, name);
@@ -102,7 +102,7 @@ public class OrderDAOImp implements OrderDAO {
         Set<Order> orders=null;
         try{
             statement=DSHolder.getInstance().getConnection().createStatement();
-            statement.executeQuery(sql);
+            resultSet=statement.executeQuery(sql);
             orders= new HashSet<>();
             while(resultSet.next()){
                 orders.add(executeOrder(resultSet));
@@ -213,7 +213,7 @@ public class OrderDAOImp implements OrderDAO {
     }
 
     public Set<Integer> getDeletingIds(int id) throws SQLException{
-        String sql="SELECT FROM Orders WHERE car=?";
+        String sql="SELECT *FROM Orders WHERE car=?";
         ps=DSHolder.getInstance().getConnection().prepareStatement(sql);
         ps.setInt(1,id);
         resultSet = ps.executeQuery();

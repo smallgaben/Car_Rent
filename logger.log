@@ -3,3 +3,333 @@
 2016-03-02 09:44:29 INFO  DSHolder:31 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@521cc3fe
 2016-03-02 09:49:51 INFO  DSHolder:25 - Making Data Source
 2016-03-02 09:49:51 INFO  DSHolder:31 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@1c389997
+2016-03-02 19:43:59 INFO  DSHolder:27 - Making Data Source
+2016-03-02 19:43:59 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@38913c33
+2016-03-02 19:43:59 ERROR UserDAOImp:86 - Can't read User org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "SELECT FROM USERS WHERE[*] USERNAME=? "; ожидалось "., (, AS, RIGHT, LEFT, FULL, INNER, JOIN, CROSS, NATURAL, ,, SELECT"
+Syntax error in SQL statement "SELECT FROM USERS WHERE[*] USERNAME=? "; expected "., (, AS, RIGHT, LEFT, FULL, INNER, JOIN, CROSS, NATURAL, ,, SELECT"; SQL statement:
+SELECT FROM Users WHERE username=? [42001-190]
+2016-03-02 19:43:59 WARN  SignInServlet:53 - User blocked or password incorrect
+2016-03-02 19:48:21 INFO  DSHolder:27 - Making Data Source
+2016-03-02 19:48:21 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@2aafa1b
+2016-03-02 19:48:22 ERROR RoleDAOImp:60 - Can't read Role org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "SELECT FROM ROLES WHERE[*] ID=? "; ожидалось "., (, AS, RIGHT, LEFT, FULL, INNER, JOIN, CROSS, NATURAL, ,, SELECT"
+Syntax error in SQL statement "SELECT FROM ROLES WHERE[*] ID=? "; expected "., (, AS, RIGHT, LEFT, FULL, INNER, JOIN, CROSS, NATURAL, ,, SELECT"; SQL statement:
+SELECT FROM Roles WHERE id=? [42001-190]
+2016-03-02 19:48:22 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-02 19:50:06 INFO  DSHolder:27 - Making Data Source
+2016-03-02 19:50:06 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@74d56806
+2016-03-02 19:50:06 WARN  SignInServlet:53 - User blocked or password incorrect
+2016-03-02 19:50:23 ERROR RoleDAOImp:60 - Can't read Role org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "SELECT FROM ROLES WHERE[*] ID=? "; ожидалось "., (, AS, RIGHT, LEFT, FULL, INNER, JOIN, CROSS, NATURAL, ,, SELECT"
+Syntax error in SQL statement "SELECT FROM ROLES WHERE[*] ID=? "; expected "., (, AS, RIGHT, LEFT, FULL, INNER, JOIN, CROSS, NATURAL, ,, SELECT"; SQL statement:
+SELECT FROM Roles WHERE id=? [42001-190]
+2016-03-02 19:50:23 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-02 19:52:58 INFO  DSHolder:27 - Making Data Source
+2016-03-02 19:52:58 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@3a585545
+2016-03-02 19:52:58 ERROR RoleDAOImp:60 - Can't read Role org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "SELECT FROM ROLES WHERE[*] ID=? "; ожидалось "., (, AS, RIGHT, LEFT, FULL, INNER, JOIN, CROSS, NATURAL, ,, SELECT"
+Syntax error in SQL statement "SELECT FROM ROLES WHERE[*] ID=? "; expected "., (, AS, RIGHT, LEFT, FULL, INNER, JOIN, CROSS, NATURAL, ,, SELECT"; SQL statement:
+SELECT FROM Roles WHERE id=? [42001-190]
+2016-03-02 19:52:58 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-02 19:55:31 INFO  DSHolder:27 - Making Data Source
+2016-03-02 19:55:31 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@cac5e5b
+2016-03-02 19:55:31 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-02 19:55:31 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-02 19:55:31 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@4d3ad937
+2016-03-02 20:11:37 INFO  AuthFilter:19 - authentication Filter initialized
+2016-03-02 20:15:08 INFO  AuthFilter:19 - authentication Filter initialized
+2016-03-02 20:15:16 INFO  DSHolder:27 - Making Data Source
+2016-03-02 20:15:16 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@2fe3ed37
+2016-03-02 20:15:16 WARN  SignInServlet:53 - User blocked or password incorrect
+2016-03-02 20:17:02 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-02 20:17:02 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-02 20:17:02 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@129f5f75
+2016-03-02 20:18:43 INFO  AuthFilter:19 - authentication Filter initialized
+2016-03-02 20:20:23 INFO  AuthFilter:19 - authentication Filter initialized
+2016-03-02 20:20:29 WARN  AuthFilter:34 - Unauthorized access request
+2016-03-02 20:22:32 INFO  AuthFilter:19 - authentication Filter initialized
+2016-03-02 20:22:43 WARN  AuthFilter:34 - Unauthorized access request
+2016-03-02 20:23:00 WARN  AuthFilter:34 - Unauthorized access request
+2016-03-02 20:24:03 WARN  AuthFilter:34 - Unauthorized access request
+2016-03-02 20:24:11 WARN  AuthFilter:34 - Unauthorized access request
+2016-03-02 20:25:32 INFO  AuthFilter:19 - authentication Filter initialized
+2016-03-02 20:25:43 INFO  DSHolder:27 - Making Data Source
+2016-03-02 20:25:43 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@7c64a829
+2016-03-02 20:25:43 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-02 20:25:43 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-02 20:25:43 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@728f06b5
+2016-03-02 20:28:49 INFO  AuthFilter:19 - authentication Filter initialized
+2016-03-02 20:28:58 INFO  DSHolder:27 - Making Data Source
+2016-03-02 20:28:58 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@60d09283
+2016-03-02 20:28:59 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-02 20:28:59 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-02 20:28:59 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@912da7
+2016-03-02 20:29:26 INFO  AuthFilter:19 - authentication Filter initialized
+2016-03-02 20:29:35 INFO  DSHolder:27 - Making Data Source
+2016-03-02 20:29:35 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@60d09283
+2016-03-02 20:29:35 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-02 20:29:35 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-02 20:29:35 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@912da7
+2016-03-02 20:30:22 INFO  AuthFilter:19 - authentication Filter initialized
+2016-03-02 20:30:31 INFO  DSHolder:27 - Making Data Source
+2016-03-02 20:30:31 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@6d9d5ce7
+2016-03-02 20:30:31 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-02 20:30:31 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-02 20:30:31 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@10dda3ce
+2016-03-02 20:31:33 INFO  AuthFilter:19 - authentication Filter initialized
+2016-03-02 20:31:41 INFO  DSHolder:27 - Making Data Source
+2016-03-02 20:31:41 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@1767f56a
+2016-03-02 20:31:41 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-02 20:31:41 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-02 20:31:41 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@6b5662fd
+2016-03-02 20:32:02 INFO  AuthFilter:19 - authentication Filter initialized
+2016-03-02 20:32:14 WARN  AuthFilter:33 - Unauthorized access request
+2016-03-02 20:32:20 WARN  AuthFilter:33 - Unauthorized access request
+2016-03-02 20:58:52 INFO  AuthFilter:19 - authentication Filter initialized
+2016-03-02 20:59:35 INFO  DSHolder:27 - Making Data Source
+2016-03-02 20:59:35 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@2ba30df7
+2016-03-02 20:59:35 INFO  RegisterServlet:39 - Created a new User: kolobok with id: 4
+2016-03-02 20:59:35 WARN  SignInServlet:53 - User blocked or password incorrect
+2016-03-02 21:01:13 WARN  SignInServlet:53 - User blocked or password incorrect
+2016-03-02 21:28:51 INFO  AuthFilter:19 - authentication Filter initialized
+2016-03-02 21:29:13 INFO  DSHolder:27 - Making Data Source
+2016-03-02 21:29:13 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@7efa7717
+2016-03-02 21:29:13 INFO  SignInServlet:23 - User exists: plotnikov password: plotnikov
+2016-03-02 21:29:13 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-02 21:29:13 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@5024e9fa
+2016-03-02 21:29:24 INFO  AuthFilter:19 - authentication Filter initialized
+2016-03-02 21:29:43 INFO  DSHolder:27 - Making Data Source
+2016-03-02 21:29:43 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@1172ec35
+2016-03-02 21:29:43 INFO  RegisterServlet:39 - Created a new User: konch with id: 5
+2016-03-02 21:29:43 WARN  SignInServlet:53 - User blocked or password incorrect
+2016-03-02 21:29:51 WARN  SignInServlet:53 - User blocked or password incorrect
+2016-03-02 21:37:05 INFO  AuthFilter:19 - authentication Filter initialized
+2016-03-02 21:37:29 INFO  DSHolder:27 - Making Data Source
+2016-03-02 21:37:29 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@24e008f7
+2016-03-02 21:37:29 INFO  RegisterServlet:39 - Created a new User: koleno with id: 6
+2016-03-02 21:37:45 WARN  SignInServlet:53 - User blocked or password incorrect
+2016-03-02 21:38:52 WARN  SignInServlet:53 - User blocked or password incorrect
+2016-03-02 21:40:26 INFO  AuthFilter:19 - authentication Filter initialized
+2016-03-02 21:40:43 INFO  DSHolder:27 - Making Data Source
+2016-03-02 21:40:43 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@6801cda2
+2016-03-02 21:40:44 INFO  RegisterServlet:39 - Created a new User: pizdos with id: 7
+2016-03-02 21:40:59 WARN  SignInServlet:55 - User blocked or password incorrect
+2016-03-02 21:41:37 INFO  AuthFilter:19 - authentication Filter initialized
+2016-03-02 21:41:53 INFO  DSHolder:27 - Making Data Source
+2016-03-02 21:41:53 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@1f7d791d
+2016-03-02 21:41:53 INFO  RegisterServlet:39 - Created a new User: kaka with id: 8
+2016-03-02 21:42:00 INFO  SignInServlet:22 - Username: kaka Password: kaka
+2016-03-02 21:42:00 WARN  SignInServlet:55 - User blocked or password incorrect
+2016-03-02 21:43:37 INFO  AuthFilter:19 - authentication Filter initialized
+2016-03-02 21:44:05 INFO  DSHolder:27 - Making Data Source
+2016-03-02 21:44:05 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@6d0ea2a1
+2016-03-02 21:44:05 INFO  RegisterServlet:39 - Created a new User: popa with id: 9
+2016-03-02 21:45:16 INFO  AuthFilter:19 - authentication Filter initialized
+2016-03-02 21:45:24 INFO  DSHolder:27 - Making Data Source
+2016-03-02 21:45:24 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@28958d02
+2016-03-02 21:46:52 INFO  AuthFilter:19 - authentication Filter initialized
+2016-03-02 21:47:01 INFO  DSHolder:27 - Making Data Source
+2016-03-02 21:47:01 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@7f3386c4
+2016-03-02 21:47:01 WARN  SignInServlet:53 - User blocked or password incorrect
+2016-03-02 21:49:31 INFO  AuthFilter:19 - authentication Filter initialized
+2016-03-02 21:49:47 INFO  DSHolder:27 - Making Data Source
+2016-03-02 21:49:47 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@df782a8
+2016-03-02 21:49:47 INFO  RegisterServlet:39 - Created a new User: bob with id: 10
+2016-03-02 21:54:23 INFO  AuthFilter:19 - authentication Filter initialized
+2016-03-02 21:54:38 INFO  DSHolder:27 - Making Data Source
+2016-03-02 21:54:38 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@6bc96927
+2016-03-02 21:54:38 INFO  RegisterServlet:40 - Created a new User: koka with id: 11
+2016-03-02 22:03:26 INFO  AuthFilter:19 - authentication Filter initialized
+2016-03-02 22:03:37 INFO  DSHolder:27 - Making Data Source
+2016-03-02 22:03:37 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@6ed17a13
+2016-03-02 22:03:38 INFO  UserDAOImp:38 - Created User with id: 12
+2016-03-02 22:03:38 INFO  RegisterServlet:40 - Created a new User: qw with id: 12
+2016-03-02 22:12:49 INFO  AuthFilter:19 - authentication Filter initialized
+2016-03-02 22:13:05 INFO  DSHolder:27 - Making Data Source
+2016-03-02 22:13:05 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@21d85ee6
+2016-03-02 22:13:06 ERROR UserDAOImp:39 - Can't add user org.h2.jdbc.JdbcSQLException: Значение NULL не разрешено для поля "FIRSTNAME"
+NULL not allowed for column "FIRSTNAME"; SQL statement:
+INSERT INTO Users(username,password,firstname,lastname,role) VALUES (?, ?, ?, ?, ?) [23502-190]
+2016-03-02 22:13:06 INFO  RegisterServlet:39 - Created customer id and username: 0pop
+2016-03-02 22:13:06 INFO  RegisterServlet:44 - Redirecting to SignInServlet.java for entering
+2016-03-02 22:13:06 WARN  SignInServlet:53 - User blocked or password incorrect
+2016-03-02 22:14:00 INFO  AuthFilter:19 - authentication Filter initialized
+2016-03-02 22:14:15 INFO  DSHolder:27 - Making Data Source
+2016-03-02 22:14:15 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@2b1d569d
+2016-03-02 22:14:15 INFO  UserDAOImp:35 - Created User with id: 14
+2016-03-02 22:14:15 INFO  RegisterServlet:39 - Created customer id and username: 14pop
+2016-03-02 22:14:15 INFO  RegisterServlet:44 - Redirecting to SignInServlet.java for entering
+2016-03-02 22:14:15 WARN  SignInServlet:53 - User blocked or password incorrect
+2016-03-02 22:26:44 INFO  AuthFilter:19 - authentication Filter initialized
+2016-03-02 22:27:09 INFO  DSHolder:27 - Making Data Source
+2016-03-02 22:27:09 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@24e008f7
+2016-03-02 22:27:09 INFO  UserDAOImp:35 - Created User with id: 15
+2016-03-02 22:27:09 INFO  RegisterServlet:39 - Created customer id and username: 15kocar
+2016-03-02 22:27:09 INFO  RegisterServlet:44 - Redirecting to SignInServlet.java for entering
+2016-03-02 22:27:09 INFO  SignInServlet:23 - User exists: kocar password: kocar
+2016-03-02 22:27:09 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-02 22:27:09 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@2eafc8d
+2016-03-02 22:55:10 INFO  AuthFilter:19 - authentication Filter initialized
+2016-03-02 22:55:36 INFO  DSHolder:27 - Making Data Source
+2016-03-02 22:55:36 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@198f9c96
+2016-03-02 22:55:36 INFO  SignInServlet:23 - User exists: plotnikov password: plotnikov
+2016-03-02 22:55:36 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-02 22:55:36 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@47606455
+2016-03-02 22:57:47 INFO  AuthFilter:19 - authentication Filter initialized
+2016-03-02 22:58:02 INFO  DSHolder:27 - Making Data Source
+2016-03-02 22:58:02 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@53c97084
+2016-03-02 22:58:02 INFO  SignInServlet:23 - User exists: plotnikov password: plotnikov
+2016-03-02 22:58:02 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-02 22:58:02 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@6a7b3c01
+2016-03-02 22:59:08 INFO  AuthFilter:19 - authentication Filter initialized
+2016-03-02 22:59:17 INFO  DSHolder:27 - Making Data Source
+2016-03-02 22:59:17 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@20a474d3
+2016-03-02 22:59:17 INFO  SignInServlet:23 - User exists: plotnikov password: plotnikov
+2016-03-02 22:59:17 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-02 22:59:17 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@20b0e92f
+2016-03-02 23:03:44 INFO  AuthFilter:19 - authentication Filter initialized
+2016-03-02 23:03:54 INFO  DSHolder:27 - Making Data Source
+2016-03-02 23:03:54 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@ed5505
+2016-03-02 23:03:54 INFO  SignInServlet:23 - User exists: plotnikov password: plotnikov
+2016-03-02 23:03:54 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-02 23:03:54 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@7a918393
+2016-03-02 23:04:58 INFO  AuthFilter:19 - authentication Filter initialized
+2016-03-02 23:05:06 INFO  DSHolder:27 - Making Data Source
+2016-03-02 23:05:06 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@1798648b
+2016-03-02 23:05:06 INFO  SignInServlet:23 - User exists: plotnikov password: plotnikov
+2016-03-02 23:05:06 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-02 23:05:06 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@6f83644a
+2016-03-02 23:18:17 INFO  AuthFilter:19 - authentication Filter initialized
+2016-03-02 23:18:26 INFO  DSHolder:27 - Making Data Source
+2016-03-02 23:18:26 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@38921b52
+2016-03-02 23:18:26 INFO  SignInServlet:23 - User exists: plotnikov password: plotnikov
+2016-03-02 23:18:26 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-02 23:18:26 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@2e86e2f0
+2016-03-02 23:19:42 INFO  AuthFilter:19 - authentication Filter initialized
+2016-03-02 23:19:53 INFO  DSHolder:27 - Making Data Source
+2016-03-02 23:19:53 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@626cc26b
+2016-03-02 23:19:53 INFO  SignInServlet:23 - User exists: plotnikov password: plotnikov
+2016-03-02 23:19:53 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-02 23:19:53 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@5413b665
+2016-03-02 23:25:17 INFO  AuthFilter:19 - authentication Filter initialized
+2016-03-02 23:25:27 INFO  DSHolder:27 - Making Data Source
+2016-03-02 23:25:27 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@362566fd
+2016-03-02 23:25:27 INFO  SignInServlet:23 - User exists: plotnikov password: plotnikov
+2016-03-02 23:25:27 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-02 23:25:27 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@337ed7e2
+2016-03-02 23:31:58 INFO  AuthFilter:19 - authentication Filter initialized
+2016-03-02 23:32:07 INFO  DSHolder:27 - Making Data Source
+2016-03-02 23:32:07 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@7b08386f
+2016-03-02 23:32:07 INFO  SignInServlet:23 - User exists: plotnikov password: plotnikov
+2016-03-02 23:32:07 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-02 23:32:07 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@26e5821f
+2016-03-02 23:52:33 INFO  AuthFilter:19 - authentication Filter initialized
+2016-03-02 23:52:43 INFO  DSHolder:27 - Making Data Source
+2016-03-02 23:52:43 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@a9384c
+2016-03-02 23:52:43 INFO  SignInServlet:23 - User exists: plotnikov password: plotnikov
+2016-03-02 23:52:43 WARN  SignInServlet:53 - User blocked or password incorrect
+2016-03-02 23:52:53 INFO  SignInServlet:23 - User exists: plotnikov password: plotnikov
+2016-03-02 23:52:53 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-02 23:52:53 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@4e55908b
+2016-03-02 23:56:18 INFO  AuthFilter:19 - authentication Filter initialized
+2016-03-02 23:56:28 INFO  DSHolder:27 - Making Data Source
+2016-03-02 23:56:28 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@4ba00133
+2016-03-02 23:56:29 INFO  SignInServlet:23 - User exists: plotnikov password: plotnikov
+2016-03-02 23:56:29 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-02 23:56:29 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@89984f2
+2016-03-02 23:57:40 INFO  AuthFilter:19 - authentication Filter initialized
+2016-03-02 23:57:49 INFO  DSHolder:27 - Making Data Source
+2016-03-02 23:57:49 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@affd8c5
+2016-03-02 23:57:49 INFO  SignInServlet:23 - User exists: plotnikov password: plotnikov
+2016-03-02 23:57:49 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-02 23:57:49 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@51c45e64
+2016-03-03 00:02:11 INFO  AuthFilter:19 - authentication Filter initialized
+2016-03-03 00:02:40 INFO  DSHolder:27 - Making Data Source
+2016-03-03 00:02:40 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@5fa93f9c
+2016-03-03 00:02:40 INFO  SignInServlet:23 - User exists: plotnikov password: plotnikov
+2016-03-03 00:02:40 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 00:02:40 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@ed4526f
+2016-03-03 00:02:44 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-03 00:02:53 WARN  AuthFilter:33 - Unauthorized access request
+2016-03-03 00:03:05 WARN  AuthFilter:33 - Unauthorized access request
+2016-03-03 00:03:14 WARN  AuthFilter:33 - Unauthorized access request
+2016-03-03 00:03:20 WARN  AuthFilter:33 - Unauthorized access request
+2016-03-03 00:04:14 INFO  AuthFilter:19 - authentication Filter initialized
+2016-03-03 00:04:23 WARN  AuthFilter:33 - Unauthorized access request
+2016-03-03 00:04:31 INFO  DSHolder:27 - Making Data Source
+2016-03-03 00:04:31 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@4c4c7d6b
+2016-03-03 00:04:31 INFO  SignInServlet:23 - User exists: plotnikov password: plotnikov
+2016-03-03 00:04:31 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 00:04:31 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@3396d403
+2016-03-03 00:04:33 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-03 00:04:37 WARN  AuthFilter:33 - Unauthorized access request
+2016-03-03 00:13:48 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 00:13:58 INFO  DSHolder:27 - Making Data Source
+2016-03-03 00:13:58 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@1fd00cac
+2016-03-03 00:13:59 INFO  SignInServlet:23 - User exists: plotnikov password: plotnikov
+2016-03-03 00:13:59 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 00:13:59 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@3179ff2b
+2016-03-03 00:14:53 ERROR DSHolder:53 - Connection failed org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot get a connection, pool error Timeout waiting for idle object
+2016-03-03 00:14:56 ERROR DSHolder:53 - Connection failed org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot get a connection, general error
+2016-03-03 00:14:59 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 00:15:08 INFO  DSHolder:27 - Making Data Source
+2016-03-03 00:15:08 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@53c97084
+2016-03-03 00:15:08 INFO  SignInServlet:23 - User exists: plotnikov password: plotnikov
+2016-03-03 00:15:08 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 00:15:08 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@6a7b3c01
+2016-03-03 00:18:30 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-03 00:18:36 ERROR DSHolder:53 - Connection failed org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot get a connection, pool error Timeout waiting for idle object
+2016-03-03 00:18:46 ERROR DSHolder:53 - Connection failed org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot get a connection, pool error Timeout waiting for idle object
+2016-03-03 00:26:18 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 00:26:27 INFO  DSHolder:27 - Making Data Source
+2016-03-03 00:26:27 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@a9384c
+2016-03-03 00:26:27 INFO  SignInServlet:23 - User exists: plotnikov password: plotnikov
+2016-03-03 00:26:27 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 00:26:27 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@5aeb305d
+2016-03-03 00:28:17 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-03 00:28:23 ERROR DSHolder:53 - Connection failed org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot get a connection, pool error Timeout waiting for idle object
+2016-03-03 00:28:25 ERROR DSHolder:53 - Connection failed org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot get a connection, pool error Timeout waiting for idle object
+2016-03-03 00:28:25 ERROR DSHolder:53 - Connection failed org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot get a connection, pool error Timeout waiting for idle object
+2016-03-03 00:28:26 ERROR DSHolder:53 - Connection failed org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot get a connection, pool error Timeout waiting for idle object
+2016-03-03 00:28:26 ERROR DSHolder:53 - Connection failed org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot get a connection, pool error Timeout waiting for idle object
+2016-03-03 00:28:26 ERROR DSHolder:53 - Connection failed org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot get a connection, pool error Timeout waiting for idle object
+2016-03-03 00:28:35 ERROR DSHolder:53 - Connection failed org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot get a connection, pool error Timeout waiting for idle object
+2016-03-03 00:35:55 WARN  AuthFilter:30 - Unauthorized access request
+2016-03-03 00:36:14 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 00:36:26 INFO  DSHolder:27 - Making Data Source
+2016-03-03 00:36:26 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@113159cd
+2016-03-03 00:36:27 INFO  SignInServlet:23 - User exists: plotnikov password: plotnikov
+2016-03-03 00:36:27 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 00:36:27 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@7d1454f5
+2016-03-03 00:36:59 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-03 00:37:06 INFO  SignInServlet:23 - User exists: plotnikov password: plotnikov
+2016-03-03 00:37:06 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 00:37:06 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@31c96b3f
+2016-03-03 00:37:36 ERROR DSHolder:53 - Connection failed org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot get a connection, pool error Timeout waiting for idle object
+2016-03-03 00:43:54 ERROR DSHolder:53 - Connection failed org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot get a connection, general error
+2016-03-03 00:43:57 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 00:44:02 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 00:48:35 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 00:48:44 INFO  DSHolder:27 - Making Data Source
+2016-03-03 00:48:44 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@4f8470fd
+2016-03-03 00:48:44 INFO  SignInServlet:23 - User exists: plotnikov password: plotnikov
+2016-03-03 00:48:44 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 00:48:44 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@62bbebe0
+2016-03-03 00:48:52 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-03 00:48:59 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-03 00:48:59 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 00:48:59 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@4a392459
+2016-03-03 00:53:06 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 00:53:14 INFO  DSHolder:27 - Making Data Source
+2016-03-03 00:53:14 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@2817c58f
+2016-03-03 00:53:14 INFO  SignInServlet:23 - User exists: plotnikov password: plotnikov
+2016-03-03 00:53:14 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 00:53:14 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@93fe11e
+2016-03-03 00:57:32 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 00:57:40 INFO  DSHolder:27 - Making Data Source
+2016-03-03 00:57:40 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@36fde74e
+2016-03-03 00:57:40 INFO  SignInServlet:23 - User exists: plotnikov password: plotnikov
+2016-03-03 00:57:40 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 00:57:40 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@7ebc32f7
+2016-03-03 00:57:43 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-03 00:57:49 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-03 00:57:49 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 00:57:49 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@6d323754
+2016-03-03 00:57:54 INFO  LogOutServlet:16 - Started LogOut Servlet

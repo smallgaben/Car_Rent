@@ -49,7 +49,7 @@ public class CarDAOImp implements CarDAO {
     @Override
     public Car readById(int id) {
         Car car=null;
-        String sql="SELECT FROM Cars WHERE id=?";
+        String sql="SELECT *FROM Cars WHERE id=?";
         try{
             ps=DSHolder.getInstance().getConnection().prepareStatement(sql);
             ps.setInt(1,id);
@@ -71,7 +71,7 @@ public class CarDAOImp implements CarDAO {
     @Override
     public Car readByName(String name) {
         Car car=null;
-        String sql="SELECT FROM Cars WHERE name=?";
+        String sql="SELECT *FROM Cars WHERE name=?";
         try{
             ps=DSHolder.getInstance().getConnection().prepareStatement(sql);
             ps.setString(1, name);
@@ -92,11 +92,11 @@ public class CarDAOImp implements CarDAO {
 
     @Override
     public Set<Car> readAll() {
-        String sql="SELECT * FROM Cars";
+        String sql="SELECT *FROM Cars";
         Set<Car> cars=null;
         try{
-            statement=DSHolder.getInstance().getConnection().createStatement();
-            statement.executeQuery(sql);
+            ps=DSHolder.getInstance().getConnection().prepareStatement(sql);
+            resultSet=ps.executeQuery();
             cars = new HashSet<>();
             while(resultSet.next()){
                 cars.add(executeCar(resultSet));

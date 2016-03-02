@@ -5,6 +5,7 @@ import java.util.Set;
 
 public class Role implements Serializable {
     private static final long serialVersionUID = 1745541598538260557L;
+    public static final int DEFAULT_ROLE=2;
 
     private int id;
     private String name;

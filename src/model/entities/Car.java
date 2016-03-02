@@ -87,7 +87,8 @@ public class Car implements Serializable {
         if (!mark.equals(car.mark)) return false;
         if (!name.equals(car.name)) return false;
         if (!carClass.equals(car.carClass)) return false;
-        return status.equals(car.status) && orders.equals(car.orders);
+        if (!status.equals(car.status)) return false;
+        return !(orders != null ? !orders.equals(car.orders) : car.orders != null);
 
     }
 
@@ -99,7 +100,7 @@ public class Car implements Serializable {
         result = 31 * result + cost;
         result = 31 * result + carClass.hashCode();
         result = 31 * result + status.hashCode();
-        result = 31 * result + orders.hashCode();
+        result = 31 * result + (orders != null ? orders.hashCode() : 0);
         return result;
     }
 
@@ -112,7 +113,6 @@ public class Car implements Serializable {
                 ", cost=" + cost +
                 ", carClass=" + carClass +
                 ", status=" + status +
-                ", orders=" + orders +
                 '}';
     }
 }

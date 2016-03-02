@@ -7,7 +7,12 @@
         <element id="directory" name="classes">
           <element id="module-output" name="Car Rent" />
         </element>
-        <element id="directory" name="lib" />
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="h2-1.4.190" />
+          <element id="library" level="project" name="log4j-1.2.17" />
+          <element id="library" level="project" name="jstl-1.2" />
+          <element id="library" level="project" name="bootstrap-maven-2.0.4" />
+        </element>
       </element>
     </root>
   </artifact>

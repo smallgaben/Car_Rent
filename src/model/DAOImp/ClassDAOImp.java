@@ -42,7 +42,7 @@ public class ClassDAOImp implements ClassDAO {
 
     @Override
     public Class read(int id) {
-        String sql="SELECT FROM Classes WHERE id=?";
+        String sql="SELECT *FROM Classes WHERE id=?";
         Class carClass=null;
         try{
             ps=DSHolder.getInstance().getConnection().prepareStatement(sql);
