@@ -29,7 +29,7 @@ public class SignInServlet extends HttpServlet{
             HttpSession session = req.getSession();
             logger.info("Set a new session: " + session);
             session.setAttribute("username", user.getUsername());
-            session.setAttribute("role", user.getRole());
+            session.setAttribute("role", user.getRole().getName());
             session.setMaxInactiveInterval(30 * 60);
 
             Cookie cookie = new Cookie("username", user.getUsername());
