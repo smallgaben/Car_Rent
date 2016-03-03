@@ -77,7 +77,6 @@ public class User implements Serializable {
 
     @Override
     public boolean equals(Object o) {
-
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
@@ -88,7 +87,8 @@ public class User implements Serializable {
         if (!password.equals(user.password)) return false;
         if (!firstName.equals(user.firstName)) return false;
         if (!lastName.equals(user.lastName)) return false;
-        return role.equals(user.role) && checks.equals(user.checks);
+        if (!role.equals(user.role)) return false;
+        return !(checks != null ? !checks.equals(user.checks) : user.checks != null);
 
     }
 
@@ -100,20 +100,19 @@ public class User implements Serializable {
         result = 31 * result + firstName.hashCode();
         result = 31 * result + lastName.hashCode();
         result = 31 * result + role.hashCode();
-        result = 31 * result + checks.hashCode();
+        result = 31 * result + (checks != null ? checks.hashCode() : 0);
         return result;
     }
 
     @Override
     public String toString() {
         return "User{" +
-                "id=" + id +
-                ", username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                ", firstName='" + firstName + '\'' +
+                "role=" + role +
                 ", lastName='" + lastName + '\'' +
-                ", role=" + role +
-                ", users=" + checks +
+                ", firstName='" + firstName + '\'' +
+                ", password='" + password + '\'' +
+                ", username='" + username + '\'' +
+                ", id=" + id +
                 '}';
     }
 }

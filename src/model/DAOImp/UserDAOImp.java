@@ -1,5 +1,6 @@
 package model.DAOImp;
 
+import model.DAO.RoleDAO;
 import model.DAO.UserDAO;
 import model.DBUtil.DSHolder;
 import model.entities.User;
@@ -11,13 +12,13 @@ import java.util.Set;
 
 public class UserDAOImp implements UserDAO {
     private static final Logger logger=Logger.getLogger(UserDAOImp.class);
-    Connection connection=null;
-    Statement statement=null;
-    PreparedStatement ps=null;
-    ResultSet resultSet=null;
 
     @Override
     public User create(User user) {
+        PreparedStatement ps=null;
+        Connection connection=null;
+        ResultSet resultSet=null;
+
         String sql="INSERT INTO Users(username,password,firstname,lastname,role) VALUES (?, ?, ?, ?, ?)";
         try{
             connection = DSHolder.getInstance().getConnection();
@@ -48,10 +49,15 @@ public class UserDAOImp implements UserDAO {
 
     @Override
     public User readById(int id) {
+        PreparedStatement ps=null;
+        Connection connection=null;
+        ResultSet resultSet=null;
+
         User user=null;
         String sql="SELECT *FROM Users WHERE id=?";
         try{
-            ps=DSHolder.getInstance().getConnection().prepareStatement(sql);
+            connection=DSHolder.getInstance().getConnection();
+            ps=connection.prepareStatement(sql);
             ps.setInt(1,id);
             resultSet=ps.executeQuery();
             if(resultSet.next()){
@@ -70,10 +76,15 @@ public class UserDAOImp implements UserDAO {
 
     @Override
     public User readByName(String name) {
+        PreparedStatement ps=null;
+        Connection connection=null;
+        ResultSet resultSet=null;
+
         User user=null;
-        String sql="SELECT *FROM Users WHERE username IS ?";
+        String sql="SELECT *FROM Users WHERE username=?";
         try{
-            ps=DSHolder.getInstance().getConnection().prepareStatement(sql);
+            connection=DSHolder.getInstance().getConnection();
+            ps=connection.prepareStatement(sql);
             ps.setString(1, name);
             resultSet=ps.executeQuery();
             if(resultSet.next()){
@@ -92,11 +103,16 @@ public class UserDAOImp implements UserDAO {
 
     @Override
     public Set<User> readAll() {
+        PreparedStatement ps=null;
+        Connection connection=null;
+        ResultSet resultSet=null;
+
         String sql="SELECT * FROM Users";
         Set<User> users=null;
         try{
-            statement=DSHolder.getInstance().getConnection().createStatement();
-            resultSet=statement.executeQuery(sql);
+            connection=DSHolder.getInstance().getConnection();
+            ps=connection.prepareStatement(sql);
+            resultSet=ps.executeQuery();
             users = new HashSet<>();
             while(resultSet.next()){
                 users.add(executeUser(resultSet));
@@ -105,16 +121,22 @@ public class UserDAOImp implements UserDAO {
             logger.error("Can't read all Users");
             e.printStackTrace();
         }finally {
-            DSHolder.close(connection, statement, resultSet);
+            DSHolder.close(connection);
+            DSHolder.close(ps);
+            DSHolder.close(resultSet);
         }
         return users;
     }
 
     @Override
     public void update(User user) {
+        PreparedStatement ps=null;
+        Connection connection=null;
+
         String sql="UPDATE Users Set username=?, password=?, firstname=?, lastname=?, role=? WHERE id=?";
         try{
-            ps=DSHolder.getInstance().getConnection().prepareStatement(sql);
+            connection=DSHolder.getInstance().getConnection();
+            ps=connection.prepareStatement(sql);
             ps.setString(1, user.getUsername());
             ps.setString(2, user.getPassword());
             ps.setString(3, user.getFirstName());
@@ -128,16 +150,19 @@ public class UserDAOImp implements UserDAO {
             e.printStackTrace();
         }finally {
             DSHolder.close(connection);
-            DSHolder.close(resultSet);
             DSHolder.close(ps);
         }
     }
 
     @Override
     public void delete(int id) {
+        PreparedStatement ps=null;
+        Connection connection=null;
+
         String sql="DELETE FROM Users WHERE id=?";
         try{
-            ps=DSHolder.getInstance().getConnection().prepareStatement(sql);
+            connection=DSHolder.getInstance().getConnection();
+            ps=connection.prepareStatement(sql);
             ps.setInt(1,id);
             ps.executeUpdate();
         }catch (SQLException e){
@@ -145,13 +170,12 @@ public class UserDAOImp implements UserDAO {
             DSHolder.rollback(connection);
         }finally {
             DSHolder.close(connection);
-            DSHolder.close(resultSet);
             DSHolder.close(ps);
         }
     }
 
     public User executeUser(ResultSet resultSet)throws SQLException{
-        RoleDAOImp roleDAOImp=new RoleDAOImp();
+        RoleDAO roleDAOImp=new RoleDAOImp();
         User user=new User();
         user.setId(resultSet.getInt(1));
         user.setUsername(resultSet.getString(2));

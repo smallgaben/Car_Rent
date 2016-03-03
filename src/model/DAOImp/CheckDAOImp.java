@@ -1,6 +1,8 @@
 package model.DAOImp;
 
 import model.DAO.CheckDAO;
+import model.DAO.OrderDAO;
+import model.DAO.StatusDAO;
 import model.DBUtil.DSHolder;
 import model.entities.Check;
 import org.apache.log4j.Logger;
@@ -11,13 +13,13 @@ import java.util.Set;
 
 public class CheckDAOImp implements CheckDAO {
     private static final Logger logger=Logger.getLogger(OrderDAOImp.class);
-    Connection connection=null;
-    Statement statement=null;
-    PreparedStatement ps=null;
-    ResultSet resultSet=null;
 
     @Override
     public Check create(Check check) {
+        PreparedStatement ps=null;
+        Connection connection=null;
+        ResultSet resultSet=null;
+
         String sql="INSERT INTO Checks(date, description, order_id, price, status ) VALUES (?, ?, ?, ?, ?)";
         try{
             connection = DSHolder.getInstance().getConnection();
@@ -40,6 +42,7 @@ public class CheckDAOImp implements CheckDAO {
             DSHolder.rollback(connection);
             e.printStackTrace();
         }finally {
+            DSHolder.close(ps);
             DSHolder.close(connection);
             DSHolder.close(resultSet);
         }
@@ -49,10 +52,14 @@ public class CheckDAOImp implements CheckDAO {
 
     @Override
     public Check readByOrderId(int id) {
+        PreparedStatement ps=null;
+        ResultSet resultSet=null;
+        Connection connection=null;
         Check check=null;
         String sql="SELECT *FROM Checks WHERE order_id=?";
         try{
-            ps=DSHolder.getInstance().getConnection().prepareStatement(sql);
+            connection=DSHolder.getInstance().getConnection();
+            ps=connection.prepareStatement(sql);
             ps.setInt(1,id);
             resultSet=ps.executeQuery();
             if(resultSet.next()){
@@ -71,11 +78,16 @@ public class CheckDAOImp implements CheckDAO {
 
     @Override
     public Set<Check> readAll() {
+        PreparedStatement ps=null;
+        Connection connection=null;
+        ResultSet resultSet=null;
+
         String sql="SELECT * FROM Checks";
         Set<Check> checks=null;
         try{
-            statement=DSHolder.getInstance().getConnection().createStatement();
-            resultSet=statement.executeQuery(sql);
+            connection=DSHolder.getInstance().getConnection();
+            ps=connection.prepareStatement(sql);
+            resultSet=ps.executeQuery();
             checks = new HashSet<>();
             while(resultSet.next()){
                 checks.add(executeCheck(resultSet));
@@ -84,16 +96,21 @@ public class CheckDAOImp implements CheckDAO {
             logger.error("Can't read all Checks");
             e.printStackTrace();
         }finally {
-            DSHolder.close(connection, statement, resultSet);
+            DSHolder.close(connection);
+            DSHolder.close(resultSet);
+            DSHolder.close(ps);
         }
         return checks;
     }
 
     @Override
     public void update(Check check) {
+        PreparedStatement ps=null;
+        Connection connection=null;
         String sql="UPDATE Checks Set date=?, description=?, price=?, status=? WHERE order_id=?";
         try{
-            ps=DSHolder.getInstance().getConnection().prepareStatement(sql);
+            connection=DSHolder.getInstance().getConnection();
+            ps=connection.prepareStatement(sql);
             ps.setDate(1, new Date( check.getDate().getTime()));
             ps.setString(2, check.getDescription());
             ps.setInt(3, check.getPrice());
@@ -106,31 +123,34 @@ public class CheckDAOImp implements CheckDAO {
             e.printStackTrace();
         }finally {
             DSHolder.close(connection);
-            DSHolder.close(resultSet);
             DSHolder.close(ps);
         }
     }
 
     @Override
     public void delete(int id) {
+        PreparedStatement ps=null;
+        Connection connection=null;
+
         String sql="DELETE FROM Checks WHERE order_id=?";
         try{
-            ps=DSHolder.getInstance().getConnection().prepareStatement(sql);
+            connection=DSHolder.getInstance().getConnection();
+            ps=connection.prepareStatement(sql);
             ps.setInt(1,id);
             ps.executeUpdate();
         }catch (SQLException e){
             logger.error("Can't delete Check "+ e);
             DSHolder.rollback(connection);
+            e.printStackTrace();
         }finally {
             DSHolder.close(connection);
-            DSHolder.close(resultSet);
             DSHolder.close(ps);
         }
     }
 
     public Check executeCheck(ResultSet resultSet)throws SQLException{
-        StatusDAOImp statusDAOImp=new StatusDAOImp();
-        OrderDAOImp orderDAOImp=new OrderDAOImp();
+        StatusDAO statusDAOImp=new StatusDAOImp();
+        OrderDAO orderDAOImp=new OrderDAOImp();
         Check check=new Check();
         check.setId(resultSet.getInt(1));
         check.setDate(resultSet.getDate(2));

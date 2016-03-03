@@ -445,3 +445,494 @@ INSERT INTO Users(username,password,firstname,lastname,role) VALUES (?, ?, ?, ?,
 2016-03-03 14:11:10 INFO  SignInServlet:27 - User successfully got to the system
 2016-03-03 14:11:10 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@66d21508
 2016-03-03 14:11:37 ERROR RoleFilter:46 - Admin can't see Manager's or User's pages
+2016-03-03 14:13:16 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-03 14:13:24 INFO  SignInServlet:23 - User exists: plotnikov password: plotnikov
+2016-03-03 14:13:24 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 14:13:24 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@31436034
+2016-03-03 14:13:24 INFO  CarListServlet:21 - Making list of Cars
+2016-03-03 14:13:46 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-03 14:15:01 INFO  RoleFilter:15 - Started Role Filter
+2016-03-03 14:15:01 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 14:15:09 INFO  DSHolder:27 - Making Data Source
+2016-03-03 14:15:09 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@5522c6cf
+2016-03-03 14:15:09 INFO  SignInServlet:23 - User exists: plotnikov password: plotnikov
+2016-03-03 14:15:09 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 14:15:09 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@7b1a992d
+2016-03-03 14:15:09 INFO  CarListServlet:21 - Making list of Cars
+2016-03-03 14:17:03 INFO  RoleFilter:15 - Started Role Filter
+2016-03-03 14:17:03 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 14:17:15 INFO  DSHolder:27 - Making Data Source
+2016-03-03 14:17:15 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@38921b52
+2016-03-03 14:17:15 INFO  SignInServlet:23 - User exists: smallgaben password: pfdnhfr040
+2016-03-03 14:17:15 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 14:17:15 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@2e86e2f0
+2016-03-03 14:17:24 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-03 14:17:30 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-03 14:17:30 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 14:17:30 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@f131373
+2016-03-03 14:32:39 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-03 14:32:51 INFO  SignInServlet:23 - User exists: plotnikov password: plotnikov
+2016-03-03 14:32:51 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 14:32:51 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@271b111b
+2016-03-03 14:32:51 INFO  CarListServlet:21 - Making list of Cars
+2016-03-03 14:34:06 INFO  CarListServlet:21 - Making list of Cars
+2016-03-03 14:34:36 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-03 14:34:43 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-03 14:34:43 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 14:34:43 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@67df26e1
+2016-03-03 14:34:47 INFO  CarListServlet:21 - Making list of Cars
+2016-03-03 14:34:57 ERROR DSHolder:53 - Connection failed org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot get a connection, pool error Timeout waiting for idle object
+2016-03-03 14:35:04 INFO  RoleFilter:15 - Started Role Filter
+2016-03-03 14:35:04 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 14:35:11 INFO  DSHolder:27 - Making Data Source
+2016-03-03 14:35:11 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@17dbca3
+2016-03-03 14:35:11 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-03 14:35:11 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 14:35:11 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@691e8974
+2016-03-03 14:35:12 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 14:35:36 WARN  AuthFilter:30 - Unauthorized access request
+2016-03-03 14:37:32 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 14:37:34 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 14:37:44 ERROR DSHolder:53 - Connection failed org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot get a connection, general error
+2016-03-03 14:37:47 INFO  RoleFilter:15 - Started Role Filter
+2016-03-03 14:37:47 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 14:37:55 INFO  DSHolder:27 - Making Data Source
+2016-03-03 14:37:55 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@1129d80b
+2016-03-03 14:37:56 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-03 14:37:56 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 14:37:56 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@7cd0efbc
+2016-03-03 14:37:56 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 14:39:01 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 14:40:10 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 14:40:20 ERROR DSHolder:53 - Connection failed org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot get a connection, pool error Timeout waiting for idle object
+2016-03-03 14:40:34 INFO  RoleFilter:15 - Started Role Filter
+2016-03-03 14:40:34 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 14:40:52 INFO  DSHolder:27 - Making Data Source
+2016-03-03 14:40:52 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@14519144
+2016-03-03 14:40:52 WARN  SignInServlet:53 - User blocked or password incorrect
+2016-03-03 14:41:02 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-03 14:41:02 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 14:41:02 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@4a5fb23d
+2016-03-03 14:41:02 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 14:41:58 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 14:43:04 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 14:43:14 ERROR DSHolder:53 - Connection failed org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot get a connection, pool error Timeout waiting for idle object
+2016-03-03 14:43:19 INFO  RoleFilter:15 - Started Role Filter
+2016-03-03 14:43:19 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 14:43:33 INFO  DSHolder:27 - Making Data Source
+2016-03-03 14:43:33 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@1fd00cac
+2016-03-03 14:43:33 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-03 14:43:33 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 14:43:33 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@3179ff2b
+2016-03-03 14:43:33 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 14:45:04 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 19:20:25 INFO  RoleFilter:15 - Started Role Filter
+2016-03-03 19:20:25 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 19:20:36 INFO  DSHolder:27 - Making Data Source
+2016-03-03 19:20:36 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@3a6b1fad
+2016-03-03 19:20:36 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-03 19:20:36 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 19:20:36 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@47616a0c
+2016-03-03 19:20:36 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 19:21:54 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 19:22:52 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 19:23:02 ERROR DSHolder:53 - Connection failed org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot get a connection, general error
+2016-03-03 19:24:16 INFO  RoleFilter:15 - Started Role Filter
+2016-03-03 19:24:16 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 19:24:23 INFO  DSHolder:27 - Making Data Source
+2016-03-03 19:24:23 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@2817c58f
+2016-03-03 19:24:23 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-03 19:24:23 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 19:24:23 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@93fe11e
+2016-03-03 19:24:23 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 19:25:56 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 19:27:54 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 19:28:03 ERROR DSHolder:53 - Connection failed org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot get a connection, general error
+2016-03-03 19:28:07 INFO  RoleFilter:15 - Started Role Filter
+2016-03-03 19:28:07 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 19:28:17 INFO  DSHolder:27 - Making Data Source
+2016-03-03 19:28:17 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@4d1c5c8d
+2016-03-03 19:28:17 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-03 19:28:17 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 19:28:17 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@3957112
+2016-03-03 19:28:17 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 19:29:13 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 19:34:08 INFO  RoleFilter:15 - Started Role Filter
+2016-03-03 19:34:08 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 19:34:16 INFO  DSHolder:27 - Making Data Source
+2016-03-03 19:34:16 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@36fde74e
+2016-03-03 19:34:16 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-03 19:34:16 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 19:34:16 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@7ebc32f7
+2016-03-03 19:34:16 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 19:36:20 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 19:36:34 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 19:36:41 ERROR DSHolder:53 - Connection failed org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot get a connection, general error
+2016-03-03 19:36:43 INFO  RoleFilter:15 - Started Role Filter
+2016-03-03 19:36:43 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 19:36:52 INFO  DSHolder:27 - Making Data Source
+2016-03-03 19:36:52 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@16387715
+2016-03-03 19:36:52 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-03 19:36:52 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 19:36:52 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@26ec1be5
+2016-03-03 19:36:52 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 19:37:47 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 19:38:13 INFO  RoleFilter:15 - Started Role Filter
+2016-03-03 19:38:13 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 19:38:21 INFO  DSHolder:27 - Making Data Source
+2016-03-03 19:38:21 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@1798648b
+2016-03-03 19:38:21 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-03 19:38:21 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 19:38:21 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@6f83644a
+2016-03-03 19:38:21 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 19:38:45 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 19:53:11 INFO  RoleFilter:15 - Started Role Filter
+2016-03-03 19:53:11 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 19:53:27 WARN  AuthFilter:30 - Unauthorized access request
+2016-03-03 19:53:38 INFO  DSHolder:27 - Making Data Source
+2016-03-03 19:53:38 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@2561287
+2016-03-03 19:53:38 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-03 19:53:38 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 19:53:38 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@56a45d5b
+2016-03-03 19:53:38 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 19:54:07 INFO  EditCarServlet:20 - Starting editing Car
+2016-03-03 20:01:32 INFO  RoleFilter:15 - Started Role Filter
+2016-03-03 20:01:32 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 20:01:44 INFO  DSHolder:27 - Making Data Source
+2016-03-03 20:01:44 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@3bbc60f3
+2016-03-03 20:01:44 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-03 20:01:44 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 20:01:44 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@2afaeb72
+2016-03-03 20:01:44 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 20:01:53 INFO  EditCarServlet:20 - Starting editing Car
+2016-03-03 20:04:07 INFO  RoleFilter:15 - Started Role Filter
+2016-03-03 20:04:07 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 20:04:15 INFO  DSHolder:27 - Making Data Source
+2016-03-03 20:04:15 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@4d5420a
+2016-03-03 20:04:15 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-03 20:04:15 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 20:04:15 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@1fe008e8
+2016-03-03 20:04:15 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 20:04:19 INFO  EditCarServlet:20 - Starting editing Car
+2016-03-03 20:05:07 INFO  RoleFilter:15 - Started Role Filter
+2016-03-03 20:05:07 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 20:05:14 INFO  DSHolder:27 - Making Data Source
+2016-03-03 20:05:14 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@231dc034
+2016-03-03 20:05:15 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-03 20:05:15 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 20:05:15 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@6f18fb79
+2016-03-03 20:05:15 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 20:05:37 INFO  EditCarServlet:20 - Starting editing Car
+2016-03-03 20:05:37 INFO  EditCarServlet:29 - Editing car: Car{id=13, mark='Aston Martin', name='GOOD', cost=3000, carClass=Class{id=3, name='D', cars=null}, status=Status{id=1, name='disable', cars=null, orders=null, checks=null}}
+2016-03-03 20:09:54 INFO  RoleFilter:15 - Started Role Filter
+2016-03-03 20:09:54 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 20:10:03 INFO  DSHolder:27 - Making Data Source
+2016-03-03 20:10:03 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@412d1b02
+2016-03-03 20:10:03 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-03 20:10:03 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 20:10:03 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@1d89c3f1
+2016-03-03 20:10:03 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 20:11:10 INFO  EditCarServlet:21 - Starting editing Car
+2016-03-03 20:11:10 INFO  EditCarServlet:30 - Editing car: Car{id=1, mark='Mercedes', name='Benz', cost=4000, carClass=Class{id=2, name='C', cars=null}, status=Status{id=0, name='enable', cars=null, orders=null, checks=null}}
+2016-03-03 20:11:10 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 20:11:10 INFO  RoleFilter:26 - User with role: null is trying to get to: null directory
+2016-03-03 20:11:36 INFO  EditCarServlet:21 - Starting editing Car
+2016-03-03 20:11:36 INFO  EditCarServlet:30 - Editing car: Car{id=14, mark='Toyota', name='Land Cruiser', cost=2700, carClass=Class{id=8, name='J', cars=null}, status=Status{id=0, name='enable', cars=null, orders=null, checks=null}}
+2016-03-03 20:11:36 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 20:11:46 ERROR DSHolder:53 - Connection failed org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot get a connection, pool error Timeout waiting for idle object
+2016-03-03 20:12:02 INFO  RoleFilter:15 - Started Role Filter
+2016-03-03 20:12:02 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 20:12:11 INFO  DSHolder:27 - Making Data Source
+2016-03-03 20:12:11 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@51ba8b52
+2016-03-03 20:12:11 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-03 20:12:11 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 20:12:11 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@8da6fef
+2016-03-03 20:12:11 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 20:13:35 INFO  RoleFilter:26 - User with role: null is trying to get to: AdminDir directory
+2016-03-03 20:14:12 INFO  RoleFilter:15 - Started Role Filter
+2016-03-03 20:14:12 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 20:14:19 INFO  DSHolder:27 - Making Data Source
+2016-03-03 20:14:19 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@60e17ee7
+2016-03-03 20:14:19 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-03 20:14:19 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 20:14:19 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@1479bbdf
+2016-03-03 20:14:19 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 20:14:21 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 20:14:21 INFO  RoleFilter:26 - User with role: null is trying to get to: null directory
+2016-03-03 20:14:21 INFO  RoleFilter:26 - User with role: null is trying to get to: null directory
+2016-03-03 20:14:21 INFO  RoleFilter:26 - User with role: null is trying to get to: null directory
+2016-03-03 20:14:21 INFO  RoleFilter:26 - User with role: null is trying to get to: null directory
+2016-03-03 20:14:21 INFO  RoleFilter:26 - User with role: null is trying to get to: null directory
+2016-03-03 20:14:22 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 20:14:32 ERROR DSHolder:53 - Connection failed org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot get a connection, pool error Timeout waiting for idle object
+2016-03-03 20:15:35 INFO  RoleFilter:15 - Started Role Filter
+2016-03-03 20:15:35 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 20:15:46 INFO  DSHolder:27 - Making Data Source
+2016-03-03 20:15:46 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@553cdbd
+2016-03-03 20:15:46 INFO  SignInServlet:23 - User exists: plotnikov password: plotnikov
+2016-03-03 20:15:46 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 20:15:46 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@4ee647af
+2016-03-03 20:15:46 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 20:16:00 INFO  RoleFilter:26 - User with role: null is trying to get to: AdminDir directory
+2016-03-03 20:16:54 INFO  RoleFilter:15 - Started Role Filter
+2016-03-03 20:16:54 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 20:17:02 INFO  DSHolder:27 - Making Data Source
+2016-03-03 20:17:02 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@354d2f70
+2016-03-03 20:17:03 INFO  SignInServlet:23 - User exists: plotnikov password: plotnikov
+2016-03-03 20:17:03 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 20:17:03 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@4cb79a87
+2016-03-03 20:17:03 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 20:17:23 INFO  RoleFilter:26 - User with role: USER is trying to get to: AdminDir directory
+2016-03-03 20:17:23 ERROR RoleFilter:32 - User can't see Admin's or Manager's pages
+2016-03-03 20:17:23 INFO  RoleFilter:26 - User with role: USER is trying to get to: UserDir directory
+2016-03-03 20:18:20 INFO  RoleFilter:15 - Started Role Filter
+2016-03-03 20:18:20 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 20:22:08 INFO  RoleFilter:15 - Started Role Filter
+2016-03-03 20:22:08 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 20:22:16 INFO  DSHolder:27 - Making Data Source
+2016-03-03 20:22:16 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@5aac401d
+2016-03-03 20:22:16 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-03 20:22:16 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 20:22:16 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@52de9048
+2016-03-03 20:22:16 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 20:22:19 INFO  EditCarServlet:21 - Starting editing Car
+2016-03-03 20:22:19 INFO  EditCarServlet:30 - Editing car: Car{id=4, mark='Audi', name='A5', cost=2100, carClass=Class{id=5, name='F', cars=null}, status=Status{id=0, name='enable', cars=null, orders=null, checks=null}}
+2016-03-03 20:22:19 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 20:23:40 INFO  EditCarServlet:21 - Starting editing Car
+2016-03-03 20:23:40 INFO  EditCarServlet:30 - Editing car: Car{id=11, mark='BMW', name='X5', cost=2800, carClass=Class{id=8, name='J', cars=null}, status=Status{id=0, name='enable', cars=null, orders=null, checks=null}}
+2016-03-03 20:23:40 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 20:23:50 ERROR DSHolder:53 - Connection failed org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot get a connection, pool error Timeout waiting for idle object
+2016-03-03 20:27:16 INFO  RoleFilter:15 - Started Role Filter
+2016-03-03 20:27:16 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 20:27:24 INFO  DSHolder:27 - Making Data Source
+2016-03-03 20:27:24 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@68969a63
+2016-03-03 20:27:25 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-03 20:27:25 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 20:27:25 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@28b55707
+2016-03-03 20:27:25 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 20:27:28 INFO  DeleteCarServlet:17 - Starting Delete Car Servlet
+2016-03-03 20:27:28 INFO  DeleteCarServlet:19 - Need to delete car with id: 9
+2016-03-03 20:27:38 INFO  DeleteCarServlet:17 - Starting Delete Car Servlet
+2016-03-03 20:27:38 INFO  DeleteCarServlet:19 - Need to delete car with id: 12
+2016-03-03 20:27:55 INFO  RoleFilter:26 - User with role: ADMIN is trying to get to: null directory
+2016-03-03 20:27:55 INFO  RoleFilter:26 - User with role: ADMIN is trying to get to: null directory
+2016-03-03 20:27:55 INFO  RoleFilter:26 - User with role: ADMIN is trying to get to: null directory
+2016-03-03 20:27:55 INFO  RoleFilter:26 - User with role: ADMIN is trying to get to: null directory
+2016-03-03 20:27:55 INFO  RoleFilter:26 - User with role: ADMIN is trying to get to: null directory
+2016-03-03 20:29:29 INFO  RoleFilter:15 - Started Role Filter
+2016-03-03 20:29:29 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 20:29:37 INFO  DSHolder:27 - Making Data Source
+2016-03-03 20:29:37 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@26278a74
+2016-03-03 20:29:37 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-03 20:29:37 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 20:29:37 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@667ad7ab
+2016-03-03 20:29:37 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 20:30:28 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 20:30:28 INFO  RoleFilter:26 - User with role: ADMIN is trying to get to: null directory
+2016-03-03 20:30:28 INFO  RoleFilter:26 - User with role: ADMIN is trying to get to: null directory
+2016-03-03 20:30:28 INFO  RoleFilter:26 - User with role: ADMIN is trying to get to: null directory
+2016-03-03 20:30:28 INFO  RoleFilter:26 - User with role: ADMIN is trying to get to: null directory
+2016-03-03 20:30:28 INFO  RoleFilter:26 - User with role: ADMIN is trying to get to: null directory
+2016-03-03 20:30:31 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 20:30:41 ERROR DSHolder:53 - Connection failed org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot get a connection, pool error Timeout waiting for idle object
+2016-03-03 21:14:00 INFO  RoleFilter:15 - Started Role Filter
+2016-03-03 21:14:00 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 21:14:08 INFO  DSHolder:27 - Making Data Source
+2016-03-03 21:14:08 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@55316f80
+2016-03-03 21:14:08 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-03 21:14:08 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 21:14:08 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@2ca5c421
+2016-03-03 21:14:08 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 21:14:08 INFO  RoleFilter:26 - User with role: ADMIN is trying to get to: null directory
+2016-03-03 21:14:08 INFO  RoleFilter:26 - User with role: ADMIN is trying to get to: null directory
+2016-03-03 21:15:15 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 21:15:15 INFO  RoleFilter:26 - User with role: ADMIN is trying to get to: null directory
+2016-03-03 21:15:15 INFO  RoleFilter:26 - User with role: ADMIN is trying to get to: null directory
+2016-03-03 21:15:15 INFO  RoleFilter:26 - User with role: ADMIN is trying to get to: null directory
+2016-03-03 21:15:15 INFO  RoleFilter:26 - User with role: ADMIN is trying to get to: null directory
+2016-03-03 21:15:15 INFO  RoleFilter:26 - User with role: ADMIN is trying to get to: null directory
+2016-03-03 21:18:23 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 21:18:33 ERROR DSHolder:53 - Connection failed org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot get a connection, pool error Timeout waiting for idle object
+2016-03-03 21:27:26 INFO  RoleFilter:15 - Started Role Filter
+2016-03-03 21:27:26 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 21:27:36 INFO  DSHolder:27 - Making Data Source
+2016-03-03 21:27:36 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@6c3b5276
+2016-03-03 21:27:37 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-03 21:27:37 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 21:27:37 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@4b532d50
+2016-03-03 21:27:37 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 21:27:56 INFO  AddCarServlet:22 - Starting making car
+2016-03-03 21:27:56 INFO  AddCarServlet:30 - Creating car: Car{id=0, mark='Bentley', name='Bexa', cost=2000, carClass=Class{id=0, name='null', cars=null}, status=Status{id=0, name='enable', cars=null, orders=null, checks=null}}
+2016-03-03 21:29:41 INFO  RoleFilter:15 - Started Role Filter
+2016-03-03 21:29:41 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 21:29:50 INFO  DSHolder:27 - Making Data Source
+2016-03-03 21:29:50 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@5632abeb
+2016-03-03 21:29:50 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-03 21:29:50 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 21:29:50 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@48e8fa47
+2016-03-03 21:29:50 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 21:30:18 INFO  AddCarServlet:23 - Starting making car
+2016-03-03 21:30:18 ERROR CarDAOImp:38 - Can't add car org.h2.jdbc.JdbcSQLException: Значение слишком длинное для поля "MARK VARCHAR(10) NOT NULL": "'Mitshubishi' (11)"
+Value too long for column "MARK VARCHAR(10) NOT NULL": "'Mitshubishi' (11)"; SQL statement:
+INSERT INTO Cars(mark,name,cost,class,status) VALUES (?, ?, ?, ?, ?) [22001-190]
+2016-03-03 21:30:18 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 21:33:14 INFO  RoleFilter:15 - Started Role Filter
+2016-03-03 21:33:15 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 21:33:24 INFO  DSHolder:27 - Making Data Source
+2016-03-03 21:33:24 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@6c76ced6
+2016-03-03 21:33:24 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-03 21:33:24 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 21:33:24 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@4efcb2d0
+2016-03-03 21:33:24 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 21:33:43 INFO  AddCarServlet:23 - Starting making car
+2016-03-03 21:33:43 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 21:34:27 INFO  EditCarServlet:21 - Starting editing Car
+2016-03-03 21:34:27 INFO  EditCarServlet:30 - Editing car: Car{id=19, mark='Mitshubishi', name='Evolushion', cost=2000, carClass=Class{id=0, name='null', cars=null}, status=Status{id=0, name='enable', cars=null, orders=null, checks=null}}
+2016-03-03 21:34:27 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 21:34:37 ERROR DSHolder:53 - Connection failed org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot get a connection, pool error Timeout waiting for idle object
+2016-03-03 21:37:38 INFO  RoleFilter:15 - Started Role Filter
+2016-03-03 21:37:38 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 21:37:48 INFO  DSHolder:27 - Making Data Source
+2016-03-03 21:37:48 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@55d70028
+2016-03-03 21:37:49 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-03 21:37:49 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 21:37:49 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@2c3846b8
+2016-03-03 21:37:49 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 21:38:31 INFO  AddCarServlet:23 - Starting making car
+2016-03-03 21:38:31 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 21:38:46 INFO  EditCarServlet:21 - Starting editing Car
+2016-03-03 21:38:46 INFO  EditCarServlet:30 - Editing car: Car{id=19, mark='Mitshubishi', name='Evolushion', cost=2000, carClass=Class{id=3, name='D', cars=null}, status=Status{id=0, name='enable', cars=null, orders=null, checks=null}}
+2016-03-03 21:38:46 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 21:38:56 ERROR DSHolder:53 - Connection failed org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot get a connection, pool error Timeout waiting for idle object
+2016-03-03 21:43:50 INFO  RoleFilter:15 - Started Role Filter
+2016-03-03 21:43:50 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 21:43:58 INFO  DSHolder:27 - Making Data Source
+2016-03-03 21:43:58 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@354d2f70
+2016-03-03 21:43:59 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-03 21:43:59 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 21:43:59 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@4cb79a87
+2016-03-03 21:43:59 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 21:44:01 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 21:50:25 INFO  RoleFilter:15 - Started Role Filter
+2016-03-03 21:50:25 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 21:50:34 INFO  DSHolder:27 - Making Data Source
+2016-03-03 21:50:34 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@64d09757
+2016-03-03 21:50:34 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-03 21:50:34 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 21:50:34 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@78fa402f
+2016-03-03 21:50:34 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 22:47:35 INFO  RoleFilter:15 - Started Role Filter
+2016-03-03 22:47:35 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 22:47:45 INFO  DSHolder:27 - Making Data Source
+2016-03-03 22:47:45 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@6c3b5276
+2016-03-03 22:47:46 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-03 22:47:46 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 22:47:46 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@4b532d50
+2016-03-03 22:47:46 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 22:48:37 INFO  RoleFilter:15 - Started Role Filter
+2016-03-03 22:48:37 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 22:48:43 INFO  DSHolder:27 - Making Data Source
+2016-03-03 22:48:43 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@44c44c57
+2016-03-03 22:48:43 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-03 22:48:43 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 22:48:43 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@7ef7d9e
+2016-03-03 22:48:43 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 22:49:27 INFO  RoleFilter:15 - Started Role Filter
+2016-03-03 22:49:27 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 22:49:39 INFO  DSHolder:27 - Making Data Source
+2016-03-03 22:49:39 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@1abf4f5
+2016-03-03 22:49:39 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-03 22:49:39 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 22:49:39 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@6ef18ad4
+2016-03-03 22:49:39 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 22:49:47 INFO  UserListServlet:21 - Started making users list
+2016-03-03 22:50:16 INFO  RoleFilter:15 - Started Role Filter
+2016-03-03 22:50:16 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 22:50:23 INFO  DSHolder:27 - Making Data Source
+2016-03-03 22:50:23 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@76495a08
+2016-03-03 22:50:23 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-03 22:50:23 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 22:50:23 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@7d69ea94
+2016-03-03 22:50:23 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 22:50:26 INFO  UserListServlet:21 - Started making users list
+2016-03-03 22:58:06 INFO  RoleFilter:15 - Started Role Filter
+2016-03-03 22:58:06 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 22:58:13 INFO  DSHolder:27 - Making Data Source
+2016-03-03 22:58:13 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@7a3f2c2b
+2016-03-03 22:58:13 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-03 22:58:13 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 22:58:13 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@70a1104e
+2016-03-03 22:58:13 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 22:58:15 INFO  UserListServlet:21 - Started making users list
+2016-03-03 22:58:29 INFO  SetBlockedServlet:39 - Making user BLOCKED
+2016-03-03 22:58:29 INFO  UserListServlet:21 - Started making users list
+2016-03-03 22:58:31 INFO  SetBlockedServlet:34 - Making user UNBLOCKED
+2016-03-03 22:58:31 INFO  UserListServlet:21 - Started making users list
+2016-03-03 22:58:33 INFO  SetBlockedServlet:39 - Making user BLOCKED
+2016-03-03 22:58:33 INFO  UserListServlet:21 - Started making users list
+2016-03-03 22:58:33 INFO  SetBlockedServlet:34 - Making user UNBLOCKED
+2016-03-03 22:58:33 INFO  UserListServlet:21 - Started making users list
+2016-03-03 22:58:34 INFO  SetBlockedServlet:39 - Making user BLOCKED
+2016-03-03 22:58:34 INFO  UserListServlet:21 - Started making users list
+2016-03-03 22:58:35 INFO  SetBlockedServlet:34 - Making user UNBLOCKED
+2016-03-03 22:58:35 INFO  UserListServlet:21 - Started making users list
+2016-03-03 22:58:36 INFO  SetBlockedServlet:39 - Making user BLOCKED
+2016-03-03 22:58:36 INFO  UserListServlet:21 - Started making users list
+2016-03-03 22:58:46 ERROR DSHolder:53 - Connection failed org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot get a connection, pool error Timeout waiting for idle object
+2016-03-03 23:05:12 INFO  RoleFilter:15 - Started Role Filter
+2016-03-03 23:05:12 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 23:05:22 INFO  DSHolder:27 - Making Data Source
+2016-03-03 23:05:22 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@42d55109
+2016-03-03 23:05:22 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-03 23:05:22 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 23:05:22 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@b87d974
+2016-03-03 23:05:22 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 23:05:28 INFO  UserListServlet:21 - Started making users list
+2016-03-03 23:05:32 INFO  SetBlockedServlet:34 - Making user UNBLOCKED
+2016-03-03 23:05:32 INFO  UserListServlet:21 - Started making users list
+2016-03-03 23:05:34 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 23:14:18 INFO  RoleFilter:15 - Started Role Filter
+2016-03-03 23:14:18 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-03 23:14:26 INFO  DSHolder:27 - Making Data Source
+2016-03-03 23:14:26 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@68969a63
+2016-03-03 23:14:26 INFO  SignInServlet:23 - User exists: ADMIN password: ADMIN
+2016-03-03 23:14:26 INFO  SignInServlet:27 - User successfully got to the system
+2016-03-03 23:14:26 INFO  SignInServlet:30 - Set a new session: org.apache.catalina.session.StandardSessionFacade@28b55707
+2016-03-03 23:14:26 INFO  CarListServlet:22 - Making list of Cars
+2016-03-03 23:14:31 INFO  UserListServlet:21 - Started making users list
+2016-03-03 23:14:33 INFO  CarListServlet:22 - Making list of Cars
+2016-03-04 00:58:44 INFO  RoleFilter:15 - Started Role Filter
+2016-03-04 00:58:44 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-04 00:59:00 INFO  DSHolder:27 - Making Data Source
+2016-03-04 00:59:00 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@6c76ced6
+2016-03-04 00:59:00 INFO  SignInServlet:24 - User exists: ADMIN password: ADMIN
+2016-03-04 00:59:00 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-04 00:59:00 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@4efcb2d0
+2016-03-04 00:59:00 INFO  CarListServlet:23 - Making list of Cars
+2016-03-04 00:59:03 INFO  CarListServlet:23 - Making list of Cars
+2016-03-04 00:59:04 INFO  CarListServlet:23 - Making list of Cars
+2016-03-04 00:59:05 INFO  CarListServlet:23 - Making list of Cars
+2016-03-04 00:59:06 INFO  CarListServlet:23 - Making list of Cars
+2016-03-04 00:59:07 INFO  CarListServlet:23 - Making list of Cars
+2016-03-04 00:59:09 INFO  CarListServlet:23 - Making list of Cars
+2016-03-04 00:59:10 INFO  CarListServlet:23 - Making list of Cars
+2016-03-04 00:59:12 INFO  UserListServlet:21 - Started making users list
+2016-03-04 00:59:13 INFO  CarListServlet:23 - Making list of Cars
+2016-03-04 00:59:21 INFO  UserListServlet:21 - Started making users list
+2016-03-04 00:59:22 INFO  CarListServlet:23 - Making list of Cars
+2016-03-04 00:59:40 ERROR RoleFilter:39 - Admin can't see Manager's or User's pages
+2016-03-04 01:00:18 INFO  CarListServlet:23 - Making list of Cars
+2016-03-04 01:00:24 ERROR RoleFilter:39 - Admin can't see Manager's or User's pages
+2016-03-04 01:00:34 INFO  RoleFilter:15 - Started Role Filter
+2016-03-04 01:00:34 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-04 01:00:43 INFO  DSHolder:27 - Making Data Source
+2016-03-04 01:00:43 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@6cd3d163
+2016-03-04 01:00:43 INFO  SignInServlet:24 - User exists: ADMIN password: ADMIN
+2016-03-04 01:00:43 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-04 01:00:43 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@26a0b069
+2016-03-04 01:00:43 INFO  CarListServlet:23 - Making list of Cars
+2016-03-04 01:00:53 ERROR RoleFilter:39 - Admin can't see Manager's or User's pages
+2016-03-04 01:00:53 INFO  CarListServlet:23 - Making list of Cars
+2016-03-04 01:01:04 ERROR RoleFilter:39 - Admin can't see Manager's or User's pages
+2016-03-04 01:01:04 INFO  CarListServlet:23 - Making list of Cars
+2016-03-04 01:01:20 INFO  LogOutServlet:16 - Started LogOut Servlet

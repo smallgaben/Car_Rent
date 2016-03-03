@@ -8,6 +8,7 @@
 
     <!-- BOOTSTRAP STYLES-->
     <link href="${pageContext.request.contextPath}/view/res/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="${pageContext.request.contextPath}/view/res/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
 
     <link href="${pageContext.request.contextPath}/view/res/css/basic.css" rel="stylesheet" />
     <!-- FONTAWESOME STYLES-->
@@ -17,5 +18,4 @@
     <!--CUSTOM MAIN STYLES-->
     <link href="${pageContext.request.contextPath}/view/res/css/custom.css" rel="stylesheet" />
 
-    <script src="${pageContext.request.contextPath}/view/res/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
 </head>

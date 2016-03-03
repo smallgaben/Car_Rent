@@ -100,15 +100,6 @@ public class DSHolder {
     }
 
     /**
-     * Closes resources.
-     */
-    public static void close(Connection con, Statement stmt, ResultSet rs) {
-        close(rs);
-        close(stmt);
-        close(con);
-    }
-
-    /**
      * Rollbacks a connection.
      *
      * @param con

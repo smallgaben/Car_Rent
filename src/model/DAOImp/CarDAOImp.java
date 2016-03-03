@@ -1,6 +1,8 @@
 package model.DAOImp;
 
 import model.DAO.CarDAO;
+import model.DAO.ClassDAO;
+import model.DAO.StatusDAO;
 import model.DBUtil.DSHolder;
 import model.entities.Car;
 import org.apache.log4j.Logger;
@@ -11,12 +13,12 @@ import java.util.Set;
 
 public class CarDAOImp implements CarDAO {
     private static final Logger logger=Logger.getLogger(CarDAOImp.class);
-    Connection connection=null;
-    Statement statement=null;
-    PreparedStatement ps=null;
-    ResultSet resultSet=null;
+
     @Override
     public Car create(Car car) {
+        Connection connection=null;
+        PreparedStatement ps=null;
+        ResultSet resultSet=null;
         String sql="INSERT INTO Cars(mark,name,cost,class,status) VALUES (?, ?, ?, ?, ?)";
         try{
             connection = DSHolder.getInstance().getConnection();
@@ -41,6 +43,7 @@ public class CarDAOImp implements CarDAO {
         }finally {
             DSHolder.close(connection);
             DSHolder.close(resultSet);
+            DSHolder.close(ps);
         }
 
         return car;
@@ -48,10 +51,14 @@ public class CarDAOImp implements CarDAO {
 
     @Override
     public Car readById(int id) {
+        PreparedStatement ps=null;
+        ResultSet resultSet=null;
+        Connection connection=null;
         Car car=null;
         String sql="SELECT *FROM Cars WHERE id=?";
         try{
-            ps=DSHolder.getInstance().getConnection().prepareStatement(sql);
+            connection=DSHolder.getInstance().getConnection();
+            ps=connection.prepareStatement(sql);
             ps.setInt(1,id);
             resultSet=ps.executeQuery();
             if(resultSet.next()){
@@ -70,10 +77,14 @@ public class CarDAOImp implements CarDAO {
 
     @Override
     public Car readByName(String name) {
+        PreparedStatement ps=null;
+        Connection connection=null;
+        ResultSet resultSet=null;
         Car car=null;
         String sql="SELECT *FROM Cars WHERE name=?";
         try{
-            ps=DSHolder.getInstance().getConnection().prepareStatement(sql);
+            connection=DSHolder.getInstance().getConnection();
+            ps=connection.prepareStatement(sql);
             ps.setString(1, name);
             resultSet=ps.executeQuery();
             if(resultSet.next()){
@@ -92,10 +103,14 @@ public class CarDAOImp implements CarDAO {
 
     @Override
     public Set<Car> readAll() {
+        PreparedStatement ps=null;
+        ResultSet resultSet=null;
+        Connection connection=null;
         String sql="SELECT *FROM Cars";
         Set<Car> cars=null;
         try{
-            ps=DSHolder.getInstance().getConnection().prepareStatement(sql);
+            connection=DSHolder.getInstance().getConnection();
+            ps=connection.prepareStatement(sql);
             resultSet=ps.executeQuery();
             cars = new HashSet<>();
             while(resultSet.next()){
@@ -105,16 +120,21 @@ public class CarDAOImp implements CarDAO {
             logger.error("Can't read all Cars");
             e.printStackTrace();
         }finally {
-            DSHolder.close(connection, statement, resultSet);
+            DSHolder.close(connection);
+            DSHolder.close(resultSet);
+            DSHolder.close(ps);
         }
         return cars;
     }
 
     @Override
     public void update(Car car) {
+        PreparedStatement ps=null;
+        Connection connection=null;
         String sql="UPDATE Cars Set mark=?, name=?, cost=?, class=?, status=? WHERE id=?";
         try{
-            ps=DSHolder.getInstance().getConnection().prepareStatement(sql);
+            connection=DSHolder.getInstance().getConnection();
+            ps=connection.prepareStatement(sql);
             ps.setString(1, car.getMark());
             ps.setString(2, car.getName());
             ps.setInt(3,car.getCost());
@@ -128,33 +148,36 @@ public class CarDAOImp implements CarDAO {
             e.printStackTrace();
         }finally {
             DSHolder.close(connection);
-            DSHolder.close(resultSet);
             DSHolder.close(ps);
         }
     }
 
     @Override
     public void delete(int id) {
+        PreparedStatement ps=null;
+        Connection connection=null;
+
         String sql="DELETE FROM Cars WHERE id=?";
         OrderDAOImp orderDAOImp=new OrderDAOImp();
         try{
-            ps=DSHolder.getInstance().getConnection().prepareStatement(sql);
+            connection=DSHolder.getInstance().getConnection();
+            ps=connection.prepareStatement(sql);
             ps.setInt(1,id);
             orderDAOImp.deleteByCarId(id);
             ps.executeUpdate();
         }catch (SQLException e){
             logger.error("Can't delete Car "+ e);
             DSHolder.rollback(connection);
+            e.printStackTrace();
         }finally {
             DSHolder.close(connection);
-            DSHolder.close(resultSet);
             DSHolder.close(ps);
         }
     }
 
     public Car executeCar(ResultSet resultSet) throws SQLException{
-        StatusDAOImp statusDAOImp=new StatusDAOImp();
-        ClassDAOImp classDAOImp=new ClassDAOImp();
+        StatusDAO statusDAOImp=new StatusDAOImp();
+        ClassDAO classDAOImp=new ClassDAOImp();
         Car car=new Car();
         car.setId(resultSet.getInt(1));
         car.setMark(resultSet.getString(2));

@@ -1,5 +1,6 @@
 package controller.authentication.servlets;
 
+import model.DAO.UserDAO;
 import model.DAOImp.UserDAOImp;
 import model.entities.User;
 import org.apache.log4j.Logger;
@@ -15,7 +16,7 @@ public class SignInServlet extends HttpServlet{
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        UserDAOImp userDAOImp=new UserDAOImp();
+        UserDAO userDAOImp=new UserDAOImp();
         User user=null;
         user=userDAOImp.readByName(req.getParameter("username"));
 
@@ -38,10 +39,10 @@ public class SignInServlet extends HttpServlet{
 
             switch(user.getRole().getName()){
                 case "ADMIN":
-                    resp.sendRedirect("/view/AdminDir/AdminPage.jsp");
+                    resp.sendRedirect("/carList");
                     break;
                 case "USER":
-                    resp.sendRedirect("/CarList");
+                    resp.sendRedirect("/carList");
                     break;
                 case "MANAGER":
                     resp.sendRedirect("/view/ManagerDir/ManagerPage.jsp");

@@ -20,7 +20,41 @@ public class RoleFilter implements Filter {
         HttpServletRequest req=(HttpServletRequest) servletRequest;
         HttpServletResponse resp=(HttpServletResponse) servletResponse;
 
+        String pass=getPass(req);
+        String role= (String) req.getSession().getAttribute("role");
 
+        if(pass==null){
+            filterChain.doFilter(req,resp);
+        }
+        else{
+            if(role.equals("USER") && (pass.equals("AdminDir") || pass.equals("ManagerDir"))){
+                logger.error("User can't see Admin's or Manager's pages");
+                resp.sendRedirect("/carList");
+            }
+            if(role.equals("MANAGER") && (pass.equals("AdminDir") || pass.equals("UserDir"))){
+                logger.error("Manager can't see Admin's or User's pages");
+                resp.sendRedirect("/view/ManagerDir/ManagerPage.jsp");
+            }
+            if(role.equals("ADMIN") && (pass.equals("ManagerDir") || pass.equals("UserDir"))){
+                logger.error("Admin can't see Manager's or User's pages");
+                resp.sendRedirect("/carList");
+            }
+            filterChain.doFilter(req, resp);
+        }
+    }
+
+    @Override
+    public void destroy() {
+
+    }
+
+
+    /**
+     * This method get directory part of URI
+     * @param req http request
+     * @return security directory
+     */
+    public String getPass(HttpServletRequest req){
         String uri=req.getRequestURI();
         String[] parts=uri.split("/");
         String pass=null;
@@ -29,29 +63,6 @@ public class RoleFilter implements Filter {
                 pass= i;
             }
         }
-
-        if(pass==null){
-            filterChain.doFilter(req,resp);
-        }
-        else{
-            if(req.getSession().getAttribute("role").equals("USER") && (pass.equals("AdminDir") || pass.equals("ManagerDir"))){
-                logger.error("User can't see Admin's or Manager's pages");
-                resp.sendRedirect("/view/UserDir/UserPage.jsp");
-            }
-            if(req.getSession().getAttribute("role").equals("MANAGER") && (pass.equals("AdminDir") || pass.equals("UserDir"))){
-                logger.error("Manager can't see Admin's or User's pages");
-                resp.sendRedirect("/view/ManagerDir/ManagerPage.jsp");
-            }
-            if(req.getSession().getAttribute("role").equals("ADMIN") && (pass.equals("ManagerDir") || pass.equals("UserDir"))){
-                logger.error("Admin can't see Manager's or User's pages");
-                resp.sendRedirect("/view/AdminDir/AdminPage.jsp");
-            }
-            filterChain.doFilter(req,resp);
-        }
-    }
-
-    @Override
-    public void destroy() {
-
+        return pass;
     }
 }

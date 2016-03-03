@@ -22,13 +22,13 @@
                 </li>
 
                 <li>
-                    <a  href="${pageContext.request.contextPath}/view/AdminDir/AdminPage.jsp"><i class="fa"></i>Car List</a>
+                    <a href="${pageContext.request.contextPath}/carList"><i class="fa"></i>Cars List</a>
                 </li>
                 <li>
-                    <a  href="/UserCars"><i class="fa"></i>Managers List</a>
+                    <a  href="/managersList"><i class="fa"></i>Managers List</a>
                 </li>
                 <li>
-                    <a  href="/about"><i class="fa"></i>Users List</a>
+                    <a  href="${pageContext.request.contextPath}/userList"><i class="fa"></i>Users List</a>
                 </li>
             </ul>
         </div>
@@ -36,7 +36,36 @@
     </nav>
     <!-- /. NAV SIDE  -->
     <div id="page-wrapper">
-        <div id="page-inner">
+        <div class="panel-group" id="page-inner">
+            <div class="panel-body row">
+                <form action="${pageContext.request.contextPath}/addCar" class="form-group inline">
+                    <div class="col-md-2">
+                        <label for="mark">Mark: </label>
+                        <input id="mark" type="text" class="form-control" name="mark">
+                    </div>
+                    <div class="col-md-2">
+                        <label for="name">Name: </label>
+                        <input class="form-control" id="name" name="name" />
+                    </div>
+                    <div class="col-md-2">
+                        <label for="cost">Cost</label>
+                        <input id="cost" name="cost" class="form-control" />
+                    </div>
+                    <div class="col-md-2">
+                            <label for="class">Class: </label>
+                            <input id="class" name="class" class="form-control" />
+                    </div>
+                    <div class="col-md-2 list-inline">
+                        <button type="submit" class="btn btn-info">Add Car</button>
+                    </div>
+                </form>
+            </div>
+
+            <%--List all Cars--%>
+            <%@include file="/view/jspf/carList.jspf"%>
+
+            <%--List all Users--%>
+            <%@include file="/view/jspf/userList.jspf"%>
 
         </div>
         <!-- /. PAGE INNER  -->

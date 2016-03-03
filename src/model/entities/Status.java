@@ -6,6 +6,7 @@ import java.util.Set;
 public class Status implements Serializable {
     private static final long serialVersionUID = -1121205141512192760L;
     public static final int DEFAULT_CHECK_STATUS=4;
+    public static final int DEFAULT_CAR_STATUS=0;
 
 
     private int id;

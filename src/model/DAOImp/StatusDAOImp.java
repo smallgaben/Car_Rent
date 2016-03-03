@@ -11,16 +11,17 @@ import java.util.Set;
 
 public class StatusDAOImp implements StatusDAO {
     private static final Logger logger=Logger.getLogger(StatusDAOImp.class);
-    Connection connection=null;
-    Statement statement=null;
-    PreparedStatement ps=null;
-    ResultSet resultSet=null;
 
     @Override
     public Status create(Status status) {
+        PreparedStatement ps=null;
+        ResultSet resultSet=null;
+        Connection connection=null;
+
         String sql="INSERT INTO Statuses VALUES(?,?)";
         try{
-            ps= DSHolder.getInstance().getConnection().prepareStatement(sql,PreparedStatement.RETURN_GENERATED_KEYS);
+            connection=DSHolder.getInstance().getConnection();
+            ps=connection.prepareStatement(sql,PreparedStatement.RETURN_GENERATED_KEYS);
             ps.setInt(1,readAll().size());
             ps.setString(2,status.getName());
             ps.executeUpdate();
@@ -42,10 +43,15 @@ public class StatusDAOImp implements StatusDAO {
 
     @Override
     public Status read(int id) {
+        PreparedStatement ps=null;
+        ResultSet resultSet=null;
+        Connection connection=null;
+
         String sql="SELECT *FROM Statuses WHERE id=?";
         Status status=null;
         try{
-            ps=DSHolder.getInstance().getConnection().prepareStatement(sql);
+            connection=DSHolder.getInstance().getConnection();
+            ps=connection.prepareStatement(sql);
             ps.setInt(1,id);
             resultSet=ps.executeQuery();
             status = new Status();
@@ -56,17 +62,26 @@ public class StatusDAOImp implements StatusDAO {
         }catch (SQLException e){
             logger.error("Can't read Status "+e);
             e.printStackTrace();
+        }finally{
+            DSHolder.close(connection);
+            DSHolder.close(ps);
+            DSHolder.close(resultSet);
         }
         return status;
     }
 
     @Override
     public Set<Status> readAll() {
+        PreparedStatement ps=null;
+        ResultSet resultSet=null;
+        Connection connection=null;
+
         Set<Status> statuses=null;
         String sql="SELECT * FROM Statuses";
         try{
-            statement = DSHolder.getInstance().getConnection().createStatement();
-            resultSet=statement.executeQuery(sql);
+            connection=DSHolder.getInstance().getConnection();
+            ps=connection.prepareStatement(sql);
+            resultSet=ps.executeQuery();
             statuses=new HashSet<>();
             while(resultSet.next()){
                 statuses.add(executeStatus(resultSet));
@@ -75,16 +90,22 @@ public class StatusDAOImp implements StatusDAO {
             logger.error("Can't read all Statuses "+e);
             e.printStackTrace();
         }finally {
-            DSHolder.close(connection, statement, resultSet);
+            DSHolder.close(connection);
+            DSHolder.close(ps);
+            DSHolder.close(resultSet);
         }
         return statuses;
     }
 
     @Override
     public void update(Status status) {
+        PreparedStatement ps=null;
+        Connection connection=null;
+
         String sql="UPDATE Statuses SET name=? WHERE id=?";
         try{
-            ps=DSHolder.getInstance().getConnection().prepareStatement(sql);
+            connection=DSHolder.getInstance().getConnection();
+            ps=connection.prepareStatement(sql);
             ps.setString(1,status.getName());
             ps.setInt(2,status.getId());
             ps.executeUpdate();
@@ -94,16 +115,20 @@ public class StatusDAOImp implements StatusDAO {
             e.printStackTrace();
         }finally {
             DSHolder.close(connection);
-            DSHolder.close(resultSet);
             DSHolder.close(ps);
         }
     }
 
     @Override
     public void delete(int id) {
+        PreparedStatement ps=null;
+        Connection connection=null;
+        ResultSet resultSet=null;
+
         String sql="DELETE FROM Statuses WHERE id=?";
         try{
-            ps=DSHolder.getInstance().getConnection().prepareStatement(sql);
+            connection=DSHolder.getInstance().getConnection();
+            ps=connection.prepareStatement(sql);
             ps.setInt(1,id);
             ps.executeUpdate();
         }catch (SQLException e){
@@ -112,7 +137,6 @@ public class StatusDAOImp implements StatusDAO {
             e.printStackTrace();
         }finally {
             DSHolder.close(connection);
-            DSHolder.close(resultSet);
             DSHolder.close(ps);
         }
 

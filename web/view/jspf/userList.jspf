@@ -1,0 +1,39 @@
+<c:forEach var="user" items="${users}">
+    <div class="panel panel-primary">
+        <div class="row panel-body">
+            <div class="col-md-12">
+                    <div class="col-md-2">
+                        <p>Username: ${user.username}</p>
+                    </div>
+                    <div class="col-md-2">
+                        <p>Password: ${user.password}</p>
+                    </div>
+                    <div class="col-md-2">
+                        <p>First Name: ${user.firstName}</p>
+                    </div>
+                    <div class="col-md-2">
+                            <p>Last Name: ${user.lastName}</p>
+                    </div>
+                    <div class="col-md-2">
+                        <p>Role: ${user.role.name}</p>
+                    </div>
+                    <div class="col-md-2 ">
+                        <c:choose>
+                            <c:when test="${user.role.name=='BLOCKED'}">
+                                <a href="${pageContext.request.contextPath}/setBlocked?id=${user.id}&blocked=true">
+                                    <button type="button" class="btn btn-success">Unblock</button>
+                                </a>
+                                <button type="button" class="btn btn-danger" disabled>Block</button>
+                            </c:when>
+                            <c:otherwise>
+                                <button type="button" class="btn btn-success" disabled>Unblock</button>
+                                <a href="${pageContext.request.contextPath}/setBlocked?id=${user.id}&blocked=false">
+                                    <button type="submit" class="btn btn-danger">Block</button>
+                                </a>
+                            </c:otherwise>
+                        </c:choose>
+                    </div>
+            </div>
+        </div>
+    </div>
+</c:forEach>

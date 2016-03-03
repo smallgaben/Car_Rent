@@ -11,16 +11,17 @@ import java.util.Set;
 
 public class ClassDAOImp implements ClassDAO {
     private static final Logger logger=Logger.getLogger(CarDAOImp.class);
-    Connection connection=null;
-    Statement statement=null;
-    PreparedStatement ps=null;
-    ResultSet resultSet=null;
 
     @Override
     public Class create(Class addClass) {
+        PreparedStatement ps=null;
+        Connection connection=null;
+        ResultSet resultSet=null;
+
         String sql="INSERT INTO Classes VALUES(?,?)";
         try{
-            ps= DSHolder.getInstance().getConnection().prepareStatement(sql,PreparedStatement.RETURN_GENERATED_KEYS);
+            connection= DSHolder.getInstance().getConnection();
+            ps=connection.prepareStatement(sql,PreparedStatement.RETURN_GENERATED_KEYS);
             ps.setInt(1,readAll().size());
             ps.setString(2,addClass.getName());
             ps.executeUpdate();
@@ -29,7 +30,7 @@ public class ClassDAOImp implements ClassDAO {
                 addClass.setId(resultSet.getInt(1));
             }
         }catch (SQLException e){
-            logger.error("Can't add new Car Class "+e);
+            logger.error("Can't add new Class "+e);
             DSHolder.rollback(connection);
             e.printStackTrace();
         }finally {
@@ -42,10 +43,15 @@ public class ClassDAOImp implements ClassDAO {
 
     @Override
     public Class read(int id) {
+        PreparedStatement ps=null;
+        Connection connection = null;
+        ResultSet resultSet=null;
+
         String sql="SELECT *FROM Classes WHERE id=?";
         Class carClass=null;
         try{
-            ps=DSHolder.getInstance().getConnection().prepareStatement(sql);
+            connection=DSHolder.getInstance().getConnection();
+            ps=connection.prepareStatement(sql);
             ps.setInt(1,id);
             resultSet=ps.executeQuery();
             carClass=new Class();
@@ -54,19 +60,28 @@ public class ClassDAOImp implements ClassDAO {
                 carClass.setName(resultSet.getString(2));
             }
         }catch (SQLException e){
-            logger.error("Can't read Car Class "+e);
+            logger.error("Can't read Class "+e);
             e.printStackTrace();
+        }finally {
+            DSHolder.close(connection);
+            DSHolder.close(resultSet);
+            DSHolder.close(ps);
         }
         return carClass;
     }
 
     @Override
     public Set<Class> readAll() {
+        PreparedStatement ps=null;
+        Connection connection=null;
+        ResultSet resultSet=null;
+
         Set<Class> classes=null;
         String sql="SELECT * FROM Classes";
         try{
-            statement = DSHolder.getInstance().getConnection().createStatement();
-            resultSet=statement.executeQuery(sql);
+            connection= DSHolder.getInstance().getConnection();
+            ps=connection.prepareStatement(sql);
+            resultSet=ps.executeQuery();
             classes=new HashSet<>();
             while(resultSet.next()){
                 classes.add(executeClass(resultSet));
@@ -75,16 +90,22 @@ public class ClassDAOImp implements ClassDAO {
             logger.error("Can't read all Classes "+e);
             e.printStackTrace();
         }finally {
-            DSHolder.close(connection, statement, resultSet);
+            DSHolder.close(connection);
+            DSHolder.close(resultSet);
+            DSHolder.close(ps);
         }
         return classes;
     }
 
     @Override
     public void update(Class carClass) {
+        PreparedStatement ps=null;
+        Connection connection=null;
+
         String sql="UPDATE Classes SET name=? WHERE id=?";
         try{
-            ps=DSHolder.getInstance().getConnection().prepareStatement(sql);
+            connection=DSHolder.getInstance().getConnection();
+            ps=connection.prepareStatement(sql);
             ps.setString(1, carClass.getName());
             ps.setInt(2, carClass.getId());
             ps.executeUpdate();
@@ -94,16 +115,19 @@ public class ClassDAOImp implements ClassDAO {
             e.printStackTrace();
         }finally {
             DSHolder.close(connection);
-            DSHolder.close(resultSet);
             DSHolder.close(ps);
         }
     }
 
     @Override
     public void delete(int id) {
+        PreparedStatement ps=null;
+        Connection connection=null;
+
         String sql="DELETE FROM Classes WHERE id=?";
         try{
-            ps=DSHolder.getInstance().getConnection().prepareStatement(sql);
+            connection=DSHolder.getInstance().getConnection();
+            ps=connection.prepareStatement(sql);
             ps.setInt(1,id);
             ps.executeUpdate();
         }catch (SQLException e){
@@ -112,7 +136,6 @@ public class ClassDAOImp implements ClassDAO {
             e.printStackTrace();
         }finally {
             DSHolder.close(connection);
-            DSHolder.close(resultSet);
             DSHolder.close(ps);
         }
     }

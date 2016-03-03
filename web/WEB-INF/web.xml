@@ -6,6 +6,9 @@
     <welcome-file-list>
         <welcome-file>/WEB-INF/SignIn.jsp</welcome-file>
     </welcome-file-list>
+
+<!-- SERVLETS-->
+
     <servlet>
         <servlet-name>SignIn</servlet-name>
         <servlet-class>controller.authentication.servlets.SignInServlet</servlet-class>
@@ -14,15 +17,7 @@
         <servlet-name>SignIn</servlet-name>
         <url-pattern>/signin</url-pattern>
     </servlet-mapping>
-    <filter>
-        <filter-name>AuthenticationFilter</filter-name>
-        <filter-class>controller.authentication.filter.AuthFilter</filter-class>
-    </filter>
-    <filter-mapping>
-        <filter-name>AuthenticationFilter</filter-name>
-        <url-pattern>/*</url-pattern>
-        <servlet-name>SignIn</servlet-name>
-    </filter-mapping>
+
     <servlet>
         <servlet-name>RegistrationServlet</servlet-name>
         <servlet-class>controller.authentication.servlets.RegisterServlet</servlet-class>
@@ -31,14 +26,16 @@
         <servlet-name>RegistrationServlet</servlet-name>
         <url-pattern>/register</url-pattern>
     </servlet-mapping>
+
     <servlet>
         <servlet-name>CarList</servlet-name>
-        <servlet-class>controller.userActivities.CarListServlet</servlet-class>
+        <servlet-class>controller.entitylists.CarListServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>CarList</servlet-name>
-        <url-pattern>/CarList</url-pattern>
+        <url-pattern>/carList</url-pattern>
     </servlet-mapping>
+
     <servlet>
         <servlet-name>LogOutServlet</servlet-name>
         <servlet-class>controller.authentication.servlets.LogOutServlet</servlet-class>
@@ -47,12 +44,69 @@
         <servlet-name>LogOutServlet</servlet-name>
         <url-pattern>/logout</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EditCarServlet</servlet-name>
+        <servlet-class>controller.adminactivities.car.EditCarServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditCarServlet</servlet-name>
+        <url-pattern>/editCar</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteCar</servlet-name>
+        <servlet-class>controller.adminactivities.car.DeleteCarServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteCar</servlet-name>
+        <url-pattern>/deleteCar</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddCarServlet</servlet-name>
+        <servlet-class>controller.adminactivities.car.AddCarServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddCarServlet</servlet-name>
+        <url-pattern>/addCar</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UserList</servlet-name>
+        <servlet-class>controller.entitylists.UserListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserList</servlet-name>
+        <url-pattern>/userList</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SetBlocked</servlet-name>
+        <servlet-class>controller.adminactivities.user.SetBlockedServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SetBlocked</servlet-name>
+        <url-pattern>/setBlocked</url-pattern>
+    </servlet-mapping>
+
+    <!-- FILTERS-->
     <filter>
-        <filter-name>Authorization</filter-name>
-        <filter-class>controller.authorization.RoleFilter</filter-class>
-    </filter>
+    <filter-name>AuthenticationFilter</filter-name>
+    <filter-class>controller.authentication.filter.AuthFilter</filter-class>
+</filter>
+    <filter-mapping>
+        <filter-name>AuthenticationFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+        <servlet-name>SignIn</servlet-name>
+    </filter-mapping>
+    <filter>
+    <filter-name>Authorization</filter-name>
+    <filter-class>controller.authorization.RoleFilter</filter-class>
+</filter>
     <filter-mapping>
         <filter-name>Authorization</filter-name>
         <url-pattern>/view/*</url-pattern>
     </filter-mapping>
+
 </web-app>

@@ -43,11 +43,9 @@
                     <div class="col-md-12 bg-info">
                         <div class="col-md-2">
                             Car mark: ${car.mark}
-
                         </div>
                         <div class="col-md-2">
                             Car name: ${car.name}
-
                         </div>
                         <div class="col-md-2">
                             Car cost: ${car.cost}
@@ -59,8 +57,8 @@
                             Car status: ${car.status.name}
                         </div>
                         <div class="col-md-2">
-                            <a href="/RentCar">
-                                <button name="rent" value="${car.id}" class="btn-warning" >Rent</button>
+                            <a href="${pageContext.request.contextPath}/RentCar?id=${car.id}">
+                                <button name="rent" class="btn-warning" >Rent</button>
                             </a>
                         </div>
                     </div>

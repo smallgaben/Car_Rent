@@ -1,5 +1,6 @@
-package controller.userActivities;
+package controller.entitylists;
 
+import model.DAO.CarDAO;
 import model.DAOImp.CarDAOImp;
 import model.entities.Car;
 import org.apache.log4j.Logger;
@@ -17,10 +18,17 @@ public class CarListServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        CarDAOImp carDAOImp=new CarDAOImp();
+
+        CarDAO carDAOImp=new CarDAOImp();
         logger.info("Making list of Cars");
         HashSet<Car> cars=new HashSet<>(carDAOImp.readAll());
         req.setAttribute("cars",cars);
-        req.getRequestDispatcher("/view/UserDir/UserPage.jsp").forward(req,resp);
+
+        if(req.getSession().getAttribute("role").equals("USER")){
+            req.getRequestDispatcher("/view/UserDir/UserPage.jsp").forward(req, resp);
+        }
+        if(req.getSession().getAttribute("role").equals("ADMIN")){
+            req.getRequestDispatcher("/view/AdminDir/AdminPage.jsp").forward(req,resp);
+        }
     }
 }
