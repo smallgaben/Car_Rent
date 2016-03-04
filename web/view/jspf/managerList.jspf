@@ -1,0 +1,20 @@
+<c:forEach var="manager" items="${managers}">
+    <div class="panel panel-primary">
+        <div class="row panel-body">
+            <div class="col-md-12">
+                    <div class="col-md-3">
+                        <p>Username: ${manager.username}</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p>Password: ${manager.password}</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p>First Name: ${manager.firstName}</p>
+                    </div>
+                    <div class="col-md-3">
+                            <p>Last Name: ${manager.lastName}</p>
+                    </div>
+               </div>
+        </div>
+    </div>
+</c:forEach>

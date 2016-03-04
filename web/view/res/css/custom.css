@@ -189,3 +189,10 @@ background-color: #929292;
     float: right;
 }
 
+.form-control{
+    margin: 5px 0;
+}
+
+h3{
+    text-align: center;
+}

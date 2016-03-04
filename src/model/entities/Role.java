@@ -7,6 +7,7 @@ public class Role implements Serializable {
     private static final long serialVersionUID = 1745541598538260557L;
     public static final int DEFAULT_ROLE=2;
     public static final int BLOCKED_ROLE=3;
+    public static final int MANAGER_ROLE=1;
 
     private int id;
     private String name;

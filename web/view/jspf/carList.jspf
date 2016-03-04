@@ -7,9 +7,11 @@
                         <div class="col-md-6">
                             <input class="form-control" name="id" value="${car.id}" readonly/>
                         </div>
-                        <label for="mark">Mark: </label>
-                        <input id="mark" type="text" class="form-control" value="${car.mark}" name="mark">
-                    </div>
+                        <div class="col-md-6">
+                            <label for="mark">Mark: </label>
+                            <input id="mark" type="text" class="form-control" value="${car.mark}" name="mark">
+                        </div>
+                        </div>
                     <div class="col-md-2">
                         <label for="name">Name: </label>
                         <input class="form-control" id="name" value="${car.name}" name="name" />

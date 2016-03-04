@@ -50,9 +50,9 @@ public class SignInServlet extends HttpServlet{
             }
         }
         else {
-            req.setAttribute("checked",false);
+            req.setAttribute("checked",true);
             logger.warn("User blocked or password incorrect");
-            resp.sendRedirect("");
+            req.getRequestDispatcher("/").forward(req,resp);
         }
     }
 }

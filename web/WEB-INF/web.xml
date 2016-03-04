@@ -90,6 +90,15 @@
         <url-pattern>/setBlocked</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>RegisterManagerServlet</servlet-name>
+        <servlet-class>controller.adminactivities.manager.ManagerUtilServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterManagerServlet</servlet-name>
+        <url-pattern>/utilManager</url-pattern>
+    </servlet-mapping>
+
     <!-- FILTERS-->
     <filter>
     <filter-name>AuthenticationFilter</filter-name>
