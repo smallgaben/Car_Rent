@@ -2,20 +2,23 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Rent Car</title>
 
     <!-- BOOTSTRAP STYLES-->
-    <link href="${pageContext.request.contextPath}/view/res/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="${pageContext.request.contextPath}/view/res/jquery/jquery-1.12.1.min.js"></script>
     <script src="${pageContext.request.contextPath}/view/res/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+    <link href="${pageContext.request.contextPath}/view/res/bootstrap-3.3.6-dist/css/bootstrap.min.css"
+          rel="stylesheet"/>
 
-    <link href="${pageContext.request.contextPath}/view/res/css/basic.css" rel="stylesheet" />
+
+    <link href="${pageContext.request.contextPath}/view/res/css/basic.css" rel="stylesheet"/>
     <!-- FONTAWESOME STYLES-->
-    <link href="${pageContext.request.contextPath}/view/res/css/font-awesome.css" rel="stylesheet" />
+    <link href="${pageContext.request.contextPath}/view/res/css/font-awesome.css" rel="stylesheet"/>
     <!--CUSTOM BASIC STYLES-->
-    <link href="${pageContext.request.contextPath}/view/res/css/basic.css" rel="stylesheet" />
+    <link href="${pageContext.request.contextPath}/view/res/css/basic.css" rel="stylesheet"/>
     <!--CUSTOM MAIN STYLES-->
-    <link href="${pageContext.request.contextPath}/view/res/css/custom.css" rel="stylesheet" />
+    <link href="${pageContext.request.contextPath}/view/res/css/custom.css" rel="stylesheet"/>
 
 </head>

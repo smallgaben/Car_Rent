@@ -1,0 +1,53 @@
+<c:forEach var="car" items="${cars}">
+    <div class="panel panel-primary">
+        <div class="row panel-body">
+            <div class="col-md-12">
+                <form class="form-group" action="${pageContext.request.contextPath}/editCar" method="get">
+                    <div class="col-md-2">
+                        <div class="col-md-6">
+                            <input class="form-control" name="id" value="${car.id}" readonly/>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="mark">Mark: </label>
+                            <input id="mark" type="text" class="form-control" value="${car.mark}" name="mark">
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="name">Name: </label>
+                        <input class="form-control" id="name" value="${car.name}" name="name"/>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="cost">Cost</label>
+                        <input id="cost" name="cost" value="${car.cost}" class="form-control list-inline"/>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="col-md-6">
+                            <label for="class">Class: </label>
+                            <input id="class" name="class" value="${car.carClass.id}" class="form-control list-inline"/>
+                        </div>
+                        <div class="col-md-6">
+                            <p>${car.carClass.name}</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="col-md-6">
+                            <label for="status">Status</label>
+                            <input class="form-control list-inline" id="status" name="status" value="${car.status.id}"/>
+                        </div>
+                        <div class="col-md-6">
+                            <p>${car.status.name}</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="submit" class="btn btn-success">Edit</button>
+                    </div>
+                </form>
+                <div class="col-md-2">
+                    <a href="${pageContext.request.contextPath}/deleteCar?id=${car.id}">
+                        <button name="rent" class="btn btn-danger">Delete</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</c:forEach>

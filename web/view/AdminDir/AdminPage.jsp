@@ -38,7 +38,7 @@
     <!-- /. NAV SIDE  -->
     <div id="page-wrapper">
         <div class="panel-group" id="page-inner">
-            <c:if test="${cars!=nuul}">
+            <c:if test="${cars!=null}">
                 <div class="panel-body row">
                     <form action="${pageContext.request.contextPath}/addCar" class="form-group inline">
                         <div class="col-md-2">
@@ -65,7 +65,7 @@
             </c:if>
 
             <%--List all Cars--%>
-            <%@include file="/view/jspf/carList.jspf"%>
+            <%@include file="/view/jspf/carInputList.jspf"%>
 
             <%--List all Users--%>
             <%@include file="/view/jspf/userList.jspf"%>

@@ -1,7 +1,7 @@
 package model.entities;
 
 import java.io.Serializable;
-import java.util.Date;
+import java.sql.Date;
 
 public class Order implements Serializable {
     private static final long serialVersionUID = -3208081497655704033L;
@@ -117,14 +117,14 @@ public class Order implements Serializable {
     @Override
     public String toString() {
         return "Order{" +
-                "id=" + id +
-                ", passport='" + passport + '\'' +
-                ", user=" + user +
-                ", car=" + car +
-                ", startDate=" + startDate +
-                ", finishDate=" + finishDate +
-                ", driver=" + driver +
-                ", status=" + status +
+                "id=" + id +"\n"+
+                ", passport='" + passport + '\'' +"\n"+
+                ", user=" + user +"\n"+
+                ", car=" + car +"\n"+
+                ", startDate=" + startDate +"\n"+
+                ", finishDate=" + finishDate +"\n"+
+                ", driver=" + driver +"\n"+
+                ", status=" + status +"\n"+
                 '}';
     }
 }

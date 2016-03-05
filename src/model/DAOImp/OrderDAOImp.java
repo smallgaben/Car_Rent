@@ -8,6 +8,7 @@ import model.entities.Status;
 import org.apache.log4j.Logger;
 
 import java.sql.*;
+import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -28,8 +29,10 @@ public class OrderDAOImp implements OrderDAO {
             ps.setString(1, order.getPassport());
             ps.setInt(2, order.getUser().getId());
             ps.setInt(3,order.getCar().getId());
-            ps.setDate(4, new Date(order.getStartDate().getTime()) );
-            ps.setDate(5, new Date(order.getFinishDate().getTime()));
+            ps.setDate(4, order.getStartDate());
+            ps.setDate(5, order.getFinishDate());
+            ps.setBoolean(6,order.isDriver());
+            ps.setInt(7,order.getStatus().getId());
             ps.executeUpdate();
 
             resultSet=ps.getGeneratedKeys();
@@ -37,7 +40,7 @@ public class OrderDAOImp implements OrderDAO {
                 int id=resultSet.getInt(1);
                 logger.debug("Created Order with id: "+id);
                 order.setId(id);
-                checkDAOImp.create(createCheck(id));
+                checkDAOImp.create(createCheck(order));
             }
         }catch (SQLException e){
             logger.error("Can't add order "+e);
@@ -232,13 +235,13 @@ public class OrderDAOImp implements OrderDAO {
         return order;
     }
 
-    public Check createCheck(int id){
+    public Check createCheck(Order order){
         StatusDAO statusDAOImp=new StatusDAOImp();
         Check check = new Check();
         check.setDate(new Date(System.currentTimeMillis()));
-        check.setOrder(readById(id));
-        check.setPrice(Check.DEFAULT_PRICE);
-        check.setDescription("Add description");
+        check.setOrder(order);
+        check.setPrice(makeCheckPrice(order));
+        check.setDescription(Check.ADD_CHECK_DESCR);
         check.setStatus(statusDAOImp.read(Status.DEFAULT_CHECK_STATUS));
         return check;
     }
@@ -273,5 +276,27 @@ public class OrderDAOImp implements OrderDAO {
             DSHolder.close(resultSet);
         }
         return integers;
+    }
+
+
+    /**
+     * Method for making total cost from the mount of days
+     * @param order
+     * @return total sum
+     */
+    public int makeCheckPrice(Order order){
+        int orderCost=order.getCar().getCost();
+        LocalDate startDate=order.getStartDate().toLocalDate();
+        LocalDate finishDate=order.getFinishDate().toLocalDate();
+
+        if(order.isDriver()){
+            orderCost+=700;
+        }
+
+
+        int rez=((finishDate.getYear()-startDate.getYear())*360)
+                +((finishDate.getMonth().getValue()-startDate.getMonth().getValue())*30)
+                +((finishDate.getDayOfMonth()-startDate.getDayOfMonth()));
+        return rez*orderCost;
     }
 }

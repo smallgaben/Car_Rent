@@ -24,7 +24,7 @@ public class CheckDAOImp implements CheckDAO {
         try{
             connection = DSHolder.getInstance().getConnection();
             ps=connection.prepareStatement(sql, PreparedStatement.RETURN_GENERATED_KEYS);
-            ps.setDate(1, new Date(check.getDate().getTime()));
+            ps.setDate(1, check.getDate());
             ps.setString(2, check.getDescription());
             ps.setInt(3,check.getOrder().getId());
             ps.setInt(4, check.getPrice());

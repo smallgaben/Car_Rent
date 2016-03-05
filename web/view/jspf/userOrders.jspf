@@ -1,0 +1,32 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:forEach var="check" items="${checks}">
+    <div class=" col-lg-8 panel panel-primary">
+        <div class="panel-body list-inline">
+            <div class="col-lg-6">
+                <br/>
+                Mark: ${check.order.car.mark}<br/>
+                Name: ${check.order.car.name}<br/>
+                Class: ${check.order.car.carClass.name}<br/>
+                Cost (Per Day): ${check.order.car.cost}<br/>
+            </div>
+            <div class="col-lg-6">
+                <br/>
+                User Passport: ${check.order.passport}<br/>
+                Start Date: ${check.order.startDate}<br/>
+                Finish Date: ${check.order.finishDate}<br/>
+                Current Date: ${check.date}
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 panel panel-primary">
+        <div class="panel-body">
+            Check<br/>
+            Driver: ${check.order.driver}<br/>
+            Check Status: ${check.status.name}<br/>
+            Order Description: ${check.description}<br/>
+            <div class="col-lg-12 bg-info h3">
+                Total cost: ${check.price}<br/>
+            </div>
+        </div>
+    </div>
+</c:forEach>

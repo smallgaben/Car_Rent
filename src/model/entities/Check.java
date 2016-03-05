@@ -1,11 +1,11 @@
 package model.entities;
 
 import java.io.Serializable;
-import java.util.Date;
+import java.sql.Date;
 
 public class Check implements Serializable {
     private static final long serialVersionUID = 5333068964774944352L;
-    public static final int DEFAULT_PRICE=1000;
+    public static final String ADD_CHECK_DESCR="Waiting to be accepted by Manager";
 
     private int id;
     private Date date;
@@ -95,11 +95,11 @@ public class Check implements Serializable {
     @Override
     public String toString() {
         return "Check{" +
-                "id=" + id +
-                ", date=" + date +
-                ", description='" + description + '\'' +
-                ", price=" + price +
-                ", order=" + order +
+                "id=" + id +"\n"+
+                ", date=" + date +"\n"+
+                ", description='" + description + '\'' +"\n"+
+                ", price=" + price +"\n"+
+                ", order=" + order +"\n"+
                 '}';
     }
 }

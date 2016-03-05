@@ -22,6 +22,8 @@ INSERT INTO Statuses VALUES (2,'rent');
 INSERT INTO Statuses VALUES (3,'repair');
 INSERT INTO Statuses VALUES (4,'not paid');
 INSERT INTO Statuses VALUES (5,'paid');
+INSERT INTO Statuses VALUES (6,'canceled');
+INSERT INTO Statuses VALUES (7,'accepted');
 
 CREATE TABLE Roles(
   id INTEGER NOT NULL PRIMARY KEY,
@@ -104,7 +106,7 @@ CREATE TABLE Orders(
 CREATE TABLE Checks(
   id INTEGER NOT NULL auto_increment PRIMARY KEY,
   date DATE NOT NULL DEFAULT CURRENT_DATE,
-  desription VARCHAR (300),
+  description VARCHAR (300),
   order_id INTEGER NOT NULL,
   price INTEGER NOT NULL,
   status INTEGER NOT NULL REFERENCES Statuses(id)

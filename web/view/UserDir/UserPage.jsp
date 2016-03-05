@@ -7,7 +7,8 @@
 <div id="wrapper">
     <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
         <div class="header-right">
-            <a href="${pageContext.request.contextPath}/logout" class="btn btn-danger" title="Logout"><i class="btn-danger">Log Out</i></a>
+            <a href="${pageContext.request.contextPath}/logout" class="btn btn-danger" title="Logout"><i
+                    class="btn-danger">Log Out</i></a>
         </div>
     </nav>
     <!-- /. NAV TOP  -->
@@ -23,13 +24,10 @@
                 </li>
 
                 <li>
-                    <a  href="${pageContext.request.contextPath}/CarList"><i class="fa"></i>Car List</a>
+                    <a href="${pageContext.request.contextPath}/carList"><i class="fa"></i>Car List</a>
                 </li>
                 <li>
-                    <a  href="/UserCars"><i class="fa"></i>My Cars</a>
-                </li>
-                <li>
-                    <a  href="/about"><i class="fa"></i>ABOUT</a>
+                    <a href="${pageContext.request.contextPath}/userOrders"><i class="fa"></i>My Orders</a>
                 </li>
             </ul>
         </div>
@@ -37,33 +35,15 @@
     </nav>
     <!-- /. NAV SIDE  -->
     <div id="page-wrapper">
+
+        <%--Filters for navigation--%>
+        <%@include file="/view/jspf/userFilters.jspf" %>
         <div id="page-inner">
-            <c:forEach var="car" items="${cars}">
-                <div class="row">
-                    <div class="col-md-12 bg-info">
-                        <div class="col-md-2">
-                            Car mark: ${car.mark}
-                        </div>
-                        <div class="col-md-2">
-                            Car name: ${car.name}
-                        </div>
-                        <div class="col-md-2">
-                            Car cost: ${car.cost}
-                        </div>
-                        <div class="col-md-2">
-                            Car class: ${car.carClass.name}
-                        </div>
-                        <div class="col-md-2">
-                            Car status: ${car.status.name}
-                        </div>
-                        <div class="col-md-2">
-                            <a href="${pageContext.request.contextPath}/RentCar?id=${car.id}">
-                                <button name="rent" class="btn-warning" >Rent</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </c:forEach>
+            <%--Cars List--%>
+            <%@include file="/view/jspf/carList.jspf" %>
+
+            <%--User Orders List--%>
+            <%@include file="/view/jspf/userOrders.jspf" %>
         </div>
         <!-- /. PAGE INNER  -->
     </div>

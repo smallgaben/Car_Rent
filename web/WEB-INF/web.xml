@@ -7,7 +7,7 @@
         <welcome-file>/WEB-INF/SignIn.jsp</welcome-file>
     </welcome-file-list>
 
-<!-- SERVLETS-->
+    <!-- SERVLETS-->
 
     <servlet>
         <servlet-name>SignIn</servlet-name>
@@ -98,21 +98,45 @@
         <servlet-name>RegisterManagerServlet</servlet-name>
         <url-pattern>/utilManager</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>UserSort</servlet-name>
+        <servlet-class>controller.useractivities.UserSortServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserSort</servlet-name>
+        <url-pattern>/filterUtils</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>RentCar</servlet-name>
+        <servlet-class>controller.useractivities.RentCarServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RentCar</servlet-name>
+        <url-pattern>/rentCar</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>UserOrders</servlet-name>
+        <servlet-class>controller.useractivities.UserOrderListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserOrders</servlet-name>
+        <url-pattern>/userOrders</url-pattern>
+    </servlet-mapping>
 
     <!-- FILTERS-->
     <filter>
-    <filter-name>AuthenticationFilter</filter-name>
-    <filter-class>controller.authentication.filter.AuthFilter</filter-class>
-</filter>
+        <filter-name>AuthenticationFilter</filter-name>
+        <filter-class>controller.authentication.filter.AuthFilter</filter-class>
+    </filter>
     <filter-mapping>
         <filter-name>AuthenticationFilter</filter-name>
         <url-pattern>/*</url-pattern>
         <servlet-name>SignIn</servlet-name>
     </filter-mapping>
     <filter>
-    <filter-name>Authorization</filter-name>
-    <filter-class>controller.authorization.RoleFilter</filter-class>
-</filter>
+        <filter-name>Authorization</filter-name>
+        <filter-class>controller.authorization.RoleFilter</filter-class>
+    </filter>
     <filter-mapping>
         <filter-name>Authorization</filter-name>
         <url-pattern>/view/*</url-pattern>
