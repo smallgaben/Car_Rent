@@ -1,8 +1,9 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:forEach var="check" items="${checks}">
-    <div class=" col-lg-8 panel panel-primary">
-        <div class="panel-body list-inline">
+    <div class="col-lg-12 panel panel-primary">
+        <div class="col-lg-8">
             <div class="col-lg-6">
+                <p>Order id: ${check.order.id}</p>
                 <br/>
                 Mark: ${check.order.car.mark}<br/>
                 Name: ${check.order.car.name}<br/>
@@ -14,19 +15,56 @@
                 User Passport: ${check.order.passport}<br/>
                 Start Date: ${check.order.startDate}<br/>
                 Finish Date: ${check.order.finishDate}<br/>
-                Current Date: ${check.date}
+                Current Date: ${check.date}<br/>
+                Order Status: ${check.order.status.name}<br/>
+            </div>
+            <c:choose>
+                <c:when test="${check.status.name=='accepted'}">
+                    <c:choose>
+                        <c:when test="${check.order.status.name=='rent'}">
+                            <a href="${pageContext.request.contextPath}/payForCar?rent=true&id=${check.order.id}">
+                                <button class="btn btn-success">Pay Rent</button>
+                            </a>
+                        </c:when>
+                        <c:when test="${check.order.status.name=='repair'}">
+                            <a href="${pageContext.request.contextPath}/payForCar?repair=true&id=${check.order.id}">
+                                <button class="btn btn-success">Pay Repair</button>
+                            </a>
+                        </c:when>
+                    </c:choose>
+                </c:when>
+                <c:when test="${check.status.name=='canceled'}">
+                    <div class="center-block">
+                        <p class="h2 bg-danger">Order Canceled!</p>
+                    </div>
+
+                </c:when>
+                <c:when test="${check.status.name=='paid'}">
+                    <c:choose>
+                        <c:when test="${check.order.status.name=='rent'}">
+                            <a href="${pageContext.request.contextPath}/returnCar?id=${check.order.id}">
+                                <button class="btn btn-warning">Return Car</button>
+                            </a>
+                        </c:when>
+                        <c:when test="${check.order.status.name=='returned'}">
+                            <p class="h2 bg-info">Car was Broken</p>
+                        </c:when>
+                    </c:choose>
+                </c:when>
+            </c:choose>
+        </div>
+        <div class="col-lg-4 panel panel-primary">
+            <div class="panel-body">
+                <h3>Check</h3><br/>
+                Driver: ${check.order.driver}<br/>
+                Check Status: ${check.status.name}<br/>
+                Order Description: ${check.description}<br/>
+
+                <div class="col-lg-12 bg-info h3">
+                    Total cost: ${check.price}<br/>
+                </div>
             </div>
         </div>
     </div>
-    <div class="col-lg-4 panel panel-primary">
-        <div class="panel-body">
-            Check<br/>
-            Driver: ${check.order.driver}<br/>
-            Check Status: ${check.status.name}<br/>
-            Order Description: ${check.description}<br/>
-            <div class="col-lg-12 bg-info h3">
-                Total cost: ${check.price}<br/>
-            </div>
-        </div>
-    </div>
+
 </c:forEach>

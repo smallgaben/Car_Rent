@@ -115,7 +115,7 @@ public class CheckDAOImp implements CheckDAO {
             ps.setString(2, check.getDescription());
             ps.setInt(3, check.getPrice());
             ps.setInt(4, check.getStatus().getId());
-            ps.setInt(5, check.getId());
+            ps.setInt(5, check.getOrder().getId());
             ps.executeUpdate();
         }catch (SQLException e){
             logger.error("Can't update the Check "+ e);

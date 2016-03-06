@@ -6,6 +6,10 @@ import java.sql.Date;
 public class Check implements Serializable {
     private static final long serialVersionUID = 5333068964774944352L;
     public static final String ADD_CHECK_DESCR="Waiting to be accepted by Manager";
+    public static final String CANCEL_CHECK_DESCR="Check was canceled by Manager";
+    public static final String ACCEPTED_CHECK_DESCR="Check was accepted by Manager, waiting por payment";
+    public static final String PAID_CHECK_DESCR="Payment was success, enjoy your ride :)";
+    public static final String SUCCESS_APPROV_CHECK_DESCR="Car is waiting for manager approving";
 
     private int id;
     private Date date;

@@ -289,14 +289,14 @@ public class OrderDAOImp implements OrderDAO {
         LocalDate startDate=order.getStartDate().toLocalDate();
         LocalDate finishDate=order.getFinishDate().toLocalDate();
 
-        if(order.isDriver()){
-            orderCost+=700;
-        }
-
-
         int rez=((finishDate.getYear()-startDate.getYear())*360)
                 +((finishDate.getMonth().getValue()-startDate.getMonth().getValue())*30)
                 +((finishDate.getDayOfMonth()-startDate.getDayOfMonth()));
-        return rez*orderCost;
+
+        rez+=orderCost*rez;
+        if(order.isDriver()){
+            rez+=700;
+        }
+        return rez;
     }
 }

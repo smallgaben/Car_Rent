@@ -6,8 +6,14 @@ import java.util.Set;
 public class Status implements Serializable {
     private static final long serialVersionUID = -1121205141512192760L;
     public static final int DEFAULT_CHECK_STATUS=4;
+    public static final int PAID_CHECK_STATUS=5;
     public static final int DEFAULT_CAR_STATUS=0;
+    public static final int DISABLED_CAR_STATUS=1;
     public static final int RENT_ORDER_STATUS=2;
+    public static final int RETURN_ORDER_STATUS=9;
+    public static final int CANCELED_CHECK_STATUS=6;
+    public static final int ACCEPTED_CHECK_STATUS=7;
+    public static final int SUCCESS_CHECK_STATUS=8;
 
 
     private int id;

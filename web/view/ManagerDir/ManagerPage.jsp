@@ -23,13 +23,10 @@
         </li>
 
         <li>
-          <a  href="${pageContext.request.contextPath}/view/ManagerDir/ManagerPage.jsp"><i class="fa"></i>Orders List</a>
+          <a  href="${pageContext.request.contextPath}/orderList?newOrders=true"><i class="fa"></i>New Orders</a>
         </li>
         <li>
-          <a  href="/UserCars"><i class="fa"></i>Disabled Cars</a>
-        </li>
-        <li>
-          <a  href="/about"><i class="fa"></i>Users List</a>
+          <a  href="${pageContext.request.contextPath}/orderList"><i class="fa"></i>Order List</a>
         </li>
       </ul>
     </div>
@@ -39,14 +36,22 @@
   <div id="page-wrapper">
     <div id="page-inner">
 
+      <c:choose>
+        <c:when test="${newOrders}">
+          <%@include file="/view/jspf/managerNewOrders.jspf"%>
+        </c:when>
+        <c:otherwise>
+          <%@include file="/view/jspf/managerOrderList.jspf"%>
+        </c:otherwise>
+      </c:choose>
+
     </div>
     <!-- /. PAGE INNER  -->
   </div>
   <!-- /. PAGE WRAPPER  -->
 </div>
 <!-- /. WRAPPER  -->
-<div id="footer-sec">
-  2016 PrutOS | Design By : Miroslav
-</div>
+<%--FOOTER--%>
+<%@include file="/view/jspf/footer.jspf"%>
 </body>
 </html>

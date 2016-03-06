@@ -12,16 +12,16 @@
                     <p>Cost: ${car.cost}</p>
                 </div>
                 <div class="col-md-2">
-                    <p>${car.carClass.name}</p>
+                   Class: <p>${car.carClass.name}</p>
                 </div>
                 <div class="col-md-2">
                     <p>Status: ${car.status.name}</p>
                 </div>
                 <div class="col-md-2">
                     <c:choose>
-                        <c:when test="${car.status.name}==disable">
+                        <c:when test="${car.status.name=='disable'}">
                             <a href="${pageContext.request.contextPath}/rentCar?id=${car.id}">
-                                <button name="rent" class="btn btn-warning" disabled>Rent</button>
+                                <button name="rent" class="btn btn-danger" disabled>Busy</button>
                             </a>
                         </c:when>
                         <c:otherwise>

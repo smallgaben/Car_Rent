@@ -1737,3 +1737,541 @@ INSERT INTO Checks(date, description, order_id, price, status ) VALUES (?, ?, ?,
 2016-03-05 23:57:16 INFO  CarListServlet:24 - Making list of Cars
 2016-03-05 23:57:18 INFO  UserOrderListServlet:24 - Making orders list
 2016-03-05 23:57:25 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-06 13:46:49 INFO  RoleFilter:15 - Started Role Filter
+2016-03-06 13:46:49 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-06 13:47:15 INFO  DSHolder:27 - Making Data Source
+2016-03-06 13:47:15 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@50155ba3
+2016-03-06 13:47:16 INFO  UserDAOImp:36 - Created User with id: 8
+2016-03-06 13:47:16 INFO  RegisterServlet:39 - Created customer id and username: 8polkan
+2016-03-06 13:47:16 INFO  RegisterServlet:44 - Redirecting to SignInServlet.java for entering
+2016-03-06 13:47:16 INFO  SignInServlet:24 - User exists: polkan password: polkan
+2016-03-06 13:47:16 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 13:47:16 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@57a0c1b5
+2016-03-06 13:47:16 INFO  CarListServlet:24 - Making list of Cars
+2016-03-06 13:48:01 INFO  UserOrderListServlet:24 - Making orders list
+2016-03-06 13:51:12 INFO  RoleFilter:15 - Started Role Filter
+2016-03-06 13:51:12 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-06 13:52:08 INFO  DSHolder:27 - Making Data Source
+2016-03-06 13:52:08 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@3096afac
+2016-03-06 13:52:08 INFO  SignInServlet:24 - User exists: polkan password: polkan
+2016-03-06 13:52:08 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 13:52:08 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@408e4749
+2016-03-06 13:52:08 INFO  CarListServlet:24 - Making list of Cars
+2016-03-06 13:52:32 INFO  UserOrderListServlet:24 - Making orders list
+2016-03-06 13:56:42 INFO  UserOrderListServlet:24 - Making orders list
+2016-03-06 13:56:55 INFO  UserOrderListServlet:24 - Making orders list
+2016-03-06 13:57:02 INFO  UserOrderListServlet:24 - Making orders list
+2016-03-06 13:57:40 INFO  UserOrderListServlet:24 - Making orders list
+2016-03-06 13:58:02 INFO  UserOrderListServlet:24 - Making orders list
+2016-03-06 13:59:08 INFO  UserOrderListServlet:24 - Making orders list
+2016-03-06 14:08:02 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-06 14:08:04 INFO  SignInServlet:24 - User exists: plotnikov password: plotnikov
+2016-03-06 14:08:04 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 14:08:04 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@3bf062ed
+2016-03-06 14:08:04 INFO  CarListServlet:24 - Making list of Cars
+2016-03-06 14:08:20 INFO  UserOrderListServlet:24 - Making orders list
+2016-03-06 14:53:39 INFO  RoleFilter:15 - Started Role Filter
+2016-03-06 14:53:39 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-06 14:53:57 INFO  DSHolder:27 - Making Data Source
+2016-03-06 14:53:57 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@3522bd93
+2016-03-06 14:53:57 INFO  SignInServlet:24 - User exists: smallgaben password: pfdnhfr040
+2016-03-06 14:53:57 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 14:53:57 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@40efb939
+2016-03-06 14:54:33 INFO  RoleFilter:15 - Started Role Filter
+2016-03-06 14:54:33 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-06 14:54:47 INFO  DSHolder:27 - Making Data Source
+2016-03-06 14:54:47 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@2c972a71
+2016-03-06 14:54:48 INFO  SignInServlet:24 - User exists: smallgaben password: pfdnhfr040
+2016-03-06 14:54:48 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 14:54:48 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@92c9f74
+2016-03-06 14:55:57 INFO  RoleFilter:15 - Started Role Filter
+2016-03-06 14:55:57 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-06 14:56:07 INFO  DSHolder:27 - Making Data Source
+2016-03-06 14:56:07 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@10262b5e
+2016-03-06 14:56:07 INFO  SignInServlet:24 - User exists: smallgaben password: pfdnhfr040
+2016-03-06 14:56:07 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 14:56:07 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@2fb45606
+2016-03-06 14:57:40 INFO  RoleFilter:15 - Started Role Filter
+2016-03-06 14:57:40 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-06 14:57:48 INFO  DSHolder:27 - Making Data Source
+2016-03-06 14:57:48 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@3b6fa56a
+2016-03-06 14:57:49 INFO  SignInServlet:24 - User exists: smallgaben password: pfdnhfr040
+2016-03-06 14:57:49 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 14:57:49 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@35daefd9
+2016-03-06 15:03:55 INFO  RoleFilter:15 - Started Role Filter
+2016-03-06 15:03:55 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-06 15:04:14 INFO  DSHolder:27 - Making Data Source
+2016-03-06 15:04:14 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@172a8a59
+2016-03-06 15:04:14 INFO  SignInServlet:24 - User exists: smallgaben password: pfdnhfr040
+2016-03-06 15:04:14 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 15:04:14 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@688b6ecf
+2016-03-06 15:05:10 INFO  RoleFilter:15 - Started Role Filter
+2016-03-06 15:05:10 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-06 15:05:20 INFO  DSHolder:27 - Making Data Source
+2016-03-06 15:05:20 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@c3a4cd5
+2016-03-06 15:05:21 INFO  SignInServlet:24 - User exists: smallgaben password: pfdnhfr040
+2016-03-06 15:05:21 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 15:05:21 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@1a449f2e
+2016-03-06 15:06:03 INFO  RoleFilter:15 - Started Role Filter
+2016-03-06 15:06:03 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-06 15:06:21 INFO  DSHolder:27 - Making Data Source
+2016-03-06 15:06:21 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@37fd7a5d
+2016-03-06 15:06:21 INFO  SignInServlet:24 - User exists: smallgaben password: pfdnhfr040
+2016-03-06 15:06:21 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 15:06:21 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@609bea07
+2016-03-06 15:07:28 INFO  RoleFilter:15 - Started Role Filter
+2016-03-06 15:07:28 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-06 15:07:44 INFO  DSHolder:27 - Making Data Source
+2016-03-06 15:07:44 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@19f95b63
+2016-03-06 15:07:44 INFO  SignInServlet:24 - User exists: smallgaben password: pfdnhfr040
+2016-03-06 15:07:44 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 15:07:44 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@2d03ae34
+2016-03-06 15:08:35 INFO  RoleFilter:15 - Started Role Filter
+2016-03-06 15:08:35 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-06 15:08:49 INFO  DSHolder:27 - Making Data Source
+2016-03-06 15:08:49 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@6a985195
+2016-03-06 15:08:49 INFO  SignInServlet:24 - User exists: smallgaben password: pfdnhfr040
+2016-03-06 15:08:49 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 15:08:49 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@7562d289
+2016-03-06 15:11:25 INFO  RoleFilter:15 - Started Role Filter
+2016-03-06 15:11:25 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-06 15:11:34 INFO  DSHolder:27 - Making Data Source
+2016-03-06 15:11:34 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@6ca1e0c
+2016-03-06 15:11:34 INFO  SignInServlet:24 - User exists: smallgaben password: pfdnhfr040
+2016-03-06 15:11:34 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 15:11:34 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@380547a9
+2016-03-06 15:54:32 INFO  SignInServlet:24 - User exists: smallgaben password: pfdnhfr040
+2016-03-06 15:54:32 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 15:54:32 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@7706f356
+2016-03-06 19:12:08 INFO  RoleFilter:15 - Started Role Filter
+2016-03-06 19:12:08 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-06 19:12:26 INFO  DSHolder:27 - Making Data Source
+2016-03-06 19:12:26 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@5700d48f
+2016-03-06 19:12:26 INFO  SignInServlet:24 - User exists: smallgaben password: pfdnhfr040
+2016-03-06 19:12:26 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 19:12:26 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@4aa9afab
+2016-03-06 19:17:32 INFO  RoleFilter:15 - Started Role Filter
+2016-03-06 19:17:32 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-06 19:17:42 INFO  DSHolder:27 - Making Data Source
+2016-03-06 19:17:42 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@4b971b0e
+2016-03-06 19:17:42 INFO  SignInServlet:24 - User exists: ADMIN password: ADMIN
+2016-03-06 19:17:42 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 19:17:42 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@675f91c5
+2016-03-06 19:17:42 INFO  CarListServlet:24 - Making list of Cars
+2016-03-06 19:18:44 INFO  CarListServlet:24 - Making list of Cars
+2016-03-06 19:19:08 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-06 19:19:16 INFO  SignInServlet:24 - User exists: smallgaben password: pfdnhfr040
+2016-03-06 19:19:16 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 19:19:16 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@393c33df
+2016-03-06 19:20:49 INFO  RoleFilter:15 - Started Role Filter
+2016-03-06 19:20:49 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-06 19:20:57 INFO  DSHolder:27 - Making Data Source
+2016-03-06 19:20:57 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@586f2b59
+2016-03-06 19:20:57 INFO  SignInServlet:24 - User exists: smallgaben password: pfdnhfr040
+2016-03-06 19:20:57 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 19:20:57 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@583f280f
+2016-03-06 19:22:23 INFO  RoleFilter:15 - Started Role Filter
+2016-03-06 19:22:23 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-06 19:22:35 INFO  DSHolder:27 - Making Data Source
+2016-03-06 19:22:35 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@2799b37
+2016-03-06 19:22:35 INFO  SignInServlet:24 - User exists: smallgaben password: pfdnhfr040
+2016-03-06 19:22:35 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 19:22:35 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@26ce9563
+2016-03-06 19:23:38 INFO  RoleFilter:15 - Started Role Filter
+2016-03-06 19:23:38 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-06 19:23:45 INFO  DSHolder:27 - Making Data Source
+2016-03-06 19:23:45 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@1ff99cd7
+2016-03-06 19:23:45 INFO  SignInServlet:24 - User exists: smallgaben password: pfdnhfr040
+2016-03-06 19:23:45 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 19:23:45 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@2755513b
+2016-03-06 19:41:36 INFO  RoleFilter:15 - Started Role Filter
+2016-03-06 19:41:36 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-06 19:41:45 INFO  DSHolder:27 - Making Data Source
+2016-03-06 19:41:45 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@36e19dbc
+2016-03-06 19:41:45 INFO  SignInServlet:24 - User exists: plotnikov password: plotnikov
+2016-03-06 19:41:45 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 19:41:45 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@2574618d
+2016-03-06 19:41:45 INFO  CarListServlet:24 - Making list of Cars
+2016-03-06 19:42:42 INFO  RoleFilter:15 - Started Role Filter
+2016-03-06 19:42:42 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-06 19:42:51 INFO  DSHolder:27 - Making Data Source
+2016-03-06 19:42:51 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@586f2b59
+2016-03-06 19:42:51 INFO  SignInServlet:24 - User exists: plotnikov password: plotnikov
+2016-03-06 19:42:51 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 19:42:51 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@583f280f
+2016-03-06 19:42:51 INFO  CarListServlet:24 - Making list of Cars
+2016-03-06 19:43:00 INFO  UserOrderListServlet:24 - Making orders list
+2016-03-06 19:44:11 INFO  UserOrderListServlet:24 - Making orders list
+2016-03-06 19:44:13 INFO  UserOrderListServlet:24 - Making orders list
+2016-03-06 19:44:27 INFO  UserOrderListServlet:24 - Making orders list
+2016-03-06 19:44:37 INFO  UserOrderListServlet:24 - Making orders list
+2016-03-06 19:59:44 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-06 19:59:53 INFO  SignInServlet:24 - User exists: smallgaben password: pfdnhfr040
+2016-03-06 19:59:53 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 19:59:53 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@164e4275
+2016-03-06 20:57:02 INFO  RoleFilter:15 - Started Role Filter
+2016-03-06 20:57:02 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-06 20:59:19 INFO  DSHolder:27 - Making Data Source
+2016-03-06 20:59:19 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@744b1a8c
+2016-03-06 20:59:19 INFO  SignInServlet:24 - User exists: smallgaben password: pfdnhfr040
+2016-03-06 20:59:19 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 20:59:19 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@79626376
+2016-03-06 20:59:35 INFO  ConfirmOrderServlet:22 - Confirming order
+2016-03-06 21:00:12 INFO  RoleFilter:15 - Started Role Filter
+2016-03-06 21:00:12 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-06 21:00:23 INFO  DSHolder:27 - Making Data Source
+2016-03-06 21:00:23 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@485da9bc
+2016-03-06 21:00:24 INFO  SignInServlet:24 - User exists: smallgaben password: pfdnhfr040
+2016-03-06 21:00:24 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 21:00:24 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@1865da96
+2016-03-06 21:00:28 INFO  ConfirmOrderServlet:22 - Confirming order
+2016-03-06 21:00:41 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-06 21:00:50 INFO  SignInServlet:24 - User exists: plotnikov password: plotnikov
+2016-03-06 21:00:50 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 21:00:50 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@10f6d6ce
+2016-03-06 21:00:50 INFO  CarListServlet:24 - Making list of Cars
+2016-03-06 21:00:52 INFO  UserOrderListServlet:24 - Making orders list
+2016-03-06 21:00:56 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-06 21:01:04 INFO  SignInServlet:24 - User exists: alexander password: alexander
+2016-03-06 21:01:04 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 21:01:04 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@4589894a
+2016-03-06 21:01:04 INFO  CarListServlet:24 - Making list of Cars
+2016-03-06 21:01:07 INFO  UserOrderListServlet:24 - Making orders list
+2016-03-06 21:01:10 INFO  UserOrderListServlet:24 - Making orders list
+2016-03-06 21:01:10 INFO  UserOrderListServlet:24 - Making orders list
+2016-03-06 21:01:10 INFO  UserOrderListServlet:24 - Making orders list
+2016-03-06 21:02:41 INFO  UserOrderListServlet:24 - Making orders list
+2016-03-06 21:02:43 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-06 21:02:49 INFO  SignInServlet:24 - User exists: smallgaben password: pfdnhfr040
+2016-03-06 21:02:49 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 21:02:49 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@2a63b2db
+2016-03-06 21:04:57 INFO  RoleFilter:15 - Started Role Filter
+2016-03-06 21:04:57 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-06 21:05:05 INFO  DSHolder:27 - Making Data Source
+2016-03-06 21:05:05 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@2c373ded
+2016-03-06 21:05:05 INFO  SignInServlet:24 - User exists: smallgaben password: pfdnhfr040
+2016-03-06 21:05:05 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 21:05:05 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@1741163a
+2016-03-06 21:05:21 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-06 21:08:27 INFO  RoleFilter:15 - Started Role Filter
+2016-03-06 21:08:27 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-06 21:08:38 INFO  DSHolder:27 - Making Data Source
+2016-03-06 21:08:38 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@5700d48f
+2016-03-06 21:08:38 INFO  SignInServlet:24 - User exists: smallgaben password: pfdnhfr040
+2016-03-06 21:08:38 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 21:08:38 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@4aa9afab
+2016-03-06 21:10:22 INFO  RoleFilter:15 - Started Role Filter
+2016-03-06 21:10:22 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-06 21:11:17 INFO  RoleFilter:15 - Started Role Filter
+2016-03-06 21:11:17 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-06 21:11:30 INFO  DSHolder:27 - Making Data Source
+2016-03-06 21:11:30 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@2799b37
+2016-03-06 21:11:30 INFO  SignInServlet:24 - User exists: smallgaben password: pfdnhfr040
+2016-03-06 21:11:30 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 21:11:30 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@26ce9563
+2016-03-06 21:11:35 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-06 21:11:42 INFO  SignInServlet:24 - User exists: plotnikov password: plotnikov
+2016-03-06 21:11:42 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 21:11:42 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@7fa0e845
+2016-03-06 21:11:42 INFO  CarListServlet:24 - Making list of Cars
+2016-03-06 21:11:45 INFO  UserOrderListServlet:24 - Making orders list
+2016-03-06 21:11:49 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-06 21:11:59 INFO  SignInServlet:24 - User exists: alexander password: alexander
+2016-03-06 21:11:59 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 21:11:59 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@3fbdc8f5
+2016-03-06 21:11:59 INFO  CarListServlet:24 - Making list of Cars
+2016-03-06 21:12:01 INFO  UserOrderListServlet:24 - Making orders list
+2016-03-06 21:12:02 INFO  UserOrderListServlet:24 - Making orders list
+2016-03-06 21:12:02 INFO  UserOrderListServlet:24 - Making orders list
+2016-03-06 21:12:02 INFO  UserOrderListServlet:24 - Making orders list
+2016-03-06 21:12:02 INFO  UserOrderListServlet:24 - Making orders list
+2016-03-06 21:12:03 INFO  UserOrderListServlet:24 - Making orders list
+2016-03-06 21:12:03 INFO  UserOrderListServlet:24 - Making orders list
+2016-03-06 21:12:03 INFO  UserOrderListServlet:24 - Making orders list
+2016-03-06 21:13:10 INFO  RoleFilter:15 - Started Role Filter
+2016-03-06 21:13:10 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-06 21:13:19 INFO  DSHolder:27 - Making Data Source
+2016-03-06 21:13:19 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@172a8a59
+2016-03-06 21:13:19 INFO  SignInServlet:24 - User exists: alexander password: alexander
+2016-03-06 21:13:19 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 21:13:19 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@688b6ecf
+2016-03-06 21:13:19 INFO  CarListServlet:24 - Making list of Cars
+2016-03-06 21:13:21 INFO  UserOrderListServlet:25 - Orders for user: alexander
+2016-03-06 21:15:36 INFO  RoleFilter:15 - Started Role Filter
+2016-03-06 21:15:36 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-06 21:15:45 INFO  DSHolder:27 - Making Data Source
+2016-03-06 21:15:45 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@5700d48f
+2016-03-06 21:15:45 INFO  SignInServlet:24 - User exists: plotnikov password: plotnikov
+2016-03-06 21:15:45 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 21:15:45 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@4aa9afab
+2016-03-06 21:15:45 INFO  CarListServlet:24 - Making list of Cars
+2016-03-06 21:15:47 INFO  UserOrderListServlet:25 - Orders for user: plotnikov
+2016-03-06 21:15:47 INFO  UserOrderListServlet:39 - List size - 1
+2016-03-06 21:16:00 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-06 21:16:09 INFO  SignInServlet:24 - User exists: alexander password: alexander
+2016-03-06 21:16:09 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 21:16:09 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@6fbd14f0
+2016-03-06 21:16:09 INFO  CarListServlet:24 - Making list of Cars
+2016-03-06 21:16:11 INFO  UserOrderListServlet:25 - Orders for user: alexander
+2016-03-06 21:16:11 INFO  UserOrderListServlet:39 - List size - 0
+2016-03-06 21:18:16 INFO  RoleFilter:15 - Started Role Filter
+2016-03-06 21:18:16 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-06 21:18:30 INFO  DSHolder:27 - Making Data Source
+2016-03-06 21:18:30 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@1ba02ef1
+2016-03-06 21:18:30 INFO  SignInServlet:24 - User exists: polkan password: polkan
+2016-03-06 21:18:30 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 21:18:30 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@24e1a3c4
+2016-03-06 21:18:30 INFO  CarListServlet:24 - Making list of Cars
+2016-03-06 21:18:32 INFO  UserOrderListServlet:25 - Orders for user: polkan
+2016-03-06 21:18:32 INFO  UserOrderListServlet:39 - List size - 1
+2016-03-06 21:18:59 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-06 21:45:48 INFO  SignInServlet:24 - User exists: polkan password: polkan
+2016-03-06 21:45:48 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 21:45:48 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@5df057b6
+2016-03-06 21:45:48 INFO  CarListServlet:24 - Making list of Cars
+2016-03-06 21:45:49 INFO  UserOrderListServlet:25 - Orders for user: polkan
+2016-03-06 21:45:49 INFO  UserOrderListServlet:39 - List size - 1
+2016-03-06 21:57:25 INFO  RoleFilter:15 - Started Role Filter
+2016-03-06 21:57:25 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-06 21:58:09 INFO  DSHolder:27 - Making Data Source
+2016-03-06 21:58:09 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@29be947d
+2016-03-06 21:58:09 INFO  SignInServlet:24 - User exists: ADMIN password: ADMIN
+2016-03-06 21:58:09 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 21:58:09 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@19e0370b
+2016-03-06 21:58:09 INFO  CarListServlet:24 - Making list of Cars
+2016-03-06 21:59:09 INFO  UserListServlet:21 - Started making users list
+2016-03-06 21:59:18 INFO  SetBlockedServlet:41 - Making user BLOCKED
+2016-03-06 21:59:18 INFO  UserListServlet:21 - Started making users list
+2016-03-06 21:59:19 INFO  SetBlockedServlet:36 - Making user UNBLOCKED
+2016-03-06 21:59:20 INFO  UserListServlet:21 - Started making users list
+2016-03-06 21:59:22 INFO  SetBlockedServlet:41 - Making user BLOCKED
+2016-03-06 21:59:22 INFO  UserListServlet:21 - Started making users list
+2016-03-06 21:59:25 INFO  SetBlockedServlet:36 - Making user UNBLOCKED
+2016-03-06 21:59:25 INFO  UserListServlet:21 - Started making users list
+2016-03-06 21:59:28 INFO  SetBlockedServlet:41 - Making user BLOCKED
+2016-03-06 21:59:28 INFO  UserListServlet:21 - Started making users list
+2016-03-06 21:59:33 INFO  SetBlockedServlet:36 - Making user UNBLOCKED
+2016-03-06 21:59:33 INFO  UserListServlet:21 - Started making users list
+2016-03-06 22:00:13 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-06 22:00:29 INFO  SignInServlet:24 - User exists: plotnikov password: plotnikov
+2016-03-06 22:00:29 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 22:00:29 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@2bd82ef6
+2016-03-06 22:00:29 INFO  CarListServlet:24 - Making list of Cars
+2016-03-06 22:00:37 INFO  UserSortServlet:23 - Starting to Sort Cars
+2016-03-06 22:00:39 INFO  UserSortServlet:23 - Starting to Sort Cars
+2016-03-06 22:00:40 INFO  UserSortServlet:23 - Starting to Sort Cars
+2016-03-06 22:00:42 INFO  UserSortServlet:23 - Starting to Sort Cars
+2016-03-06 22:01:20 INFO  CarListServlet:24 - Making list of Cars
+2016-03-06 22:01:27 INFO  UserOrderListServlet:38 - List of orders for plotnikov, size - 1
+2016-03-06 22:01:28 INFO  CarListServlet:24 - Making list of Cars
+2016-03-06 22:01:41 INFO  CarListServlet:24 - Making list of Cars
+2016-03-06 22:01:43 INFO  UserOrderListServlet:38 - List of orders for plotnikov, size - 1
+2016-03-06 22:01:45 INFO  CarListServlet:24 - Making list of Cars
+2016-03-06 22:01:49 INFO  UserOrderListServlet:38 - List of orders for plotnikov, size - 1
+2016-03-06 22:02:21 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-06 22:02:30 INFO  SignInServlet:24 - User exists: smallgaben password: pfdnhfr040
+2016-03-06 22:02:30 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 22:02:30 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@16aad3c8
+2016-03-06 22:03:14 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-06 22:03:21 INFO  SignInServlet:24 - User exists: polkan password: polkan
+2016-03-06 22:03:21 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 22:03:21 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@36b6ac9d
+2016-03-06 22:03:21 INFO  CarListServlet:24 - Making list of Cars
+2016-03-06 22:03:26 INFO  UserOrderListServlet:38 - List of orders for polkan, size - 1
+2016-03-06 22:03:39 INFO  CarListServlet:24 - Making list of Cars
+2016-03-06 22:04:37 INFO  UserSortServlet:23 - Starting to Sort Cars
+2016-03-06 22:04:38 INFO  UserSortServlet:23 - Starting to Sort Cars
+2016-03-06 22:04:39 INFO  UserSortServlet:23 - Starting to Sort Cars
+2016-03-06 22:04:40 INFO  UserSortServlet:23 - Starting to Sort Cars
+2016-03-06 22:04:41 INFO  UserSortServlet:23 - Starting to Sort Cars
+2016-03-06 22:04:43 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-06 22:10:53 INFO  SignInServlet:24 - User exists: polkan password: polkan
+2016-03-06 22:10:53 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-06 22:10:53 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@26e26c3c
+2016-03-06 22:10:53 INFO  CarListServlet:24 - Making list of Cars
+2016-03-06 23:04:48 WARN  AuthFilter:30 - Unauthorized access request
+2016-03-07 00:04:07 INFO  UserOrderListServlet:38 - List of orders for null, size - 0
+2016-03-07 00:04:20 INFO  RoleFilter:15 - Started Role Filter
+2016-03-07 00:04:20 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-07 00:06:19 INFO  DSHolder:27 - Making Data Source
+2016-03-07 00:06:19 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@51baada7
+2016-03-07 00:06:19 INFO  SignInServlet:24 - User exists: polkan password: polkan
+2016-03-07 00:06:19 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-07 00:06:19 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@71c3864f
+2016-03-07 00:06:19 INFO  CarListServlet:24 - Making list of Cars
+2016-03-07 00:06:28 INFO  UserOrderListServlet:38 - List of orders for polkan, size - 1
+2016-03-07 00:06:30 INFO  PayForCarServlet:28 - User payed for rent
+2016-03-07 00:06:30 INFO  UserOrderListServlet:38 - List of orders for polkan, size - 1
+2016-03-07 00:07:45 INFO  RoleFilter:15 - Started Role Filter
+2016-03-07 00:07:45 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-07 00:08:14 INFO  DSHolder:27 - Making Data Source
+2016-03-07 00:08:14 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@37131446
+2016-03-07 00:08:15 INFO  SignInServlet:24 - User exists: polkan password: polkan
+2016-03-07 00:08:15 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-07 00:08:15 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@6269ed43
+2016-03-07 00:08:15 INFO  CarListServlet:24 - Making list of Cars
+2016-03-07 00:08:17 INFO  UserOrderListServlet:38 - List of orders for polkan, size - 1
+2016-03-07 00:08:18 INFO  PayForCarServlet:28 - User payed for rent
+2016-03-07 00:08:18 INFO  UserOrderListServlet:38 - List of orders for polkan, size - 1
+2016-03-07 00:13:04 INFO  RoleFilter:15 - Started Role Filter
+2016-03-07 00:13:04 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-07 00:13:12 INFO  DSHolder:27 - Making Data Source
+2016-03-07 00:13:12 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@5a515771
+2016-03-07 00:13:12 INFO  SignInServlet:24 - User exists: polkan password: polkan
+2016-03-07 00:13:12 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-07 00:13:12 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@688fa9a2
+2016-03-07 00:13:12 INFO  CarListServlet:24 - Making list of Cars
+2016-03-07 00:13:14 INFO  UserOrderListServlet:38 - List of orders for polkan, size - 1
+2016-03-07 00:13:16 INFO  PayForCarServlet:28 - User payed for rent
+2016-03-07 00:13:16 INFO  UserOrderListServlet:38 - List of orders for polkan, size - 1
+2016-03-07 00:14:11 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-07 00:14:20 INFO  SignInServlet:24 - User exists: smallgaben password: pfdnhfr040
+2016-03-07 00:14:20 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-07 00:14:20 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@79a3847f
+2016-03-07 00:16:44 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-07 00:16:53 INFO  SignInServlet:24 - User exists: plotnikov password: plotnikov
+2016-03-07 00:16:53 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-07 00:16:53 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@257ad988
+2016-03-07 00:16:53 INFO  CarListServlet:24 - Making list of Cars
+2016-03-07 00:18:45 INFO  RoleFilter:15 - Started Role Filter
+2016-03-07 00:18:45 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-07 00:18:54 INFO  DSHolder:27 - Making Data Source
+2016-03-07 00:18:54 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@2b5f5583
+2016-03-07 00:18:54 INFO  SignInServlet:24 - User exists: plotnikov password: plotnikov
+2016-03-07 00:18:54 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-07 00:18:54 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@3e595632
+2016-03-07 00:18:54 INFO  CarListServlet:24 - Making list of Cars
+2016-03-07 00:19:05 INFO  UserSortServlet:23 - Starting to Sort Cars
+2016-03-07 00:19:55 INFO  CarListServlet:24 - Making list of Cars
+2016-03-07 00:32:06 INFO  RoleFilter:15 - Started Role Filter
+2016-03-07 00:32:06 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-07 00:32:22 INFO  DSHolder:27 - Making Data Source
+2016-03-07 00:32:22 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@5d8e1909
+2016-03-07 00:32:22 INFO  SignInServlet:24 - User exists: plotnikov password: plotnikov
+2016-03-07 00:32:22 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-07 00:32:22 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@dce4102
+2016-03-07 00:32:22 INFO  CarListServlet:24 - Making list of Cars
+2016-03-07 00:32:28 INFO  UserOrderListServlet:38 - List of orders for plotnikov, size - 0
+2016-03-07 00:32:30 INFO  CarListServlet:24 - Making list of Cars
+2016-03-07 00:32:32 INFO  UserSortServlet:23 - Starting to Sort Cars
+2016-03-07 00:32:33 INFO  UserSortServlet:23 - Starting to Sort Cars
+2016-03-07 00:32:35 INFO  UserSortServlet:23 - Starting to Sort Cars
+2016-03-07 00:32:36 INFO  UserSortServlet:23 - Starting to Sort Cars
+2016-03-07 00:32:38 INFO  UserSortServlet:23 - Starting to Sort Cars
+2016-03-07 00:32:39 INFO  UserSortServlet:23 - Starting to Sort Cars
+2016-03-07 00:32:41 INFO  UserSortServlet:23 - Starting to Sort Cars
+2016-03-07 00:32:42 INFO  UserSortServlet:23 - Starting to Sort Cars
+2016-03-07 00:32:43 INFO  UserSortServlet:23 - Starting to Sort Cars
+2016-03-07 00:32:58 INFO  RentCarServlet:35 - Making order page
+2016-03-07 00:33:14 INFO  RentCarServlet:30 - Making a new order
+2016-03-07 00:33:14 INFO  UserOrderListServlet:38 - List of orders for plotnikov, size - 1
+2016-03-07 00:33:46 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-07 00:33:53 INFO  SignInServlet:24 - User exists: smallgaben password: pfdnhfr040
+2016-03-07 00:33:53 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-07 00:33:53 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@172a8a59
+2016-03-07 00:34:06 INFO  ConfirmOrderServlet:22 - Confirming order
+2016-03-07 00:34:13 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-07 00:34:15 INFO  SignInServlet:24 - User exists: plotnikov password: plotnikov
+2016-03-07 00:34:15 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-07 00:34:15 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@c226410
+2016-03-07 00:34:15 INFO  CarListServlet:24 - Making list of Cars
+2016-03-07 00:34:16 INFO  UserOrderListServlet:38 - List of orders for plotnikov, size - 1
+2016-03-07 00:34:18 INFO  PayForCarServlet:32 - User payed for rent
+2016-03-07 00:34:18 INFO  UserOrderListServlet:38 - List of orders for plotnikov, size - 1
+2016-03-07 00:34:32 INFO  CarListServlet:24 - Making list of Cars
+2016-03-07 00:35:57 INFO  CarListServlet:24 - Making list of Cars
+2016-03-07 00:36:15 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-07 00:36:30 INFO  SignInServlet:24 - User exists: polkan password: polkan
+2016-03-07 00:36:30 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-07 00:36:30 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@53524e73
+2016-03-07 00:36:30 INFO  CarListServlet:24 - Making list of Cars
+2016-03-07 00:36:34 INFO  UserSortServlet:23 - Starting to Sort Cars
+2016-03-07 00:36:42 INFO  UserSortServlet:23 - Starting to Sort Cars
+2016-03-07 00:36:45 INFO  UserSortServlet:23 - Starting to Sort Cars
+2016-03-07 00:36:47 INFO  RentCarServlet:35 - Making order page
+2016-03-07 00:37:12 INFO  RentCarServlet:30 - Making a new order
+2016-03-07 00:37:12 INFO  UserOrderListServlet:38 - List of orders for polkan, size - 1
+2016-03-07 00:37:15 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-07 00:37:22 INFO  SignInServlet:24 - User exists: smallgaben password: pfdnhfr040
+2016-03-07 00:37:22 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-07 00:37:22 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@1c81b9c8
+2016-03-07 00:37:26 INFO  CancelOrderServlet:22 - Cancelling order
+2016-03-07 00:37:32 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-07 00:37:39 INFO  SignInServlet:24 - User exists: polkan password: polkan
+2016-03-07 00:37:39 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-07 00:37:39 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@2bb9eb28
+2016-03-07 00:37:39 INFO  CarListServlet:24 - Making list of Cars
+2016-03-07 00:37:40 INFO  UserOrderListServlet:38 - List of orders for polkan, size - 1
+2016-03-07 00:37:45 INFO  CarListServlet:24 - Making list of Cars
+2016-03-07 00:37:54 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-07 00:38:30 INFO  SignInServlet:24 - User exists: plotnikov password: plotnikov
+2016-03-07 00:38:30 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-07 00:38:30 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@a6ee065
+2016-03-07 00:38:30 INFO  CarListServlet:24 - Making list of Cars
+2016-03-07 00:38:31 INFO  UserOrderListServlet:38 - List of orders for plotnikov, size - 1
+2016-03-07 00:38:55 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-07 00:50:02 INFO  RoleFilter:15 - Started Role Filter
+2016-03-07 00:50:02 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-07 00:50:07 INFO  DSHolder:27 - Making Data Source
+2016-03-07 00:50:07 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@12beb27d
+2016-03-07 00:50:07 INFO  SignInServlet:24 - User exists: plotnikov password: plotnikov
+2016-03-07 00:50:07 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-07 00:50:07 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@76b7c216
+2016-03-07 00:50:07 INFO  CarListServlet:24 - Making list of Cars
+2016-03-07 00:50:09 INFO  UserOrderListServlet:38 - List of orders for plotnikov, size - 1
+2016-03-07 00:50:15 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-07 00:51:19 INFO  RoleFilter:15 - Started Role Filter
+2016-03-07 00:51:19 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-07 00:51:24 INFO  DSHolder:27 - Making Data Source
+2016-03-07 00:51:24 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@2c9a5df8
+2016-03-07 00:51:24 INFO  SignInServlet:24 - User exists: plotnikov password: plotnikov
+2016-03-07 00:51:24 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-07 00:51:24 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@36a00aeb
+2016-03-07 00:51:24 INFO  CarListServlet:24 - Making list of Cars
+2016-03-07 00:51:26 INFO  UserOrderListServlet:38 - List of orders for plotnikov, size - 1
+2016-03-07 00:51:27 INFO  RentCarServlet:35 - Making order page
+2016-03-07 00:52:52 INFO  RoleFilter:15 - Started Role Filter
+2016-03-07 00:52:52 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-07 00:53:01 INFO  DSHolder:27 - Making Data Source
+2016-03-07 00:53:01 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@76e64468
+2016-03-07 00:53:01 INFO  SignInServlet:24 - User exists: plotnikov password: plotnikov
+2016-03-07 00:53:01 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-07 00:53:01 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@33fc71ff
+2016-03-07 00:53:01 INFO  CarListServlet:24 - Making list of Cars
+2016-03-07 00:53:03 INFO  UserOrderListServlet:38 - List of orders for plotnikov, size - 1
+2016-03-07 00:53:04 INFO  ReturnCarServlet:25 - Returning Car
+2016-03-07 00:53:04 INFO  UserOrderListServlet:38 - List of orders for plotnikov, size - 1
+2016-03-07 00:54:14 INFO  UserOrderListServlet:38 - List of orders for plotnikov, size - 1
+2016-03-07 00:54:29 INFO  CarListServlet:24 - Making list of Cars
+2016-03-07 00:55:05 INFO  CarListServlet:24 - Making list of Cars
+2016-03-07 00:55:29 INFO  CarListServlet:24 - Making list of Cars
+2016-03-07 00:56:05 INFO  UserOrderListServlet:38 - List of orders for plotnikov, size - 1
+2016-03-07 00:56:08 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-07 00:56:16 INFO  SignInServlet:24 - User exists: smallgaben password: pfdnhfr040
+2016-03-07 00:56:16 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-07 00:56:16 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@333e1935
+2016-03-07 00:59:42 INFO  RoleFilter:15 - Started Role Filter
+2016-03-07 00:59:42 INFO  AuthFilter:16 - authentication Filter initialized
+2016-03-07 00:59:48 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-07 01:00:07 INFO  DSHolder:27 - Making Data Source
+2016-03-07 01:00:07 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@c64b3c5
+2016-03-07 01:00:08 INFO  SignInServlet:24 - User exists: ADMIN password: ADMIN
+2016-03-07 01:00:08 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-07 01:00:08 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@786e41c3
+2016-03-07 01:00:08 INFO  CarListServlet:24 - Making list of Cars
+2016-03-07 01:00:10 INFO  UserListServlet:21 - Started making users list
+2016-03-07 01:00:11 INFO  CarListServlet:24 - Making list of Cars
+2016-03-07 01:00:29 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-07 01:00:31 INFO  SignInServlet:24 - User exists: plotnikov password: plotnikov
+2016-03-07 01:00:31 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-07 01:00:31 INFO  SignInServlet:31 - Set a new session: org.apache.catalina.session.StandardSessionFacade@4f29b89c
+2016-03-07 01:00:31 INFO  CarListServlet:24 - Making list of Cars
+2016-03-07 01:00:32 INFO  UserOrderListServlet:38 - List of orders for plotnikov, size - 1
+2016-03-07 01:00:33 INFO  CarListServlet:24 - Making list of Cars
+2016-03-07 01:00:35 INFO  UserSortServlet:23 - Starting to Sort Cars
+2016-03-07 01:00:36 INFO  UserSortServlet:23 - Starting to Sort Cars
+2016-03-07 01:00:40 INFO  UserSortServlet:23 - Starting to Sort Cars
+2016-03-07 01:00:42 INFO  UserSortServlet:23 - Starting to Sort Cars
+2016-03-07 01:00:43 INFO  UserSortServlet:23 - Starting to Sort Cars
+2016-03-07 01:00:44 INFO  UserSortServlet:23 - Starting to Sort Cars
+2016-03-07 01:00:52 INFO  LogOutServlet:16 - Started LogOut Servlet

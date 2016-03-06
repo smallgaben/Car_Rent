@@ -27,13 +27,12 @@ public class RentCarServlet extends HttpServlet {
         req.setAttribute("id",id);
 
         if(req.getParameter("passport")!=null){
-            CheckDAO checkDAO=new CheckDAOImp();
-            Order order=makeAnOrder(req);
-            Check check=checkDAO.readByOrderId(order.getId());
-
+            logger.info("Making a new order");
+            makeAnOrder(req);
             resp.sendRedirect("/userOrders");
         }
         else{
+            logger.info("Making order page");
             req.setAttribute("mark", car.getMark());
             req.setAttribute("name", car.getName());
             req.setAttribute("cost", car.getCost());
@@ -54,7 +53,6 @@ public class RentCarServlet extends HttpServlet {
         if(reqDriver!=null){
             driver=reqDriver.equals("on");
         }
-
 
         Order order=new Order();
         order.setCar(carDAO.readById(Integer.valueOf(req.getParameter("id"))));

@@ -122,6 +122,46 @@
         <servlet-name>UserOrders</servlet-name>
         <url-pattern>/userOrders</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>OrderList</servlet-name>
+        <servlet-class>controller.entitylists.OrderListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OrderList</servlet-name>
+        <url-pattern>/orderList</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>CancelOrder</servlet-name>
+        <servlet-class>controller.manageractivities.CancelOrderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CancelOrder</servlet-name>
+        <url-pattern>/cancelOrder</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ConfirmOrder</servlet-name>
+        <servlet-class>controller.manageractivities.ConfirmOrderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ConfirmOrder</servlet-name>
+        <url-pattern>/confirmOrder</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>PayForCar</servlet-name>
+        <servlet-class>controller.useractivities.PayForCarServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PayForCar</servlet-name>
+        <url-pattern>/payForCar</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ReturnCar</servlet-name>
+        <servlet-class>controller.useractivities.ReturnCarServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReturnCar</servlet-name>
+        <url-pattern>/returnCar</url-pattern>
+    </servlet-mapping>
 
     <!-- FILTERS-->
     <filter>

@@ -50,8 +50,6 @@
     <!-- /. PAGE WRAPPER  -->
 </div>
 <!-- /. WRAPPER  -->
-<div id="footer-sec">
-    2016 PrutOS | Design By : Miroslav
-</div>
+<%@include file="/view/jspf/footer.jspf"%>
 </body>
 </html>

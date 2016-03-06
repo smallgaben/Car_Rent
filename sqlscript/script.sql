@@ -24,6 +24,8 @@ INSERT INTO Statuses VALUES (4,'not paid');
 INSERT INTO Statuses VALUES (5,'paid');
 INSERT INTO Statuses VALUES (6,'canceled');
 INSERT INTO Statuses VALUES (7,'accepted');
+INSERT INTO Statuses VALUES (8,'success');
+INSERT INTO Statuses VALUES (9,'returned');
 
 CREATE TABLE Roles(
   id INTEGER NOT NULL PRIMARY KEY,

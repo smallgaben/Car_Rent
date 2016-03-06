@@ -1,0 +1,45 @@
+﻿<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<div class="center-block h3">
+    Order List
+</div>
+<div class="container col-lg-12">
+    <c:forEach var="check" items="${checks}">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                Order: ${check.order.id}
+            </div>
+            <div class="panel-body">
+                <div class="col-lg-3">
+                    <p class="h3"> User</p><br/>
+                    <p>username: ${check.order.user.username}</p><br/>
+                    <p>password: ${check.order.user.password}</p><br/>
+                    <p>first name: ${check.order.user.firstName}</p><br/>
+                    <p>last name: ${check.order.user.lastName}</p><br/>
+                </div>
+                <div class="col-lg-3">
+                    <p class="h3">Car</p>
+                    <p>mark: ${check.order.car.mark}</p><br/>
+                    <p>name: ${check.order.car.name}</p><br/>
+                    <p>class: ${check.order.car.carClass.name}</p><br>
+                    <p>cost: ${check.order.car.cost}</p><br/>
+                </div>
+                <div class="col-lg-3">
+                    <p class="h3">Order</p><br/>
+                    <p>Start Date: ${check.order.startDate}</p><br/>
+                    <p>Finish Date: ${check.order.finishDate}</p><br/>
+                    <p>Current Date: ${check.date}</p><br/>
+				<p>Order: ${check.order.status.name}</p><br/>
+                </div>
+                    <div class="col-lg-3">
+                        <p class="h3"> Check </p><br/>
+                        <p>Description: </p><br/>
+                        <p>${check.description}</p><br/>
+				<p>Status: ${check.status.name}</p><br/>
+                        <div class="col-lg-12 bg-info h3">
+                            Total cost: ${check.price}<br/>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </c:forEach>
+</div>

@@ -21,7 +21,6 @@ public class UserOrderListServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        logger.info("Making orders list");
         String username= (String) req.getSession().getAttribute("username");
         OrderDAO orderDAO=new OrderDAOImp();
         CheckDAO checkDAO=new CheckDAOImp();
@@ -36,6 +35,7 @@ public class UserOrderListServlet extends HttpServlet {
         }
 
         req.setAttribute("checks",checks);
+        logger.info("List of orders for "+username+", size - "+checks.size());
         req.getRequestDispatcher("/view/UserDir/UserPage.jsp").forward(req,resp);
     }
 }
