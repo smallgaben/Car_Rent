@@ -10,6 +10,9 @@ public class Check implements Serializable {
     public static final String ACCEPTED_CHECK_DESCR="Check was accepted by Manager, waiting por payment";
     public static final String PAID_CHECK_DESCR="Payment was success, enjoy your ride :)";
     public static final String SUCCESS_APPROV_CHECK_DESCR="Car is waiting for manager approving";
+    public static final String SUCCESS_FINISH_CHECK_DESCR="Car returned without any problems, thank you for using our service";
+    public static final String REPAIR_CHECK_DESCR="Car was returned with damage, the new check was sent to you, pay for repair as son as you can";
+    public static final String REPAIR_SUCCESS_CHECK_DESCR="Car was successfully repaired, try not to damage cars at future :)";
 
     private int id;
     private Date date;

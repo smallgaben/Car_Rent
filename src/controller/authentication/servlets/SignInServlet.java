@@ -45,7 +45,7 @@ public class SignInServlet extends HttpServlet{
                     resp.sendRedirect("/carList");
                     break;
                 case "MANAGER":
-                    resp.sendRedirect("/orderList?newOrders=true");
+                    resp.sendRedirect("/orderList");
                     break;
             }
         }

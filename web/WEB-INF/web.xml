@@ -162,6 +162,30 @@
         <servlet-name>ReturnCar</servlet-name>
         <url-pattern>/returnCar</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>FinishOrder</servlet-name>
+        <servlet-class>controller.manageractivities.FinishOrderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FinishOrder</servlet-name>
+        <url-pattern>/finishOrder</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>MakeRepairPage</servlet-name>
+        <servlet-class>controller.manageractivities.MakeRepairPageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MakeRepairPage</servlet-name>
+        <url-pattern>/makeRepairPage</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>CreateRepairOrder</servlet-name>
+        <servlet-class>controller.manageractivities.CreateRepairOrderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateRepairOrder</servlet-name>
+        <url-pattern>/createRepairOrder</url-pattern>
+    </servlet-mapping>
 
     <!-- FILTERS-->
     <filter>

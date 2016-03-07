@@ -86,7 +86,7 @@
                         <a href="${pageContext.request.contextPath}/finishOrder?id=${check.order.id}">
                             <button class="btn btn-primary">Accept</button>
                         </a>
-                        <a href="${pageContext.request.contextPath}/repairOrder?id=${check.order.id}">
+                        <a href="${pageContext.request.contextPath}/makeRepairPage?id=${check.order.id}">
                             <button class="btn btn-warning">Repair</button>
                         </a>
                     </div>

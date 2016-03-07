@@ -28,11 +28,12 @@ public class PayForCarServlet extends HttpServlet {
         StatusDAO statusDAO=new StatusDAOImp();
         CarDAO carDAO=new CarDAOImp();
 
+        int id=Integer.valueOf(req.getParameter("id"));
+        Check check=checkDAO.readByOrderId(id);
+        Car car=carDAO.readById(check.getOrder().getCar().getId());
+
         if(state==null){
             logger.info("User payed for rent");
-            int id=Integer.valueOf(req.getParameter("id"));
-            Check check=checkDAO.readByOrderId(id);
-            Car car=carDAO.readById(check.getOrder().getCar().getId());
             car.setStatus(statusDAO.read(Status.DISABLED_CAR_STATUS));
             check.getOrder().getCar().setStatus(statusDAO.read(Status.DISABLED_CAR_STATUS));
             check.setStatus(statusDAO.read(Status.PAID_CHECK_STATUS));
@@ -44,6 +45,12 @@ public class PayForCarServlet extends HttpServlet {
         }
         else{
             logger.info("User payed for repair");
+            car.setStatus(statusDAO.read(Status.DEFAULT_CAR_STATUS));
+            carDAO.update(car);
+
+            check.setStatus(statusDAO.read(Status.SUCCESS_CHECK_STATUS));
+            check.setDescription(Check.REPAIR_SUCCESS_CHECK_DESCR);
+            checkDAO.update(check);
         }
 
         resp.sendRedirect("/userOrders");

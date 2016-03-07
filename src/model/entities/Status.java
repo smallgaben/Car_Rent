@@ -11,6 +11,7 @@ public class Status implements Serializable {
     public static final int DISABLED_CAR_STATUS=1;
     public static final int RENT_ORDER_STATUS=2;
     public static final int RETURN_ORDER_STATUS=9;
+    public static final int REPAIR_ORDER_STATUS=3;
     public static final int CANCELED_CHECK_STATUS=6;
     public static final int ACCEPTED_CHECK_STATUS=7;
     public static final int SUCCESS_CHECK_STATUS=8;
