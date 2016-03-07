@@ -204,10 +204,12 @@ public class OrderDAOImp implements OrderDAO {
             connection=DSHolder.getInstance().getConnection();
             ps=connection.prepareStatement(sql);
             ps.setInt(1,id);
-            ps.executeQuery();
+
             for(Integer i: del){
                 checkDAOImp.delete(i);
             }
+
+            ps.executeUpdate();
         }catch (SQLException e){
             logger.error("Can't delete Order "+ e);
             DSHolder.rollback(connection);

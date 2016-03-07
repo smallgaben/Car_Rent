@@ -1,5 +1,7 @@
 package controller.adminactivities.car;
 
+import model.DAO.CarDAO;
+import model.DAOImp.CarDAOImp;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -18,6 +20,9 @@ public class DeleteCarServlet extends HttpServlet {
         int id=Integer.valueOf(req.getParameter("id"));
         logger.info("Need to delete car with id: "+ id);
 
-        //TODO VERY SAFE DELETE THAT CAR
+        CarDAO carDAO=new CarDAOImp();
+        carDAO.delete(id);
+
+        resp.sendRedirect("/carList");
     }
 }
