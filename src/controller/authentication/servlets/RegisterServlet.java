@@ -21,10 +21,12 @@ public class RegisterServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        UserDAO userDAO=new UserDAOImp();
         String username=req.getParameter("username");
         String password=req.getParameter("password");
         String firstName=req.getParameter("firstname");
         String lastName=req.getParameter("lastname");
+
 
         User user=new User();
         user.setUsername(username);
@@ -33,7 +35,11 @@ public class RegisterServlet extends HttpServlet {
         user.setLastName(lastName);
         user.setRole(new RoleDAOImp().read(Role.DEFAULT_ROLE));
 
-        UserDAO userDAO=new UserDAOImp();
+        if(userDAO.readByName(username)!=null){
+            req.setAttribute("exist",true);
+            req.getRequestDispatcher("/").forward(req,resp);
+        }
+
         user=userDAO.create(user);
 
         logger.info("Created customer id and username: "+user.getId() + user.getUsername());
