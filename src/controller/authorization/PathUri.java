@@ -18,10 +18,12 @@ public abstract class PathUri {
         UserUris.add("/logout");
         UserUris.add("/filterUtils");
         UserUris.add("/rentCar");
+        UserUris.add("/makeRentPage");
         UserUris.add("/userOrders");
         UserUris.add("/payForCar");
         UserUris.add("/returnCar");
-        UserUris.add("/view/errorPages/BadValOrder.jsp");
+        UserUris.add("/view/errorPages/BadVal.jsp");
+        UserUris.add("/view/res/");
 
         AdminUris.add("/carList");
         AdminUris.add("/logout");
@@ -30,8 +32,11 @@ public abstract class PathUri {
         AdminUris.add("/addCar");
         AdminUris.add("/userList");
         AdminUris.add("/setBlocked");
-        AdminUris.add("/utilManager");
+        AdminUris.add("/addManager");
+        AdminUris.add("/managerList");
         AdminUris.add("/view/AdminDir/RegManager.jsp");
+        AdminUris.add("/view/errorPages/BadVal.jsp");
+        AdminUris.add("/view/res/");
 
         ManagerUris.add("/logout");
         ManagerUris.add("/orderList");
@@ -40,5 +45,7 @@ public abstract class PathUri {
         ManagerUris.add("/finishOrder");
         ManagerUris.add("/makeRepairPage");
         ManagerUris.add("/createRepairOrder");
+        ManagerUris.add("/view/res/");
+
     }
 }

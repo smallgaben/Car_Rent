@@ -92,11 +92,19 @@
 
     <servlet>
         <servlet-name>RegisterManagerServlet</servlet-name>
-        <servlet-class>controller.adminactivities.manager.ManagerUtilServlet</servlet-class>
+        <servlet-class>controller.adminactivities.manager.AddManagerServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>RegisterManagerServlet</servlet-name>
-        <url-pattern>/utilManager</url-pattern>
+        <url-pattern>/addManager</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ManagerList</servlet-name>
+        <servlet-class>controller.adminactivities.manager.ManagerList</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ManagerList</servlet-name>
+        <url-pattern>/managerList</url-pattern>
     </servlet-mapping>
     <servlet>
         <servlet-name>UserSort</servlet-name>
@@ -105,6 +113,14 @@
     <servlet-mapping>
         <servlet-name>UserSort</servlet-name>
         <url-pattern>/filterUtils</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>RentPage</servlet-name>
+        <servlet-class>controller.useractivities.RentPageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RentPage</servlet-name>
+        <url-pattern>/makeRentPage</url-pattern>
     </servlet-mapping>
     <servlet>
         <servlet-name>RentCar</servlet-name>

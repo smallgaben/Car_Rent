@@ -5,7 +5,7 @@
 <div class="col-lg-12 row center-block">
   <div class="col-lg-offset-5 col-lg-2">
     <h3><fmt:message key="registration"/></h3>
-    <form method="post" action="${pageContext.request.contextPath}/utilManager" class="form-group" id="register_form">
+    <form method="post" action="${pageContext.request.contextPath}/addManager" class="form-group" id="register_form">
       <div>
         <input name="username" placeholder="<fmt:message key="enter.username"/>" type="text" required="" class="form-control">
       </div>

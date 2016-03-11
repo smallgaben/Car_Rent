@@ -2,26 +2,26 @@
     <div class="panel panel-primary">
         <div class="row panel-body">
             <div class="col-md-12">
-                <form class="form-group" action="${pageContext.request.contextPath}/editCar" method="get">
+                <form class="form-group" action="${pageContext.request.contextPath}/editCar" method="post">
                     <div class="col-md-2">
                             <input name="id" value="${car.id}" hidden/>
                         <div class="col-md-6">
                             <label for="mark"><fmt:message key="car.mark"/>: </label>
-                            <input id="mark" type="text" class="form-control" value="${car.mark}" name="mark">
+                            <input id="mark" required="" type="text" class="form-control" value="${car.mark}" name="mark">
                         </div>
                     </div>
                     <div class="col-md-2">
                         <label for="name"><fmt:message key="car.name"/>: </label>
-                        <input class="form-control" id="name" value="${car.name}" name="name"/>
+                        <input class="form-control" id="name" required="" value="${car.name}" name="name"/>
                     </div>
                     <div class="col-md-2">
                         <label for="cost"><fmt:message key="car.cost"/>: </label>
-                        <input id="cost" name="cost" value="${car.cost}" class="form-control list-inline"/>
+                        <input id="cost" name="cost" value="${car.cost}" required="" class="form-control list-inline"/>
                     </div>
                     <div class="col-md-2">
                         <div class="col-md-6">
                             <label for="class"><fmt:message key="car.carClass"/>: </label>
-                            <input id="class" name="class" value="${car.carClass.id}" class="form-control list-inline"/>
+                            <input id="class" name="class" value="${car.carClass.id}" required="" class="form-control list-inline"/>
                         </div>
                         <div class="col-md-6">
                             <p>${car.carClass.name}</p>
@@ -30,7 +30,7 @@
                     <div class="col-md-2">
                         <div class="col-md-6">
                             <label for="status"><fmt:message key="global.status"/>: </label>
-                            <input class="form-control list-inline" id="status" name="status" value="${car.status.id}"/>
+                            <input class="form-control list-inline" id="status" name="status" required="" value="${car.status.id}"/>
                         </div>
                         <div class="col-md-6">
                             <p>${car.status.name}</p>

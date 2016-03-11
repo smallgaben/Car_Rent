@@ -20,12 +20,12 @@
                 <div class="col-md-2">
                     <c:choose>
                         <c:when test="${car.status.name=='disable'}">
-                            <a href="${pageContext.request.contextPath}/rentCar?id=${car.id}">
+                            <a href="${pageContext.request.contextPath}/makeRentPage?id=${car.id}">
                                 <button name="rent" class="btn btn-danger" disabled><fmt:message key="user.busy"/></button>
                             </a>
                         </c:when>
                         <c:otherwise>
-                            <a href="${pageContext.request.contextPath}/rentCar?id=${car.id}">
+                            <a href="${pageContext.request.contextPath}/makeRentPage?id=${car.id}">
                                 <button name="rent" class="btn btn-warning"><fmt:message key="user.rent"/></button>
                             </a>
                         </c:otherwise>

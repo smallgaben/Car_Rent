@@ -1,4 +1,4 @@
-package controller.authentication.servlets;
+package controller.adminactivities.manager;
 
 import model.DAO.UserDAO;
 import model.DAOImp.RoleDAOImp;
@@ -12,14 +12,18 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.HashSet;
+import java.util.Iterator;
 
-public class RegisterServlet extends HttpServlet {
-    private static final long serialVersionUID = -4880969354114420921L;
-    private static final Logger logger=Logger.getLogger(RegisterServlet.class);
+public class AddManagerServlet extends HttpServlet {
+
+    private static final long serialVersionUID = 5783096968278728291L;
+    private static final Logger logger=Logger.getLogger(AddManagerServlet.class);
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        UserDAO userDAO=new UserDAOImp();
+        logger.info("Starting add a new manager");
+
         String username=req.getParameter("username");
         String password=req.getParameter("password");
         String firstName=req.getParameter("firstname");
@@ -27,31 +31,24 @@ public class RegisterServlet extends HttpServlet {
 
         if(username.matches("\\w+") && firstName.matches("^[a-zA-Zа-яА-Я]+$") && lastName.matches("^[a-zA-Zа-яА-Я]+$")){
             User user=new User();
+            user.setRole(new RoleDAOImp().read(Role.MANAGER_ROLE));
             user.setUsername(username);
             user.setPassword(password);
             user.setFirstName(firstName);
             user.setLastName(lastName);
-            user.setRole(new RoleDAOImp().read(Role.DEFAULT_ROLE));
 
-            if(userDAO.readByName(username)!=null){
-                req.setAttribute("exist",true);
-                req.getRequestDispatcher("/").forward(req,resp);
-            }
+            UserDAO userDAO=new UserDAOImp();
+            userDAO.create(user);
 
-            user=userDAO.create(user);
-
-            logger.info("Created customer id and username: "+user.getId() + user.getUsername());
-
-            req.getRequestDispatcher("/signin").forward(req,resp);
+            resp.sendRedirect("/managerList");
         }
         else{
-            badValRegistr(req, resp);
+            badValManager(req,resp);
         }
     }
 
-    private void badValRegistr(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException{
-        logger.error("Bad values");
-        req.setAttribute("checked", false);
-        req.getRequestDispatcher("/").forward(req,resp);
+    private void badValManager(HttpServletRequest req, HttpServletResponse resp) throws IOException{
+        logger.error("Bad values for adding manager");
+        resp.sendRedirect("/view/errorPages/BadVal.jsp");
     }
 }

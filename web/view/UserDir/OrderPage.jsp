@@ -8,7 +8,7 @@
             <fmt:message key="order.enterInfo"/>
         </div>
         <div class="panel-body">
-            <form action="${pageContext.request.contextPath}/rentCar" class="form-control">
+            <form action="${pageContext.request.contextPath}/rentCar" method="post" class="form-control">
                 <div class="row ">
                     <div class="col-lg-3 list-inline">
                         <div class="col-lg-4">
