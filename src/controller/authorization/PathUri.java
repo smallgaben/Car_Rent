@@ -13,6 +13,7 @@ public abstract class PathUri {
         AnonymousUris.add("/");
         AnonymousUris.add("/signIn");
         AnonymousUris.add("/register");
+        AnonymousUris.add("/return");
 
         UserUris.add("/carList");
         UserUris.add("/logout");

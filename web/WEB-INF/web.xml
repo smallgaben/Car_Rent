@@ -234,6 +234,10 @@
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 
+    <error-page>
+        <error-code>404</error-code>
+        <location>/view/errorPages/404.jsp</location>
+    </error-page>
 
     <jsp-config>
         <jsp-property-group>

@@ -6,8 +6,7 @@
 <div id="wrapper">
     <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
         <div class="header-right">
-            <a href="${pageContext.request.contextPath}/logout" class="btn btn-danger" title="Logout"><i
-                    class="btn-danger"><fmt:message key="button.logout"/></i></a>
+            <a href="${pageContext.request.contextPath}/logout" class="btn btn-danger" title="Logout"><i class="btn-danger"><fmt:message key="button.logout"/></i></a>
         </div>
     </nav>
     <!-- /. NAV TOP  -->

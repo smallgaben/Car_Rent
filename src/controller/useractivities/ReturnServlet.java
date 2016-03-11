@@ -13,16 +13,20 @@ public class ReturnServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String role= (String) req.getSession().getAttribute("role");
 
-        switch(role){
-            case "User":
-                resp.sendRedirect("/carList");
-                break;
-            case "ADMIN":
-                resp.sendRedirect("/carList");
-                break;
-            case "Manager":
-                resp.sendRedirect("/orderList");
-                break;
+        if(role!=null){
+            switch(role){
+                case "User":
+                    resp.sendRedirect("/carList");
+                    break;
+                case "ADMIN":
+                    resp.sendRedirect("/carList");
+                    break;
+                case "Manager":
+                    resp.sendRedirect("/orderList");
+                    break;
+            }
+        }else{
+            resp.sendRedirect("/");
         }
     }
 }
