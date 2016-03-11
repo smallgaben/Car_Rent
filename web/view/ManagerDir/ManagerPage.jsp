@@ -1,13 +1,11 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
+<%@include file="/view/jspf/taglibs.jspf"%>
 <html>
 <%@ include file="/view/jspf/head.jspf" %>
 <body>
 <div id="wrapper">
   <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
     <div class="header-right">
-      <a href="${pageContext.request.contextPath}/logout" class="btn btn-danger" title="Logout"><i class="btn-danger">Log Out</i></a>
+      <a href="${pageContext.request.contextPath}/logout" class="btn btn-danger" title="Logout"><i class="btn-danger"><fmt:message key="button.logout"/></i></a>
     </div>
   </nav>
   <!-- /. NAV TOP  -->
@@ -23,10 +21,10 @@
         </li>
 
         <li>
-          <a  href="${pageContext.request.contextPath}/orderList?newOrders=true"><i class="fa"></i>New Orders</a>
+          <a  href="${pageContext.request.contextPath}/orderList?newOrders=true"><i class="fa"></i><fmt:message key="manager.newOrders"/></a>
         </li>
         <li>
-          <a  href="${pageContext.request.contextPath}/orderList"><i class="fa"></i>Order List</a>
+          <a  href="${pageContext.request.contextPath}/orderList"><i class="fa"></i><fmt:message key="manager.orderList"/></a>
         </li>
       </ul>
     </div>

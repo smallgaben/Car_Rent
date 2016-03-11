@@ -8,6 +8,7 @@ import org.apache.log4j.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.http.*;
 import java.io.IOException;
+import java.util.Locale;
 
 public class SignInServlet extends HttpServlet{
 
@@ -27,7 +28,10 @@ public class SignInServlet extends HttpServlet{
         if(user!=null && req.getParameter("password").equals(user.getPassword()) && !user.getRole().getName().equals("BLOCKED")){
             logger.info("User successfully got to the system");
 
+            Locale locale=new Locale(req.getParameter("locale"));
             HttpSession session = req.getSession();
+            logger.info("Setted locale: "+locale.getLanguage());
+            session.setAttribute("locale",locale);
             logger.info("Set a new session: " + session);
             session.setAttribute("username", user.getUsername());
             session.setAttribute("role", user.getRole().getName());
@@ -47,7 +51,7 @@ public class SignInServlet extends HttpServlet{
             }
         }
         else {
-            req.setAttribute("checked",true);
+            req.setAttribute("checked",false);
             logger.warn("User blocked or password incorrect");
             req.getRequestDispatcher("/").forward(req,resp);
         }

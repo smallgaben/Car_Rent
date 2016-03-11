@@ -186,6 +186,14 @@
         <servlet-name>CreateRepairOrder</servlet-name>
         <url-pattern>/createRepairOrder</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>ReturnServlet</servlet-name>
+        <servlet-class>controller.useractivities.ReturnServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReturnServlet</servlet-name>
+        <url-pattern>/return</url-pattern>
+    </servlet-mapping>
 
     <!-- FILTERS-->
     <filter>

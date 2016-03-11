@@ -21,6 +21,7 @@ public abstract class PathUri {
         UserUris.add("/userOrders");
         UserUris.add("/payForCar");
         UserUris.add("/returnCar");
+        UserUris.add("/view/errorPages/BadValOrder.jsp");
 
         AdminUris.add("/carList");
         AdminUris.add("/logout");
@@ -30,6 +31,7 @@ public abstract class PathUri {
         AdminUris.add("/userList");
         AdminUris.add("/setBlocked");
         AdminUris.add("/utilManager");
+        AdminUris.add("/view/AdminDir/RegManager.jsp");
 
         ManagerUris.add("/logout");
         ManagerUris.add("/orderList");

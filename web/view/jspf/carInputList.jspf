@@ -4,25 +4,23 @@
             <div class="col-md-12">
                 <form class="form-group" action="${pageContext.request.contextPath}/editCar" method="get">
                     <div class="col-md-2">
+                            <input name="id" value="${car.id}" hidden/>
                         <div class="col-md-6">
-                            <input class="form-control" name="id" value="${car.id}" readonly/>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="mark">Mark: </label>
+                            <label for="mark"><fmt:message key="car.mark"/>: </label>
                             <input id="mark" type="text" class="form-control" value="${car.mark}" name="mark">
                         </div>
                     </div>
                     <div class="col-md-2">
-                        <label for="name">Name: </label>
+                        <label for="name"><fmt:message key="car.name"/>: </label>
                         <input class="form-control" id="name" value="${car.name}" name="name"/>
                     </div>
                     <div class="col-md-2">
-                        <label for="cost">Cost</label>
+                        <label for="cost"><fmt:message key="car.cost"/>: </label>
                         <input id="cost" name="cost" value="${car.cost}" class="form-control list-inline"/>
                     </div>
                     <div class="col-md-2">
                         <div class="col-md-6">
-                            <label for="class">Class: </label>
+                            <label for="class"><fmt:message key="car.carClass"/>: </label>
                             <input id="class" name="class" value="${car.carClass.id}" class="form-control list-inline"/>
                         </div>
                         <div class="col-md-6">
@@ -31,7 +29,7 @@
                     </div>
                     <div class="col-md-2">
                         <div class="col-md-6">
-                            <label for="status">Status</label>
+                            <label for="status"><fmt:message key="global.status"/>: </label>
                             <input class="form-control list-inline" id="status" name="status" value="${car.status.id}"/>
                         </div>
                         <div class="col-md-6">
@@ -39,12 +37,12 @@
                         </div>
                     </div>
                     <div class="col-md-2">
-                        <button type="submit" class="btn btn-success">Edit</button>
+                        <button type="submit" class="btn btn-success"><fmt:message key="admin.button.edit"/></button>
                     </div>
                 </form>
                 <div class="col-md-2">
                     <a href="${pageContext.request.contextPath}/deleteCar?id=${car.id}">
-                        <button name="rent" class="btn btn-danger">Delete</button>
+                        <button name="rent" class="btn btn-danger"><fmt:message key="admin.button.delete"/></button>
                     </a>
                 </div>
             </div>

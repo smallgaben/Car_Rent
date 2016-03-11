@@ -28,8 +28,7 @@ public class RentCarServlet extends HttpServlet {
 
         if(req.getParameter("passport")!=null){
             logger.info("Making a new order");
-            makeAnOrder(req);
-            resp.sendRedirect("/userOrders");
+            makeAnOrder(req, resp);
         }
         else{
             logger.info("Making order page");
@@ -42,27 +41,47 @@ public class RentCarServlet extends HttpServlet {
 
     }
 
-    public Order makeAnOrder(HttpServletRequest req){
+    public Order makeAnOrder(HttpServletRequest req, HttpServletResponse resp)throws IOException,ServletException{
         OrderDAO orderDAO=new OrderDAOImp();
         CarDAO carDAO=new CarDAOImp();
         UserDAO userDAO=new UserDAOImp();
         StatusDAO statusDAO=new StatusDAOImp();
 
+        int id=Integer.valueOf(req.getParameter("id"));
+        String username=(String) req.getSession().getAttribute("username");
+        Date startDate=Date.valueOf(req.getParameter("startDate"));
+        Date finishDate=Date.valueOf(req.getParameter("finishDate"));
+        Date currentDate=new Date(System.currentTimeMillis());
         String reqDriver= req.getParameter("driver");
+        String passport=req.getParameter("passport");
+
         boolean driver=false;
         if(reqDriver!=null){
             driver=reqDriver.equals("on");
         }
 
-        Order order=new Order();
-        order.setCar(carDAO.readById(Integer.valueOf(req.getParameter("id"))));
-        order.setUser(userDAO.readByName((String) req.getSession().getAttribute("username")));
-        order.setStartDate(Date.valueOf(req.getParameter("startDate")));
-        order.setFinishDate(Date.valueOf(req.getParameter("finishDate")));
-        order.setStatus(statusDAO.read(Status.RENT_ORDER_STATUS));
-        order.setPassport(req.getParameter("passport"));
-        order.setDriver(driver);
-        return orderDAO.create(order);
+        if(startDate.before(currentDate) || finishDate.before(startDate)){
+            badValRedirect(req, resp);
+        }
+        else{
+            Order order=new Order();
+            order.setCar(carDAO.readById(id));
+            order.setUser(userDAO.readByName(username));
+            order.setStartDate(startDate);
+            order.setFinishDate(finishDate);
+            order.setStatus(statusDAO.read(Status.RENT_ORDER_STATUS));
+            order.setPassport(passport);
+            order.setDriver(driver);
+            resp.sendRedirect("/userOrders");
+            return orderDAO.create(order);
+        }
+        return null;
+    }
+
+    public void badValRedirect(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException{
+        logger.error("Bad order values");
+        req.setAttribute("checked",false);
+        resp.sendRedirect("/view/errorPages/BadValOrder.jsp");
     }
 
 }

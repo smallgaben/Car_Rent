@@ -5,56 +5,56 @@
         <c:if test="${check.status.name=='not paid'}">
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    Order for Confirm
+                    <fmt:message key="heading.orderForConfrim"/>
                 </div>
                 <div class="panel-body">
                     <div class="col-lg-3">
-                        <p class="h3"> User</p><br/>
+                        <p class="h3"><fmt:message key="user"/></p><br/>
 
-                        <p>username: ${check.order.user.username}</p><br/>
+                        <p><fmt:message key="user.username"/>: ${check.order.user.username}</p><br/>
 
-                        <p>password: ${check.order.user.password}</p><br/>
+                        <p><fmt:message key="user.password"/>: ${check.order.user.password}</p><br/>
 
-                        <p>first name: ${check.order.user.firstName}</p><br/>
+                        <p><fmt:message key="user.firstname"/>: ${check.order.user.firstName}</p><br/>
 
-                        <p>last name: ${check.order.user.lastName}</p><br/>
+                        <p><fmt:message key="user.lastname"/>: ${check.order.user.lastName}</p><br/>
                     </div>
                     <div class="col-lg-3">
-                        <p class="h3">Car</p>
+                        <p class="h3"><fmt:message key="car"/></p>
 
-                        <p>mark: ${check.order.car.mark}</p><br/>
+                        <p><fmt:message key="car.mark"/>: ${check.order.car.mark}</p><br/>
 
-                        <p>name: ${check.order.car.name}</p><br/>
+                        <p><fmt:message key="car.name"/>: ${check.order.car.name}</p><br/>
 
-                        <p>class: ${check.order.car.carClass.name}</p><br>
+                        <p><fmt:message key="car.carClass"/>: ${check.order.car.carClass.name}</p><br>
 
-                        <p>cost: ${check.order.car.cost}</p><br/>
+                        <p><fmt:message key="car.cost"/>: ${check.order.car.cost}</p><br/>
                     </div>
                     <div class="col-lg-3">
-                        <p class="h3">Order</p><br/>
+                        <p class="h3"><fmt:message key="order"/></p><br/>
 
-                        <p>Start Date: ${check.order.startDate}</p><br/>
+                        <p><fmt:message key="order.startDate"/>: ${check.order.startDate}</p><br/>
 
-                        <p>Finish Date: ${check.order.finishDate}</p><br/>
+                        <p><fmt:message key="order.finishDate"/>: ${check.order.finishDate}</p><br/>
 
-                        <p>Current Date: ${check.date}</p>
+                        <p><fmt:message key="order.currentDate"/>: ${check.date}</p>
                     </div>
                     <form class="form-group" action="${pageContext.request.contextPath}/cancelOrder">
                         <div class="col-lg-3">
-                            <p class="h3"> Check: <input type="number" class="form-control" name="id"
-                                                         value="${check.order.id}" readonly/></p><br/>
-                            <label for="desc">Description: </label><br/>
+                            <p class="h3"><fmt:message key="check"/>: <input type="number" name="id"
+                                                         value="${check.order.id}" hidden/></p><br/>
+                            <label for="desc"><fmt:message key="check.description"/>: </label><br/>
                             <textarea class="form-control" name="description" rows="2"
                                       id="desc">${check.description}</textarea>
 
                             <div class="col-lg-12 bg-info h3">
-                                Total cost: ${check.price}<br/>
+                                <fmt:message key="check.totalCost"/>: ${check.price}<br/>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-danger">Cancel</button>
+                        <button type="submit" class="btn btn-danger"><fmt:message key="manager.button.cancel"/></button>
                     </form>
                     <a href="${pageContext.request.contextPath}/confirmOrder?id=${check.order.id}">
-                        <button class="btn btn-success">Confirm</button>
+                        <button class="btn btn-success"><fmt:message key="manager.button.confirm"/></button>
                     </a>
                 </div>
             </div>
@@ -62,32 +62,32 @@
         <c:if test="${check.order.status.name=='returned' && check.status.name=='success'}">
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    Returned Car
+                    <fmt:message key="heading.returnedCar"/>
                 </div>
                 <div class="panel-body">
                     <div class="col-lg-4">
-                        <p class="h3">Car</p><br/>
-                        <p>mark: ${check.order.car.mark}</p><br/>
+                        <p class="h3"><fmt:message key="car"/></p><br/>
+                        <p><fmt:message key="car.mark"/>: ${check.order.car.mark}</p><br/>
 
-                        <p>name: ${check.order.car.name}</p><br/>
+                        <p><fmt:message key="car.name"/>: ${check.order.car.name}</p><br/>
 
-                        <p>class: ${check.order.car.carClass.name}</p><br>
+                        <p><fmt:message key="car.carClass"/>: ${check.order.car.carClass.name}</p><br>
 
                     </div>
                     <div class="col-lg-4">
-                        <p class="h3"> User</p><br/>
+                        <p class="h3"> <fmt:message key="user"/></p><br/>
 
-                        <p>username: ${check.order.user.username}</p><br/>
+                        <p><fmt:message key="user.username"/>: ${check.order.user.username}</p><br/>
                     </div>
                     <div class="col-lg-4">
-                        <p class="h3">Order</p><br/>
+                        <p class="h3"><fmt:message key="order"/></p><br/>
 
-                        <p>Order Status: ${check.order.status.name}</p><br/>
+                        <p><fmt:message key="order.orderStatus"/>: ${check.order.status.name}</p><br/>
                         <a href="${pageContext.request.contextPath}/finishOrder?id=${check.order.id}">
-                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn btn-primary"><fmt:message key="manager.button.accept"/></button>
                         </a>
                         <a href="${pageContext.request.contextPath}/makeRepairPage?id=${check.order.id}">
-                            <button class="btn btn-warning">Repair</button>
+                            <button class="btn btn-warning"><fmt:message key="manager.button.repair"/></button>
                         </a>
                     </div>
                 </div>

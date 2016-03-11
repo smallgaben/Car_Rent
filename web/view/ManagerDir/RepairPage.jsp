@@ -29,7 +29,7 @@
     </div>
     <div class="row">
       <form class="form-group" action="${pageContext.request.contextPath}/createRepairOrder">
-        <label for="check">Check: <input type="number" name="id" value="${check.order.id}" id="check" readonly></label><br/>
+        <label for="check">Check: <input type="number" name="id" value="${check.order.id}" id="check" hidden></label><br/>
         <div class="col-lg-3">
           <label for="startDate">Start Date: </label>
         </div>

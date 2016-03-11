@@ -3,32 +3,32 @@
         <div class="row panel-body">
             <div class="col-md-12">
                 <div class="col-md-2">
-                    <p>Username: ${user.username}</p>
+                    <p><fmt:message key="user.username"/>: ${user.username}</p>
                 </div>
                 <div class="col-md-2">
-                    <p>Password: ${user.password}</p>
+                    <p><fmt:message key="user.password"/>: ${user.password}</p>
                 </div>
                 <div class="col-md-2">
-                    <p>First Name: ${user.firstName}</p>
+                    <p><fmt:message key="user.firstname"/>: ${user.firstName}</p>
                 </div>
                 <div class="col-md-2">
-                    <p>Last Name: ${user.lastName}</p>
+                    <p><fmt:message key="user.lastname"/>: ${user.lastName}</p>
                 </div>
                 <div class="col-md-2">
-                    <p>Role: ${user.role.name}</p>
+                    <p><fmt:message key="user.role"/>: ${user.role.name}</p>
                 </div>
                 <div class="col-md-2 ">
                     <c:choose>
                         <c:when test="${user.role.name=='BLOCKED'}">
                             <a href="${pageContext.request.contextPath}/setBlocked?id=${user.id}&blocked=true">
-                                <button type="button" class="btn btn-success">Unblock</button>
+                                <button type="button" class="btn btn-success"><fmt:message key="admin.button.unblock"/></button>
                             </a>
-                            <button type="button" class="btn btn-danger" disabled>Block</button>
+                            <button type="button" class="btn btn-danger" disabled><fmt:message key="admin.button.block"/></button>
                         </c:when>
                         <c:otherwise>
-                            <button type="button" class="btn btn-success" disabled>Unblock</button>
+                            <button type="button" class="btn btn-success" disabled><fmt:message key="admin.button.unblock"/></button>
                             <a href="${pageContext.request.contextPath}/setBlocked?id=${user.id}&blocked=false">
-                                <button type="submit" class="btn btn-danger">Block</button>
+                                <button type="submit" class="btn btn-danger"><fmt:message key="admin.button.block"/></button>
                             </a>
                         </c:otherwise>
                     </c:choose>

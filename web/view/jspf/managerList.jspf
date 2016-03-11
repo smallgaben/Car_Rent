@@ -3,16 +3,16 @@
         <div class="row panel-body">
             <div class="col-md-12">
                     <div class="col-md-3">
-                        <p>Username: ${manager.username}</p>
+                        <p><fmt:message key="user.username"/>: ${manager.username}</p>
                     </div>
                     <div class="col-md-3">
-                        <p>Password: ${manager.password}</p>
+                        <p><fmt:message key="user.password"/>: ${manager.password}</p>
                     </div>
                     <div class="col-md-3">
-                        <p>First Name: ${manager.firstName}</p>
+                        <p><fmt:message key="user.firstname"/>: ${manager.firstName}</p>
                     </div>
                     <div class="col-md-3">
-                            <p>Last Name: ${manager.lastName}</p>
+                        <p><fmt:message key="user.lastname"/>: ${manager.lastName}</p>
                     </div>
                </div>
         </div>

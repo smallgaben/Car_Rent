@@ -7788,3 +7788,1889 @@ DELETE FROM Cars WHERE id=? [23503-190]
 2016-03-10 01:46:04 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
 2016-03-10 01:46:12 INFO  RoleFilter:59 - Request URI: /
 2016-03-10 01:46:12 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:28:32 INFO  RoleFilter:16 - Started Role Filter
+2016-03-10 13:28:32 INFO  EncodingFilter:28 - Encoding filter started
+2016-03-10 13:28:32 INFO  EncodingFilter:30 - Get incoding UTF-8
+2016-03-10 13:28:33 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:28:33 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:28:34 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:28:34 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:28:34 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:28:34 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:28:34 INFO  RoleFilter:59 - Request URI: /view/res/jquery/jquery-1.12.1.min.js
+2016-03-10 13:28:34 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:28:35 INFO  RoleFilter:59 - Request URI: /favicon.ico
+2016-03-10 13:28:35 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:28:35 INFO  RoleFilter:59 - Request URI: /favicon.ico
+2016-03-10 13:28:35 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:28:37 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:28:37 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:28:44 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-10 13:28:44 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:28:44 INFO  DSHolder:27 - Making Data Source
+2016-03-10 13:28:44 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@112ff0c6
+2016-03-10 13:28:45 WARN  SignInServlet:51 - User blocked or password incorrect
+2016-03-10 13:28:49 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-10 13:28:49 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:29:06 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-10 13:29:06 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:29:15 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-10 13:29:15 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:29:25 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-10 13:29:25 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:30:32 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:30:32 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:30:35 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:30:35 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:30:39 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-10 13:30:39 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:30:39 WARN  SignInServlet:51 - User blocked or password incorrect
+2016-03-10 13:32:39 INFO  RoleFilter:16 - Started Role Filter
+2016-03-10 13:32:39 INFO  EncodingFilter:28 - Encoding filter started
+2016-03-10 13:32:39 INFO  EncodingFilter:30 - Get incoding UTF-8
+2016-03-10 13:32:39 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:32:39 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:32:40 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:32:40 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:32:40 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:32:40 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:32:48 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-10 13:32:48 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:32:48 INFO  DSHolder:27 - Making Data Source
+2016-03-10 13:32:48 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@4cb711c9
+2016-03-10 13:32:49 INFO  SignInServlet:24 - User exists: ADMIN password: ADMIN
+2016-03-10 13:32:49 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-10 13:32:49 INFO  SignInServlet:31 - Setted locale: localhost
+2016-03-10 13:32:49 INFO  SignInServlet:33 - Set a new session: org.apache.catalina.session.StandardSessionFacade@27fd647b
+2016-03-10 13:32:49 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 13:32:49 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:32:49 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 13:33:59 INFO  RoleFilter:16 - Started Role Filter
+2016-03-10 13:33:59 INFO  EncodingFilter:28 - Encoding filter started
+2016-03-10 13:33:59 INFO  EncodingFilter:30 - Get incoding UTF-8
+2016-03-10 13:33:59 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:33:59 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:34:00 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:34:00 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:34:00 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:34:00 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:34:08 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-10 13:34:08 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:34:08 INFO  DSHolder:27 - Making Data Source
+2016-03-10 13:34:08 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@4e9b3fbd
+2016-03-10 13:34:08 INFO  SignInServlet:24 - User exists: ADMIN password: ADMIN
+2016-03-10 13:34:08 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-10 13:34:08 INFO  SignInServlet:31 - Setted locale: ru
+2016-03-10 13:34:08 INFO  SignInServlet:33 - Set a new session: org.apache.catalina.session.StandardSessionFacade@1529cab
+2016-03-10 13:34:08 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 13:34:08 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:34:08 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 13:40:22 INFO  RoleFilter:16 - Started Role Filter
+2016-03-10 13:40:22 INFO  EncodingFilter:28 - Encoding filter started
+2016-03-10 13:40:22 INFO  EncodingFilter:30 - Get incoding UTF-8
+2016-03-10 13:40:22 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:40:22 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:40:23 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:40:23 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:40:23 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:40:23 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:40:31 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-10 13:40:31 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:40:31 INFO  DSHolder:27 - Making Data Source
+2016-03-10 13:40:31 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@11409145
+2016-03-10 13:40:32 INFO  SignInServlet:24 - User exists: ADMIN password: ADMIN
+2016-03-10 13:40:32 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-10 13:40:32 INFO  SignInServlet:31 - Setted locale: ru
+2016-03-10 13:40:32 INFO  SignInServlet:33 - Set a new session: org.apache.catalina.session.StandardSessionFacade@fbfde81
+2016-03-10 13:40:32 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 13:40:32 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:40:32 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 13:40:34 INFO  RoleFilter:59 - Request URI: /logout
+2016-03-10 13:40:34 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:40:34 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-10 13:40:34 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:40:34 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:40:38 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:40:38 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:41:16 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-10 13:41:16 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:41:16 INFO  SignInServlet:24 - User exists: ADMIN password: ADMIN
+2016-03-10 13:41:16 WARN  SignInServlet:53 - User blocked or password incorrect
+2016-03-10 13:41:28 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-10 13:41:28 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:41:28 INFO  SignInServlet:24 - User exists: ADMIN password: ADMIN
+2016-03-10 13:41:28 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-10 13:41:28 INFO  SignInServlet:31 - Setted locale: ru
+2016-03-10 13:41:28 INFO  SignInServlet:33 - Set a new session: org.apache.catalina.session.StandardSessionFacade@6f724488
+2016-03-10 13:41:28 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 13:41:28 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:41:28 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 13:41:36 INFO  RoleFilter:59 - Request URI: /logout
+2016-03-10 13:41:36 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:41:36 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-10 13:41:36 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:41:36 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:41:38 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:41:38 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:41:48 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-10 13:41:48 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:41:48 INFO  SignInServlet:24 - User exists: ADMIN password: ADMIN
+2016-03-10 13:41:48 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-10 13:41:48 INFO  SignInServlet:31 - Setted locale: ru
+2016-03-10 13:41:48 INFO  SignInServlet:33 - Set a new session: org.apache.catalina.session.StandardSessionFacade@18ceed24
+2016-03-10 13:41:48 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 13:41:48 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:41:48 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 13:44:58 INFO  RoleFilter:16 - Started Role Filter
+2016-03-10 13:44:58 INFO  EncodingFilter:28 - Encoding filter started
+2016-03-10 13:44:58 INFO  EncodingFilter:30 - Get incoding UTF-8
+2016-03-10 13:44:58 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:44:58 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:44:59 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:44:59 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:44:59 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:44:59 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:45:02 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:45:02 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:45:09 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-10 13:45:09 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:45:09 INFO  DSHolder:27 - Making Data Source
+2016-03-10 13:45:09 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@47a8d2bf
+2016-03-10 13:45:09 INFO  SignInServlet:24 - User exists: ADMIN password: ADMIN
+2016-03-10 13:45:09 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-10 13:45:09 INFO  SignInServlet:31 - Setted locale: ru
+2016-03-10 13:45:09 INFO  SignInServlet:33 - Set a new session: org.apache.catalina.session.StandardSessionFacade@5bae5ffb
+2016-03-10 13:45:09 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 13:45:09 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:45:09 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 13:46:52 INFO  RoleFilter:16 - Started Role Filter
+2016-03-10 13:46:52 INFO  EncodingFilter:28 - Encoding filter started
+2016-03-10 13:46:52 INFO  EncodingFilter:30 - Get incoding UTF-8
+2016-03-10 13:46:52 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:46:52 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:46:53 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:46:53 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:46:53 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:46:53 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:47:05 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-10 13:47:05 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:47:05 INFO  DSHolder:27 - Making Data Source
+2016-03-10 13:47:05 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@354089e4
+2016-03-10 13:47:05 INFO  SignInServlet:24 - User exists: ADMIN password: ADMIN
+2016-03-10 13:47:05 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-10 13:47:05 INFO  SignInServlet:31 - Setted locale: ru
+2016-03-10 13:47:05 INFO  SignInServlet:33 - Set a new session: org.apache.catalina.session.StandardSessionFacade@4db263ea
+2016-03-10 13:47:05 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 13:47:05 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:47:05 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 13:47:07 INFO  RoleFilter:59 - Request URI: /logout
+2016-03-10 13:47:07 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:47:07 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-10 13:47:07 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:47:07 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:47:09 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:47:09 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:47:20 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-10 13:47:20 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:47:20 INFO  SignInServlet:24 - User exists: ADMIN password: ADMIN
+2016-03-10 13:47:20 INFO  SignInServlet:28 - User successfully got to the system
+2016-03-10 13:47:20 INFO  SignInServlet:31 - Setted locale: ru
+2016-03-10 13:47:20 INFO  SignInServlet:33 - Set a new session: org.apache.catalina.session.StandardSessionFacade@1b7c5baf
+2016-03-10 13:47:20 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 13:47:20 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:47:20 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 13:47:23 INFO  RoleFilter:59 - Request URI: /logout
+2016-03-10 13:47:23 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:47:23 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-10 13:47:23 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:47:23 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:52:23 INFO  RoleFilter:16 - Started Role Filter
+2016-03-10 13:52:23 INFO  EncodingFilter:28 - Encoding filter started
+2016-03-10 13:52:23 INFO  EncodingFilter:30 - Get incoding UTF-8
+2016-03-10 13:52:23 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:52:23 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:52:25 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:52:25 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:52:25 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:52:25 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:56:05 INFO  RoleFilter:16 - Started Role Filter
+2016-03-10 13:56:05 INFO  EncodingFilter:28 - Encoding filter started
+2016-03-10 13:56:05 INFO  EncodingFilter:30 - Get incoding UTF-8
+2016-03-10 13:56:06 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:56:06 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:56:07 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:56:07 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:56:07 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:56:07 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:56:11 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:56:11 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:56:32 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:56:32 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:56:36 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:56:36 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:57:02 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:57:02 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:57:02 INFO  RoleFilter:59 - Request URI: /view/res/jquery/jquery-1.12.1.min.js
+2016-03-10 13:57:02 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:57:02 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/js/bootstrap.min.js
+2016-03-10 13:57:02 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:57:02 INFO  RoleFilter:59 - Request URI: /view/res/css/custom.css
+2016-03-10 13:57:02 INFO  RoleFilter:59 - Request URI: /view/res/css/font-awesome.css
+2016-03-10 13:57:02 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:57:02 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:57:02 INFO  RoleFilter:59 - Request URI: /view/res/css/basic.css
+2016-03-10 13:57:02 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:57:02 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/css/bootstrap.min.css
+2016-03-10 13:57:02 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:57:04 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:57:04 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:57:04 INFO  RoleFilter:59 - Request URI: /view/res/jquery/jquery-1.12.1.min.js
+2016-03-10 13:57:04 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/js/bootstrap.min.js
+2016-03-10 13:57:04 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/css/bootstrap.min.css
+2016-03-10 13:57:04 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:57:04 INFO  RoleFilter:59 - Request URI: /view/res/css/custom.css
+2016-03-10 13:57:04 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:57:04 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:57:04 INFO  RoleFilter:59 - Request URI: /view/res/css/font-awesome.css
+2016-03-10 13:57:04 INFO  RoleFilter:59 - Request URI: /view/res/css/basic.css
+2016-03-10 13:57:04 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:57:04 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:57:04 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:57:13 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:57:13 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:57:14 INFO  RoleFilter:59 - Request URI: /view/res/jquery/jquery-1.12.1.min.js
+2016-03-10 13:57:14 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:57:14 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/js/bootstrap.min.js
+2016-03-10 13:57:14 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:57:14 INFO  RoleFilter:59 - Request URI: /view/res/css/basic.css
+2016-03-10 13:57:14 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:57:14 INFO  RoleFilter:59 - Request URI: /view/res/css/font-awesome.css
+2016-03-10 13:57:14 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:57:14 INFO  RoleFilter:59 - Request URI: /view/res/css/custom.css
+2016-03-10 13:57:14 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:57:14 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/css/bootstrap.min.css
+2016-03-10 13:57:14 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:57:22 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:57:22 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:57:22 INFO  RoleFilter:59 - Request URI: /view/res/jquery/jquery-1.12.1.min.js
+2016-03-10 13:57:22 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/js/bootstrap.min.js
+2016-03-10 13:57:22 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/css/bootstrap.min.css
+2016-03-10 13:57:22 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:57:22 INFO  RoleFilter:59 - Request URI: /view/res/css/basic.css
+2016-03-10 13:57:22 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:57:22 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:57:22 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:57:22 INFO  RoleFilter:59 - Request URI: /view/res/css/font-awesome.css
+2016-03-10 13:57:22 INFO  RoleFilter:59 - Request URI: /view/res/css/custom.css
+2016-03-10 13:57:22 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:57:22 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:57:30 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:57:30 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:57:30 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/js/bootstrap.min.js
+2016-03-10 13:57:30 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:57:30 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/css/bootstrap.min.css
+2016-03-10 13:57:30 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:57:30 INFO  RoleFilter:59 - Request URI: /view/res/jquery/jquery-1.12.1.min.js
+2016-03-10 13:57:30 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:57:30 INFO  RoleFilter:59 - Request URI: /view/res/css/basic.css
+2016-03-10 13:57:30 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:57:30 INFO  RoleFilter:59 - Request URI: /view/res/css/custom.css
+2016-03-10 13:57:30 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:57:30 INFO  RoleFilter:59 - Request URI: /view/res/css/font-awesome.css
+2016-03-10 13:57:30 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:57:34 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:57:34 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:57:37 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:57:37 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:57:39 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:57:39 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:58:56 INFO  RoleFilter:16 - Started Role Filter
+2016-03-10 13:58:56 INFO  EncodingFilter:28 - Encoding filter started
+2016-03-10 13:58:56 INFO  EncodingFilter:30 - Get incoding UTF-8
+2016-03-10 13:58:57 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:58:57 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:58:58 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:58:58 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:58:58 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:58:58 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:59:02 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:59:02 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:59:10 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-10 13:59:10 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:59:10 INFO  DSHolder:27 - Making Data Source
+2016-03-10 13:59:10 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@2d1aa3f0
+2016-03-10 13:59:10 INFO  SignInServlet:25 - User exists: ADMIN password: ADMIN
+2016-03-10 13:59:10 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-10 13:59:10 INFO  SignInServlet:34 - Setted locale: ru
+2016-03-10 13:59:10 INFO  SignInServlet:36 - Set a new session: org.apache.catalina.session.StandardSessionFacade@77d7aabe
+2016-03-10 13:59:10 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 13:59:10 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:59:10 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 13:59:49 INFO  RoleFilter:16 - Started Role Filter
+2016-03-10 13:59:49 INFO  EncodingFilter:28 - Encoding filter started
+2016-03-10 13:59:49 INFO  EncodingFilter:30 - Get incoding UTF-8
+2016-03-10 13:59:50 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:59:50 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:59:50 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:59:50 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:59:51 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:59:51 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 13:59:53 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 13:59:53 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:00:00 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-10 14:00:00 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:00:00 INFO  DSHolder:27 - Making Data Source
+2016-03-10 14:00:00 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@6b219267
+2016-03-10 14:00:00 INFO  SignInServlet:25 - User exists: ADMIN password: ADMIN
+2016-03-10 14:00:00 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-10 14:00:00 INFO  SignInServlet:33 - Setted locale: en
+2016-03-10 14:00:00 INFO  SignInServlet:35 - Set a new session: org.apache.catalina.session.StandardSessionFacade@1f0afeff
+2016-03-10 14:00:00 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 14:00:00 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:00:00 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 14:00:03 INFO  RoleFilter:59 - Request URI: /logout
+2016-03-10 14:00:03 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:00:03 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-10 14:00:03 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 14:00:03 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:01:05 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 14:01:05 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:01:06 INFO  RoleFilter:59 - Request URI: /view/res/jquery/jquery-1.12.1.min.js
+2016-03-10 14:01:06 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/js/bootstrap.min.js
+2016-03-10 14:01:06 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:01:06 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/css/bootstrap.min.css
+2016-03-10 14:01:06 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:01:06 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:01:06 INFO  RoleFilter:59 - Request URI: /view/res/css/basic.css
+2016-03-10 14:01:06 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:01:06 INFO  RoleFilter:59 - Request URI: /view/res/css/custom.css
+2016-03-10 14:01:06 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:01:06 INFO  RoleFilter:59 - Request URI: /view/res/css/font-awesome.css
+2016-03-10 14:01:06 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:01:07 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 14:01:07 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:01:07 INFO  RoleFilter:59 - Request URI: /view/res/jquery/jquery-1.12.1.min.js
+2016-03-10 14:01:07 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/js/bootstrap.min.js
+2016-03-10 14:01:07 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:01:07 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/css/bootstrap.min.css
+2016-03-10 14:01:07 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:01:07 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:01:07 INFO  RoleFilter:59 - Request URI: /view/res/css/basic.css
+2016-03-10 14:01:07 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:01:07 INFO  RoleFilter:59 - Request URI: /view/res/css/custom.css
+2016-03-10 14:01:07 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:01:07 INFO  RoleFilter:59 - Request URI: /view/res/css/font-awesome.css
+2016-03-10 14:01:07 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:01:23 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 14:01:23 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:01:23 INFO  RoleFilter:59 - Request URI: /view/res/jquery/jquery-1.12.1.min.js
+2016-03-10 14:01:23 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:01:23 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/css/bootstrap.min.css
+2016-03-10 14:01:23 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:01:23 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/js/bootstrap.min.js
+2016-03-10 14:01:23 INFO  RoleFilter:59 - Request URI: /view/res/css/basic.css
+2016-03-10 14:01:23 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:01:23 INFO  RoleFilter:59 - Request URI: /view/res/css/font-awesome.css
+2016-03-10 14:01:23 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:01:23 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:01:23 INFO  RoleFilter:59 - Request URI: /view/res/css/custom.css
+2016-03-10 14:01:23 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:01:44 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 14:01:44 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:01:44 INFO  RoleFilter:59 - Request URI: /view/res/jquery/jquery-1.12.1.min.js
+2016-03-10 14:01:44 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:01:44 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/css/bootstrap.min.css
+2016-03-10 14:01:44 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/js/bootstrap.min.js
+2016-03-10 14:01:44 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:01:44 INFO  RoleFilter:59 - Request URI: /view/res/css/basic.css
+2016-03-10 14:01:44 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:01:44 INFO  RoleFilter:59 - Request URI: /view/res/css/custom.css
+2016-03-10 14:01:44 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:01:44 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:01:44 INFO  RoleFilter:59 - Request URI: /view/res/css/font-awesome.css
+2016-03-10 14:01:44 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:01:47 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 14:01:47 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:01:48 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 14:01:48 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:02:22 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 14:02:22 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:02:24 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 14:02:24 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:02:35 INFO  RoleFilter:16 - Started Role Filter
+2016-03-10 14:02:35 INFO  EncodingFilter:28 - Encoding filter started
+2016-03-10 14:02:35 INFO  EncodingFilter:30 - Get incoding UTF-8
+2016-03-10 14:02:36 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 14:02:36 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:02:37 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 14:02:37 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:02:37 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 14:02:37 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:02:43 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-10 14:02:43 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:02:43 INFO  DSHolder:27 - Making Data Source
+2016-03-10 14:02:43 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@654f13a2
+2016-03-10 14:02:43 INFO  SignInServlet:25 - User exists: ADMIN password: ADMIN
+2016-03-10 14:02:43 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-10 14:02:43 INFO  SignInServlet:33 - Setted locale: ru_ru
+2016-03-10 14:02:43 INFO  SignInServlet:35 - Set a new session: org.apache.catalina.session.StandardSessionFacade@2ea7c7d7
+2016-03-10 14:02:43 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 14:02:43 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:02:43 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 14:03:26 INFO  RoleFilter:59 - Request URI: /logout
+2016-03-10 14:03:26 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:03:26 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-10 14:03:26 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 14:03:26 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:05:08 INFO  RoleFilter:16 - Started Role Filter
+2016-03-10 14:05:08 INFO  EncodingFilter:28 - Encoding filter started
+2016-03-10 14:05:08 INFO  EncodingFilter:30 - Get incoding UTF-8
+2016-03-10 14:05:08 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 14:05:08 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:05:08 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 14:05:08 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:05:09 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 14:05:09 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:05:59 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 14:05:59 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:05:59 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 14:05:59 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:06:01 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 14:06:01 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:07:10 INFO  RoleFilter:16 - Started Role Filter
+2016-03-10 14:07:10 INFO  EncodingFilter:28 - Encoding filter started
+2016-03-10 14:07:10 INFO  EncodingFilter:30 - Get incoding UTF-8
+2016-03-10 14:07:11 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 14:07:11 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:07:12 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 14:07:12 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:07:12 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 14:07:12 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:07:24 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-10 14:07:24 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:07:24 INFO  DSHolder:27 - Making Data Source
+2016-03-10 14:07:24 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@ca8f922
+2016-03-10 14:07:24 INFO  SignInServlet:25 - User exists: ADMIN password: ADMIN
+2016-03-10 14:07:24 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-10 14:07:24 INFO  SignInServlet:33 - Setted locale: ru_ru
+2016-03-10 14:07:24 INFO  SignInServlet:35 - Set a new session: org.apache.catalina.session.StandardSessionFacade@4c227ff
+2016-03-10 14:07:24 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 14:07:24 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:07:24 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 14:07:40 INFO  RoleFilter:59 - Request URI: /logout
+2016-03-10 14:07:40 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:07:40 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-10 14:07:40 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 14:07:40 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:09:39 INFO  RoleFilter:16 - Started Role Filter
+2016-03-10 14:09:39 INFO  EncodingFilter:28 - Encoding filter started
+2016-03-10 14:09:39 INFO  EncodingFilter:30 - Get incoding UTF-8
+2016-03-10 14:09:39 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 14:09:39 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:09:40 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 14:09:40 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:09:40 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 14:09:40 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:09:43 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 14:09:43 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:09:44 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 14:09:44 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:09:47 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 14:09:47 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:10:12 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-10 14:10:12 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:10:12 INFO  DSHolder:27 - Making Data Source
+2016-03-10 14:10:12 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@5d4822d9
+2016-03-10 14:10:12 INFO  SignInServlet:25 - User exists: ADMIN password: ADMIN
+2016-03-10 14:10:12 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-10 14:10:12 INFO  SignInServlet:33 - Setted locale: en
+2016-03-10 14:10:12 INFO  SignInServlet:35 - Set a new session: org.apache.catalina.session.StandardSessionFacade@47df8004
+2016-03-10 14:10:12 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 14:10:12 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:10:12 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 14:10:14 INFO  RoleFilter:59 - Request URI: /logout
+2016-03-10 14:10:14 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 14:10:14 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-10 14:10:14 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 14:10:14 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:40:00 INFO  RoleFilter:16 - Started Role Filter
+2016-03-10 22:40:00 INFO  EncodingFilter:28 - Encoding filter started
+2016-03-10 22:40:00 INFO  EncodingFilter:30 - Get incoding UTF-8
+2016-03-10 22:40:01 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 22:40:01 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:40:02 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 22:40:02 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:40:02 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 22:40:02 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:40:04 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 22:40:04 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:40:13 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-10 22:40:13 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:40:13 INFO  DSHolder:27 - Making Data Source
+2016-03-10 22:40:13 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@19bb7c40
+2016-03-10 22:40:13 INFO  SignInServlet:25 - User exists: ADMIN password: ADMIN
+2016-03-10 22:40:13 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-10 22:40:13 INFO  SignInServlet:33 - Setted locale: en
+2016-03-10 22:40:13 INFO  SignInServlet:35 - Set a new session: org.apache.catalina.session.StandardSessionFacade@694d8f56
+2016-03-10 22:40:13 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 22:40:13 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:40:13 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 22:40:25 INFO  RoleFilter:59 - Request URI: /utilManager
+2016-03-10 22:40:25 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:40:27 INFO  RoleFilter:59 - Request URI: /userList
+2016-03-10 22:40:27 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:40:27 INFO  UserListServlet:21 - Started making users list
+2016-03-10 22:40:34 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 22:40:34 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:40:34 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 22:40:35 INFO  RoleFilter:59 - Request URI: /utilManager
+2016-03-10 22:40:35 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:40:36 INFO  RoleFilter:59 - Request URI: /userList
+2016-03-10 22:40:36 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:40:36 INFO  UserListServlet:21 - Started making users list
+2016-03-10 22:40:38 INFO  RoleFilter:59 - Request URI: /logout
+2016-03-10 22:40:38 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:40:38 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-10 22:40:38 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 22:40:38 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:40:50 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-10 22:40:50 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:40:50 INFO  SignInServlet:25 - User exists: ADMIN password: ADMIN
+2016-03-10 22:40:50 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-10 22:40:50 INFO  SignInServlet:33 - Setted locale: ru
+2016-03-10 22:40:50 INFO  SignInServlet:35 - Set a new session: org.apache.catalina.session.StandardSessionFacade@629be740
+2016-03-10 22:40:50 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 22:40:50 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:40:50 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 22:41:10 INFO  RoleFilter:59 - Request URI: /utilManager
+2016-03-10 22:41:10 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:41:11 INFO  RoleFilter:59 - Request URI: /userList
+2016-03-10 22:41:11 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:41:11 INFO  UserListServlet:21 - Started making users list
+2016-03-10 22:41:19 INFO  RoleFilter:59 - Request URI: /logout
+2016-03-10 22:41:19 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:41:19 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-10 22:41:19 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 22:41:19 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:42:55 INFO  RoleFilter:16 - Started Role Filter
+2016-03-10 22:42:55 INFO  EncodingFilter:28 - Encoding filter started
+2016-03-10 22:42:55 INFO  EncodingFilter:30 - Get incoding UTF-8
+2016-03-10 22:42:55 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 22:42:55 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:42:56 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 22:42:56 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:42:56 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 22:42:56 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:43:11 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-10 22:43:11 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:43:11 INFO  DSHolder:27 - Making Data Source
+2016-03-10 22:43:11 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@ca8f922
+2016-03-10 22:43:11 INFO  SignInServlet:25 - User exists: ADMIN password: ADMIN
+2016-03-10 22:43:11 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-10 22:43:11 INFO  SignInServlet:33 - Setted locale: ru
+2016-03-10 22:43:11 INFO  SignInServlet:35 - Set a new session: org.apache.catalina.session.StandardSessionFacade@4c227ff
+2016-03-10 22:43:11 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 22:43:11 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:43:11 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 22:43:47 INFO  RoleFilter:16 - Started Role Filter
+2016-03-10 22:43:47 INFO  EncodingFilter:28 - Encoding filter started
+2016-03-10 22:43:47 INFO  EncodingFilter:30 - Get incoding UTF-8
+2016-03-10 22:43:47 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 22:43:47 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:43:48 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 22:43:48 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:43:49 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 22:43:49 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:43:56 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-10 22:43:56 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:43:56 INFO  DSHolder:27 - Making Data Source
+2016-03-10 22:43:56 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@373eac05
+2016-03-10 22:43:57 INFO  SignInServlet:25 - User exists: ADMIN password: ADMIN
+2016-03-10 22:43:57 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-10 22:43:57 INFO  SignInServlet:33 - Setted locale: ru
+2016-03-10 22:43:57 INFO  SignInServlet:35 - Set a new session: org.apache.catalina.session.StandardSessionFacade@5304c18c
+2016-03-10 22:43:57 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 22:43:57 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:43:57 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 22:44:44 INFO  RoleFilter:16 - Started Role Filter
+2016-03-10 22:44:44 INFO  EncodingFilter:28 - Encoding filter started
+2016-03-10 22:44:44 INFO  EncodingFilter:30 - Get incoding UTF-8
+2016-03-10 22:44:45 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 22:44:45 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:44:46 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 22:44:46 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:44:46 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 22:44:46 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:44:53 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-10 22:44:53 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:44:53 INFO  DSHolder:27 - Making Data Source
+2016-03-10 22:44:53 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@47a8d2bf
+2016-03-10 22:44:53 INFO  SignInServlet:25 - User exists: ADMIN password: ADMIN
+2016-03-10 22:44:53 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-10 22:44:53 INFO  SignInServlet:33 - Setted locale: ru
+2016-03-10 22:44:53 INFO  SignInServlet:35 - Set a new session: org.apache.catalina.session.StandardSessionFacade@5bae5ffb
+2016-03-10 22:44:53 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 22:44:53 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:44:53 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 22:45:09 INFO  RoleFilter:59 - Request URI: /logout
+2016-03-10 22:45:09 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:45:09 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-10 22:45:09 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 22:45:09 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:45:13 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 22:45:13 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:45:20 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-10 22:45:20 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:45:20 INFO  SignInServlet:25 - User exists: ADMIN password: ADMIN
+2016-03-10 22:45:20 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-10 22:45:20 INFO  SignInServlet:33 - Setted locale: en
+2016-03-10 22:45:20 INFO  SignInServlet:35 - Set a new session: org.apache.catalina.session.StandardSessionFacade@1a2f61d5
+2016-03-10 22:45:20 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 22:45:20 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:45:20 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 22:45:27 INFO  RoleFilter:59 - Request URI: /logout
+2016-03-10 22:45:27 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:45:27 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-10 22:45:27 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 22:45:27 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:48:58 INFO  RoleFilter:16 - Started Role Filter
+2016-03-10 22:48:58 INFO  EncodingFilter:28 - Encoding filter started
+2016-03-10 22:48:58 INFO  EncodingFilter:30 - Get incoding UTF-8
+2016-03-10 22:48:58 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 22:48:58 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:48:59 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 22:48:59 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:48:59 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 22:48:59 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:49:07 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-10 22:49:07 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:49:07 INFO  DSHolder:27 - Making Data Source
+2016-03-10 22:49:07 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@5422a33a
+2016-03-10 22:49:07 INFO  SignInServlet:25 - User exists: ADMIN password: ADMIN
+2016-03-10 22:49:07 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-10 22:49:07 INFO  SignInServlet:33 - Setted locale: ru
+2016-03-10 22:49:07 INFO  SignInServlet:35 - Set a new session: org.apache.catalina.session.StandardSessionFacade@3e91ce8f
+2016-03-10 22:49:07 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 22:49:08 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:49:08 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 22:49:09 INFO  RoleFilter:59 - Request URI: /view/AdminDir/RegManager.jsp
+2016-03-10 22:49:09 ERROR RoleFilter:31 - Admin can't see Manager and User pages
+2016-03-10 22:49:09 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 22:49:09 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:49:09 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 22:49:14 INFO  RoleFilter:59 - Request URI: /view/AdminDir/RegManager.jsp
+2016-03-10 22:49:14 ERROR RoleFilter:31 - Admin can't see Manager and User pages
+2016-03-10 22:49:14 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 22:49:14 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:49:14 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 22:49:15 INFO  RoleFilter:59 - Request URI: /view/AdminDir/RegManager.jsp
+2016-03-10 22:49:15 ERROR RoleFilter:31 - Admin can't see Manager and User pages
+2016-03-10 22:49:15 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 22:49:15 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:49:15 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 22:49:16 INFO  RoleFilter:59 - Request URI: /view/AdminDir/RegManager.jsp
+2016-03-10 22:49:16 ERROR RoleFilter:31 - Admin can't see Manager and User pages
+2016-03-10 22:49:16 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 22:49:16 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:49:16 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 22:49:17 INFO  RoleFilter:59 - Request URI: /view/AdminDir/RegManager.jsp
+2016-03-10 22:49:17 ERROR RoleFilter:31 - Admin can't see Manager and User pages
+2016-03-10 22:49:17 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 22:49:17 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:49:17 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 22:49:18 INFO  RoleFilter:59 - Request URI: /view/AdminDir/RegManager.jsp
+2016-03-10 22:49:18 ERROR RoleFilter:31 - Admin can't see Manager and User pages
+2016-03-10 22:49:18 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 22:49:18 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:49:18 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 22:49:18 INFO  RoleFilter:59 - Request URI: /view/AdminDir/RegManager.jsp
+2016-03-10 22:49:18 ERROR RoleFilter:31 - Admin can't see Manager and User pages
+2016-03-10 22:49:18 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 22:49:18 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:49:18 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 22:49:19 INFO  RoleFilter:59 - Request URI: /view/AdminDir/RegManager.jsp
+2016-03-10 22:49:19 ERROR RoleFilter:31 - Admin can't see Manager and User pages
+2016-03-10 22:49:19 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 22:49:19 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:49:19 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 22:49:19 INFO  RoleFilter:59 - Request URI: /view/AdminDir/RegManager.jsp
+2016-03-10 22:49:19 ERROR RoleFilter:31 - Admin can't see Manager and User pages
+2016-03-10 22:49:19 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 22:49:19 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:49:19 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 22:49:20 INFO  RoleFilter:59 - Request URI: /view/AdminDir/RegManager.jsp
+2016-03-10 22:49:20 ERROR RoleFilter:31 - Admin can't see Manager and User pages
+2016-03-10 22:49:20 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 22:49:20 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:49:20 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 22:49:21 INFO  RoleFilter:59 - Request URI: /view/AdminDir/RegManager.jsp
+2016-03-10 22:49:21 ERROR RoleFilter:31 - Admin can't see Manager and User pages
+2016-03-10 22:49:21 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 22:49:21 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:49:21 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 22:50:25 INFO  RoleFilter:16 - Started Role Filter
+2016-03-10 22:50:25 INFO  EncodingFilter:28 - Encoding filter started
+2016-03-10 22:50:25 INFO  EncodingFilter:30 - Get incoding UTF-8
+2016-03-10 22:50:26 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 22:50:26 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:50:27 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 22:50:27 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:50:27 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 22:50:27 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:50:34 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-10 22:50:34 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:50:34 INFO  DSHolder:27 - Making Data Source
+2016-03-10 22:50:34 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@66f2111c
+2016-03-10 22:50:35 INFO  SignInServlet:25 - User exists: ADMIN password: ADMIN
+2016-03-10 22:50:35 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-10 22:50:35 INFO  SignInServlet:33 - Setted locale: ru
+2016-03-10 22:50:35 INFO  SignInServlet:35 - Set a new session: org.apache.catalina.session.StandardSessionFacade@4f19614b
+2016-03-10 22:50:35 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 22:50:35 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:50:35 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 22:50:37 INFO  RoleFilter:59 - Request URI: /view/AdminDir/RegManager.jsp
+2016-03-10 22:50:37 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:51:46 INFO  RoleFilter:16 - Started Role Filter
+2016-03-10 22:51:46 INFO  EncodingFilter:28 - Encoding filter started
+2016-03-10 22:51:46 INFO  EncodingFilter:30 - Get incoding UTF-8
+2016-03-10 22:51:47 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 22:51:47 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:51:48 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 22:51:48 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:51:48 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 22:51:48 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:51:54 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-10 22:51:54 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:51:54 INFO  DSHolder:27 - Making Data Source
+2016-03-10 22:51:54 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@5422a33a
+2016-03-10 22:51:54 INFO  SignInServlet:25 - User exists: ADMIN password: ADMIN
+2016-03-10 22:51:54 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-10 22:51:54 INFO  SignInServlet:33 - Setted locale: ru
+2016-03-10 22:51:54 INFO  SignInServlet:35 - Set a new session: org.apache.catalina.session.StandardSessionFacade@3e91ce8f
+2016-03-10 22:51:54 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 22:51:54 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:51:54 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 22:51:55 INFO  RoleFilter:59 - Request URI: /view/AdminDir/RegManager.jsp
+2016-03-10 22:51:55 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:53:00 INFO  RoleFilter:16 - Started Role Filter
+2016-03-10 22:53:00 INFO  EncodingFilter:28 - Encoding filter started
+2016-03-10 22:53:00 INFO  EncodingFilter:30 - Get incoding UTF-8
+2016-03-10 22:53:00 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 22:53:00 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:53:01 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 22:53:01 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:53:01 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 22:53:01 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:54:24 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 22:54:24 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:54:24 INFO  RoleFilter:59 - Request URI: /view/res/jquery/jquery-1.12.1.min.js
+2016-03-10 22:54:24 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:54:24 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/js/bootstrap.min.js
+2016-03-10 22:54:24 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:54:24 INFO  RoleFilter:59 - Request URI: /view/res/css/basic.css
+2016-03-10 22:54:24 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:54:24 INFO  RoleFilter:59 - Request URI: /view/res/css/font-awesome.css
+2016-03-10 22:54:24 INFO  RoleFilter:59 - Request URI: /view/res/css/custom.css
+2016-03-10 22:54:24 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:54:24 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:54:24 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/css/bootstrap.min.css
+2016-03-10 22:54:24 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:55:14 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 22:55:14 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:55:14 INFO  RoleFilter:59 - Request URI: /view/res/jquery/jquery-1.12.1.min.js
+2016-03-10 22:55:14 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/js/bootstrap.min.js
+2016-03-10 22:55:14 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:55:14 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:55:14 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/css/bootstrap.min.css
+2016-03-10 22:55:14 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:55:14 INFO  RoleFilter:59 - Request URI: /view/res/css/basic.css
+2016-03-10 22:55:14 INFO  RoleFilter:59 - Request URI: /view/res/css/custom.css
+2016-03-10 22:55:14 INFO  RoleFilter:59 - Request URI: /view/res/css/font-awesome.css
+2016-03-10 22:55:14 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:55:14 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 22:55:14 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:48:13 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 23:48:13 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:48:13 INFO  RoleFilter:59 - Request URI: /view/res/jquery/jquery-1.12.1.min.js
+2016-03-10 23:48:13 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:48:13 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/js/bootstrap.min.js
+2016-03-10 23:48:13 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:48:13 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/css/bootstrap.min.css
+2016-03-10 23:48:13 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:48:13 INFO  RoleFilter:59 - Request URI: /view/res/css/font-awesome.css
+2016-03-10 23:48:13 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:48:13 INFO  RoleFilter:59 - Request URI: /view/res/css/basic.css
+2016-03-10 23:48:13 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:48:13 INFO  RoleFilter:59 - Request URI: /view/res/css/custom.css
+2016-03-10 23:48:13 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:48:14 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 23:48:14 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:48:14 INFO  RoleFilter:59 - Request URI: /view/res/jquery/jquery-1.12.1.min.js
+2016-03-10 23:48:14 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/js/bootstrap.min.js
+2016-03-10 23:48:14 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/css/bootstrap.min.css
+2016-03-10 23:48:14 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:48:14 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:48:14 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:48:14 INFO  RoleFilter:59 - Request URI: /view/res/css/basic.css
+2016-03-10 23:48:14 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:48:14 INFO  RoleFilter:59 - Request URI: /view/res/css/font-awesome.css
+2016-03-10 23:48:14 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:48:14 INFO  RoleFilter:59 - Request URI: /view/res/css/custom.css
+2016-03-10 23:48:14 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:48:24 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 23:48:24 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:48:30 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/css/bootstrap.min.css.map
+2016-03-10 23:48:30 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/css/bootstrap.min.css.map
+2016-03-10 23:48:30 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/css/bootstrap.min.css.map
+2016-03-10 23:48:30 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/css/bootstrap.min.css.map
+2016-03-10 23:48:30 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/css/bootstrap.min.css.map
+2016-03-10 23:48:30 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:48:30 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:48:30 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:48:30 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:48:30 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:49:01 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 23:49:01 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:49:01 INFO  RoleFilter:59 - Request URI: /view/res/jquery/jquery-1.12.1.min.js
+2016-03-10 23:49:01 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:49:01 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/js/bootstrap.min.js
+2016-03-10 23:49:01 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/css/bootstrap.min.css
+2016-03-10 23:49:01 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:49:01 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:49:01 INFO  RoleFilter:59 - Request URI: /view/res/css/basic.css
+2016-03-10 23:49:01 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:49:01 INFO  RoleFilter:59 - Request URI: /view/res/css/font-awesome.css
+2016-03-10 23:49:01 INFO  RoleFilter:59 - Request URI: /view/res/css/custom.css
+2016-03-10 23:49:01 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:49:01 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:49:02 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 23:49:02 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:49:02 INFO  RoleFilter:59 - Request URI: /view/res/jquery/jquery-1.12.1.min.js
+2016-03-10 23:49:02 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:49:02 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/js/bootstrap.min.js
+2016-03-10 23:49:02 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/css/bootstrap.min.css
+2016-03-10 23:49:02 INFO  RoleFilter:59 - Request URI: /view/res/css/basic.css
+2016-03-10 23:49:02 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:49:02 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:49:02 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:49:02 INFO  RoleFilter:59 - Request URI: /view/res/css/custom.css
+2016-03-10 23:49:02 INFO  RoleFilter:59 - Request URI: /view/res/css/font-awesome.css
+2016-03-10 23:49:02 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:49:02 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:49:10 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 23:49:10 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:49:10 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/js/bootstrap.min.js
+2016-03-10 23:49:10 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/css/bootstrap.min.css
+2016-03-10 23:49:10 INFO  RoleFilter:59 - Request URI: /view/res/jquery/jquery-1.12.1.min.js
+2016-03-10 23:49:10 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:49:10 INFO  RoleFilter:59 - Request URI: /view/res/css/basic.css
+2016-03-10 23:49:10 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:49:10 INFO  RoleFilter:59 - Request URI: /view/res/css/font-awesome.css
+2016-03-10 23:49:10 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:49:10 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:49:10 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:49:10 INFO  RoleFilter:59 - Request URI: /view/res/css/custom.css
+2016-03-10 23:49:10 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:49:23 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-10 23:49:23 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:49:23 INFO  DSHolder:27 - Making Data Source
+2016-03-10 23:49:23 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@3c2ee8ad
+2016-03-10 23:49:23 INFO  SignInServlet:25 - User exists: ADMIN password: ADMIN
+2016-03-10 23:49:23 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-10 23:49:23 INFO  SignInServlet:33 - Setted locale: en
+2016-03-10 23:49:23 INFO  SignInServlet:35 - Set a new session: org.apache.catalina.session.StandardSessionFacade@55c6049d
+2016-03-10 23:49:23 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 23:49:23 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:49:23 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 23:49:53 INFO  RoleFilter:59 - Request URI: /view/AdminDir/RegManager.jsp
+2016-03-10 23:49:53 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:49:56 INFO  RoleFilter:59 - Request URI: /utilManager
+2016-03-10 23:49:56 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:49:57 INFO  RoleFilter:59 - Request URI: /userList
+2016-03-10 23:49:57 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:49:57 INFO  UserListServlet:21 - Started making users list
+2016-03-10 23:49:58 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 23:49:58 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:49:58 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 23:49:58 INFO  RoleFilter:59 - Request URI: /utilManager
+2016-03-10 23:49:58 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:49:59 INFO  RoleFilter:59 - Request URI: /userList
+2016-03-10 23:49:59 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:49:59 INFO  UserListServlet:21 - Started making users list
+2016-03-10 23:50:11 INFO  RoleFilter:59 - Request URI: /logout
+2016-03-10 23:50:11 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:50:11 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-10 23:50:11 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 23:50:11 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:50:20 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-10 23:50:20 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:50:20 INFO  SignInServlet:25 - User exists: plotnikov password: plotnikov
+2016-03-10 23:50:20 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-10 23:50:20 INFO  SignInServlet:33 - Setted locale: ru
+2016-03-10 23:50:20 INFO  SignInServlet:35 - Set a new session: org.apache.catalina.session.StandardSessionFacade@75fb552b
+2016-03-10 23:50:20 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 23:50:20 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:50:20 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 23:50:27 INFO  RoleFilter:59 - Request URI: /rentCar
+2016-03-10 23:50:27 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:50:27 INFO  RentCarServlet:35 - Making order page
+2016-03-10 23:53:39 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 23:53:39 ERROR RoleFilter:39 - User can't see Admin and Manager pages
+2016-03-10 23:53:39 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 23:53:39 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:53:39 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 23:53:42 INFO  RoleFilter:59 - Request URI: /logout
+2016-03-10 23:53:42 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:53:42 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-10 23:53:42 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 23:53:42 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:53:58 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 23:53:58 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:53:58 INFO  RoleFilter:59 - Request URI: /view/res/jquery/jquery-1.12.1.min.js
+2016-03-10 23:53:58 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/js/bootstrap.min.js
+2016-03-10 23:53:58 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:53:58 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:53:58 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/css/bootstrap.min.css
+2016-03-10 23:53:58 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:53:58 INFO  RoleFilter:59 - Request URI: /view/res/css/custom.css
+2016-03-10 23:53:58 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:53:58 INFO  RoleFilter:59 - Request URI: /view/res/css/font-awesome.css
+2016-03-10 23:53:58 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:53:58 INFO  RoleFilter:59 - Request URI: /view/res/css/basic.css
+2016-03-10 23:53:58 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:53:59 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 23:53:59 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:53:59 INFO  RoleFilter:59 - Request URI: /view/res/jquery/jquery-1.12.1.min.js
+2016-03-10 23:53:59 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/js/bootstrap.min.js
+2016-03-10 23:53:59 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/css/bootstrap.min.css
+2016-03-10 23:53:59 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:53:59 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:53:59 INFO  RoleFilter:59 - Request URI: /view/res/css/font-awesome.css
+2016-03-10 23:53:59 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:53:59 INFO  RoleFilter:59 - Request URI: /view/res/css/basic.css
+2016-03-10 23:53:59 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:53:59 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:53:59 INFO  RoleFilter:59 - Request URI: /view/res/css/custom.css
+2016-03-10 23:53:59 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:54:18 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-10 23:54:18 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:54:18 INFO  SignInServlet:25 - User exists: plotnikov password: plotnikov
+2016-03-10 23:54:18 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-10 23:54:18 INFO  SignInServlet:33 - Setted locale: r
+2016-03-10 23:54:18 INFO  SignInServlet:35 - Set a new session: org.apache.catalina.session.StandardSessionFacade@2411eb0a
+2016-03-10 23:54:18 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 23:54:18 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:54:18 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 23:54:20 INFO  RoleFilter:59 - Request URI: /rentCar
+2016-03-10 23:54:20 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:54:20 INFO  RentCarServlet:35 - Making order page
+2016-03-10 23:54:32 INFO  RoleFilter:59 - Request URI: /logout
+2016-03-10 23:54:32 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:54:32 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-10 23:54:32 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 23:54:32 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:54:59 INFO  RoleFilter:16 - Started Role Filter
+2016-03-10 23:54:59 INFO  EncodingFilter:28 - Encoding filter started
+2016-03-10 23:54:59 INFO  EncodingFilter:30 - Get incoding UTF-8
+2016-03-10 23:55:00 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 23:55:00 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:55:01 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 23:55:01 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:55:01 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 23:55:01 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:55:10 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-10 23:55:10 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:55:10 INFO  DSHolder:27 - Making Data Source
+2016-03-10 23:55:10 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@6b219267
+2016-03-10 23:55:10 INFO  SignInServlet:25 - User exists: plotnikov password: plotnikov
+2016-03-10 23:55:10 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-10 23:55:10 INFO  SignInServlet:33 - Setted locale: ru
+2016-03-10 23:55:10 INFO  SignInServlet:35 - Set a new session: org.apache.catalina.session.StandardSessionFacade@1f0afeff
+2016-03-10 23:55:10 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 23:55:10 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:55:10 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 23:55:12 INFO  RoleFilter:59 - Request URI: /rentCar
+2016-03-10 23:55:12 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:55:12 INFO  RentCarServlet:35 - Making order page
+2016-03-10 23:55:59 INFO  RoleFilter:59 - Request URI: /rentCar
+2016-03-10 23:55:59 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:55:59 INFO  RentCarServlet:35 - Making order page
+2016-03-10 23:55:59 INFO  RoleFilter:59 - Request URI: /view/res/jquery/jquery-1.12.1.min.js
+2016-03-10 23:55:59 ERROR RoleFilter:39 - User can't see Admin and Manager pages
+2016-03-10 23:55:59 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/js/bootstrap.min.js
+2016-03-10 23:55:59 ERROR RoleFilter:39 - User can't see Admin and Manager pages
+2016-03-10 23:55:59 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/css/bootstrap.min.css
+2016-03-10 23:55:59 ERROR RoleFilter:39 - User can't see Admin and Manager pages
+2016-03-10 23:55:59 INFO  RoleFilter:59 - Request URI: /view/res/css/basic.css
+2016-03-10 23:55:59 ERROR RoleFilter:39 - User can't see Admin and Manager pages
+2016-03-10 23:55:59 INFO  RoleFilter:59 - Request URI: /view/res/css/font-awesome.css
+2016-03-10 23:55:59 ERROR RoleFilter:39 - User can't see Admin and Manager pages
+2016-03-10 23:55:59 INFO  RoleFilter:59 - Request URI: /view/res/css/custom.css
+2016-03-10 23:55:59 ERROR RoleFilter:39 - User can't see Admin and Manager pages
+2016-03-10 23:55:59 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 23:55:59 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:55:59 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 23:55:59 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 23:55:59 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:55:59 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 23:55:59 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 23:55:59 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:55:59 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 23:55:59 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 23:55:59 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:55:59 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 23:55:59 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 23:55:59 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:55:59 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 23:55:59 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 23:55:59 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:55:59 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 23:56:01 INFO  RoleFilter:59 - Request URI: /rentCar
+2016-03-10 23:56:01 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:56:01 INFO  RentCarServlet:35 - Making order page
+2016-03-10 23:56:01 INFO  RoleFilter:59 - Request URI: /view/res/jquery/jquery-1.12.1.min.js
+2016-03-10 23:56:01 ERROR RoleFilter:39 - User can't see Admin and Manager pages
+2016-03-10 23:56:01 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/js/bootstrap.min.js
+2016-03-10 23:56:01 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/css/bootstrap.min.css
+2016-03-10 23:56:01 ERROR RoleFilter:39 - User can't see Admin and Manager pages
+2016-03-10 23:56:01 ERROR RoleFilter:39 - User can't see Admin and Manager pages
+2016-03-10 23:56:01 INFO  RoleFilter:59 - Request URI: /view/res/css/basic.css
+2016-03-10 23:56:01 ERROR RoleFilter:39 - User can't see Admin and Manager pages
+2016-03-10 23:56:01 INFO  RoleFilter:59 - Request URI: /view/res/css/font-awesome.css
+2016-03-10 23:56:01 ERROR RoleFilter:39 - User can't see Admin and Manager pages
+2016-03-10 23:56:01 INFO  RoleFilter:59 - Request URI: /view/res/css/custom.css
+2016-03-10 23:56:01 ERROR RoleFilter:39 - User can't see Admin and Manager pages
+2016-03-10 23:56:01 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 23:56:01 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:56:01 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 23:56:01 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 23:56:01 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:56:01 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 23:56:01 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 23:56:01 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:56:01 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 23:56:01 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 23:56:01 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:56:01 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 23:56:01 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 23:56:01 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:56:01 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 23:56:01 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 23:56:01 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:56:01 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 23:56:20 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 23:56:20 ERROR RoleFilter:39 - User can't see Admin and Manager pages
+2016-03-10 23:56:20 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 23:56:20 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:56:20 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 23:56:20 INFO  RoleFilter:59 - Request URI: /view/res/jquery/jquery-1.12.1.min.js
+2016-03-10 23:56:20 ERROR RoleFilter:39 - User can't see Admin and Manager pages
+2016-03-10 23:56:20 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/js/bootstrap.min.js
+2016-03-10 23:56:20 ERROR RoleFilter:39 - User can't see Admin and Manager pages
+2016-03-10 23:56:20 INFO  RoleFilter:59 - Request URI: /view/res/css/basic.css
+2016-03-10 23:56:20 ERROR RoleFilter:39 - User can't see Admin and Manager pages
+2016-03-10 23:56:20 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/css/bootstrap.min.css
+2016-03-10 23:56:20 ERROR RoleFilter:39 - User can't see Admin and Manager pages
+2016-03-10 23:56:20 INFO  RoleFilter:59 - Request URI: /view/res/css/font-awesome.css
+2016-03-10 23:56:20 ERROR RoleFilter:39 - User can't see Admin and Manager pages
+2016-03-10 23:56:20 INFO  RoleFilter:59 - Request URI: /view/res/css/custom.css
+2016-03-10 23:56:20 ERROR RoleFilter:39 - User can't see Admin and Manager pages
+2016-03-10 23:56:20 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 23:56:20 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 23:56:20 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:56:20 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:56:20 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 23:56:20 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 23:56:20 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 23:56:20 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 23:56:20 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 23:56:20 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 23:56:20 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:56:20 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 23:56:20 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:56:20 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:56:20 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 23:56:20 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 23:56:20 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:56:20 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 23:56:25 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 23:56:25 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:56:25 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 23:56:25 INFO  RoleFilter:59 - Request URI: /view/res/jquery/jquery-1.12.1.min.js
+2016-03-10 23:56:25 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/js/bootstrap.min.js
+2016-03-10 23:56:25 ERROR RoleFilter:39 - User can't see Admin and Manager pages
+2016-03-10 23:56:25 ERROR RoleFilter:39 - User can't see Admin and Manager pages
+2016-03-10 23:56:25 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/css/bootstrap.min.css
+2016-03-10 23:56:25 ERROR RoleFilter:39 - User can't see Admin and Manager pages
+2016-03-10 23:56:25 INFO  RoleFilter:59 - Request URI: /view/res/css/basic.css
+2016-03-10 23:56:25 ERROR RoleFilter:39 - User can't see Admin and Manager pages
+2016-03-10 23:56:25 INFO  RoleFilter:59 - Request URI: /view/res/css/font-awesome.css
+2016-03-10 23:56:25 ERROR RoleFilter:39 - User can't see Admin and Manager pages
+2016-03-10 23:56:25 INFO  RoleFilter:59 - Request URI: /view/res/css/custom.css
+2016-03-10 23:56:25 ERROR RoleFilter:39 - User can't see Admin and Manager pages
+2016-03-10 23:56:25 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 23:56:25 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:56:25 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 23:56:25 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 23:56:25 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:56:25 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 23:56:25 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 23:56:25 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:56:25 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 23:56:25 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 23:56:25 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:56:25 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 23:56:25 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 23:56:25 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:56:25 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 23:56:25 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 23:56:25 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:56:25 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 23:56:34 INFO  RoleFilter:16 - Started Role Filter
+2016-03-10 23:56:34 INFO  EncodingFilter:28 - Encoding filter started
+2016-03-10 23:56:34 INFO  EncodingFilter:30 - Get incoding UTF-8
+2016-03-10 23:56:35 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 23:56:35 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:56:36 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 23:56:36 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:56:36 INFO  RoleFilter:59 - Request URI: /
+2016-03-10 23:56:36 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:56:36 INFO  RoleFilter:59 - Request URI: /view/res/jquery/jquery-1.12.1.min.js
+2016-03-10 23:56:36 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/js/bootstrap.min.js
+2016-03-10 23:56:36 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:56:36 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:56:36 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/css/bootstrap.min.css
+2016-03-10 23:56:36 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:56:36 INFO  RoleFilter:59 - Request URI: /view/res/css/font-awesome.css
+2016-03-10 23:56:36 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:56:36 INFO  RoleFilter:59 - Request URI: /view/res/css/basic.css
+2016-03-10 23:56:36 INFO  RoleFilter:59 - Request URI: /view/res/css/custom.css
+2016-03-10 23:56:36 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:56:36 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:56:46 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-10 23:56:46 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:56:46 INFO  DSHolder:27 - Making Data Source
+2016-03-10 23:56:46 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@747b2c9
+2016-03-10 23:56:47 INFO  SignInServlet:25 - User exists: plotnikov password: plotnikov
+2016-03-10 23:56:47 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-10 23:56:47 INFO  SignInServlet:33 - Setted locale: ru
+2016-03-10 23:56:47 INFO  SignInServlet:35 - Set a new session: org.apache.catalina.session.StandardSessionFacade@28c0376f
+2016-03-10 23:56:47 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 23:56:47 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:56:47 INFO  CarListServlet:24 - Making list of Cars
+2016-03-10 23:56:49 INFO  RoleFilter:59 - Request URI: /rentCar
+2016-03-10 23:56:49 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:56:49 INFO  RentCarServlet:35 - Making order page
+2016-03-10 23:57:00 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-10 23:57:00 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-10 23:57:00 INFO  CarListServlet:24 - Making list of Cars
+2016-03-11 00:35:45 INFO  RoleFilter:16 - Started Role Filter
+2016-03-11 00:35:45 INFO  EncodingFilter:28 - Encoding filter started
+2016-03-11 00:35:45 INFO  EncodingFilter:30 - Get incoding UTF-8
+2016-03-11 00:35:46 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 00:35:46 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:35:47 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 00:35:47 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:35:47 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 00:35:47 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:36:36 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-11 00:36:36 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:36:36 INFO  DSHolder:27 - Making Data Source
+2016-03-11 00:36:36 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@9ba2f81
+2016-03-11 00:36:36 INFO  SignInServlet:25 - User exists: smallgaben password: pfdnhfr040
+2016-03-11 00:36:36 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-11 00:36:36 INFO  SignInServlet:33 - Setted locale: ru
+2016-03-11 00:36:36 INFO  SignInServlet:35 - Set a new session: org.apache.catalina.session.StandardSessionFacade@7cec3b72
+2016-03-11 00:36:36 INFO  RoleFilter:59 - Request URI: /orderList
+2016-03-11 00:36:36 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:37:28 INFO  RoleFilter:59 - Request URI: /orderList
+2016-03-11 00:37:28 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:37:28 INFO  RoleFilter:59 - Request URI: /view/res/jquery/jquery-1.12.1.min.js
+2016-03-11 00:37:28 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/js/bootstrap.min.js
+2016-03-11 00:37:28 ERROR RoleFilter:35 - Manager can't see Admin and User pages
+2016-03-11 00:37:28 ERROR RoleFilter:35 - Manager can't see Admin and User pages
+2016-03-11 00:37:28 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/css/bootstrap.min.css
+2016-03-11 00:37:28 ERROR RoleFilter:35 - Manager can't see Admin and User pages
+2016-03-11 00:37:28 INFO  RoleFilter:59 - Request URI: /view/res/css/custom.css
+2016-03-11 00:37:28 ERROR RoleFilter:35 - Manager can't see Admin and User pages
+2016-03-11 00:37:28 INFO  RoleFilter:59 - Request URI: /view/res/css/basic.css
+2016-03-11 00:37:28 ERROR RoleFilter:35 - Manager can't see Admin and User pages
+2016-03-11 00:37:28 INFO  RoleFilter:59 - Request URI: /view/res/css/font-awesome.css
+2016-03-11 00:37:28 ERROR RoleFilter:35 - Manager can't see Admin and User pages
+2016-03-11 00:37:28 INFO  RoleFilter:59 - Request URI: /orderList
+2016-03-11 00:37:28 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:37:28 INFO  RoleFilter:59 - Request URI: /orderList
+2016-03-11 00:37:28 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:37:28 INFO  RoleFilter:59 - Request URI: /orderList
+2016-03-11 00:37:28 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:37:28 INFO  RoleFilter:59 - Request URI: /orderList
+2016-03-11 00:37:28 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:37:28 INFO  RoleFilter:59 - Request URI: /orderList
+2016-03-11 00:37:28 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:37:28 INFO  RoleFilter:59 - Request URI: /orderList
+2016-03-11 00:37:28 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:37:34 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 00:37:34 ERROR RoleFilter:35 - Manager can't see Admin and User pages
+2016-03-11 00:37:34 INFO  RoleFilter:59 - Request URI: /orderList
+2016-03-11 00:37:34 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:37:34 INFO  RoleFilter:59 - Request URI: /view/res/jquery/jquery-1.12.1.min.js
+2016-03-11 00:37:34 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/css/bootstrap.min.css
+2016-03-11 00:37:34 ERROR RoleFilter:35 - Manager can't see Admin and User pages
+2016-03-11 00:37:34 INFO  RoleFilter:59 - Request URI: /view/res/css/font-awesome.css
+2016-03-11 00:37:34 ERROR RoleFilter:35 - Manager can't see Admin and User pages
+2016-03-11 00:37:34 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/js/bootstrap.min.js
+2016-03-11 00:37:34 INFO  RoleFilter:59 - Request URI: /view/res/css/custom.css
+2016-03-11 00:37:34 INFO  RoleFilter:59 - Request URI: /view/res/css/basic.css
+2016-03-11 00:37:34 ERROR RoleFilter:35 - Manager can't see Admin and User pages
+2016-03-11 00:37:34 ERROR RoleFilter:35 - Manager can't see Admin and User pages
+2016-03-11 00:37:34 ERROR RoleFilter:35 - Manager can't see Admin and User pages
+2016-03-11 00:37:34 ERROR RoleFilter:35 - Manager can't see Admin and User pages
+2016-03-11 00:37:34 INFO  RoleFilter:59 - Request URI: /orderList
+2016-03-11 00:37:34 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:37:34 INFO  RoleFilter:59 - Request URI: /orderList
+2016-03-11 00:37:34 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:37:34 INFO  RoleFilter:59 - Request URI: /orderList
+2016-03-11 00:37:34 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:37:34 INFO  RoleFilter:59 - Request URI: /orderList
+2016-03-11 00:37:34 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:37:34 INFO  RoleFilter:59 - Request URI: /orderList
+2016-03-11 00:37:34 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:37:34 INFO  RoleFilter:59 - Request URI: /orderList
+2016-03-11 00:37:34 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:37:47 INFO  RoleFilter:16 - Started Role Filter
+2016-03-11 00:37:47 INFO  EncodingFilter:28 - Encoding filter started
+2016-03-11 00:37:47 INFO  EncodingFilter:30 - Get incoding UTF-8
+2016-03-11 00:37:48 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 00:37:48 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:37:49 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 00:37:49 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:37:49 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 00:37:49 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:37:49 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/js/bootstrap.min.js
+2016-03-11 00:37:49 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:37:49 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/css/bootstrap.min.css
+2016-03-11 00:37:49 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:37:49 INFO  RoleFilter:59 - Request URI: /view/res/jquery/jquery-1.12.1.min.js
+2016-03-11 00:37:49 INFO  RoleFilter:59 - Request URI: /view/res/css/custom.css
+2016-03-11 00:37:49 INFO  RoleFilter:59 - Request URI: /view/res/css/basic.css
+2016-03-11 00:37:49 INFO  RoleFilter:59 - Request URI: /view/res/css/font-awesome.css
+2016-03-11 00:37:49 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:37:49 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:37:49 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:37:49 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:37:59 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-11 00:37:59 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:37:59 INFO  DSHolder:27 - Making Data Source
+2016-03-11 00:37:59 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@4a6da18b
+2016-03-11 00:37:59 INFO  SignInServlet:25 - User exists: smallgaben password: pfdnhfr040
+2016-03-11 00:37:59 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-11 00:37:59 INFO  SignInServlet:33 - Setted locale: ru
+2016-03-11 00:37:59 INFO  SignInServlet:35 - Set a new session: org.apache.catalina.session.StandardSessionFacade@2fb74b78
+2016-03-11 00:37:59 INFO  RoleFilter:59 - Request URI: /orderList
+2016-03-11 00:37:59 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:38:20 INFO  RoleFilter:59 - Request URI: /orderList
+2016-03-11 00:38:20 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:38:22 INFO  RoleFilter:59 - Request URI: /orderList
+2016-03-11 00:38:22 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:38:25 INFO  RoleFilter:59 - Request URI: /logout
+2016-03-11 00:38:25 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:38:25 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-11 00:38:25 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 00:38:25 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:38:31 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-11 00:38:31 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:38:31 INFO  SignInServlet:25 - User exists: ADMIN password: ADMIN
+2016-03-11 00:38:31 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-11 00:38:31 INFO  SignInServlet:33 - Setted locale: ru
+2016-03-11 00:38:31 INFO  SignInServlet:35 - Set a new session: org.apache.catalina.session.StandardSessionFacade@4bdbf283
+2016-03-11 00:38:31 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-11 00:38:31 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:38:31 INFO  CarListServlet:24 - Making list of Cars
+2016-03-11 00:39:23 INFO  RoleFilter:59 - Request URI: /utilManager
+2016-03-11 00:39:23 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:39:26 INFO  RoleFilter:59 - Request URI: /userList
+2016-03-11 00:39:26 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:39:26 INFO  UserListServlet:21 - Started making users list
+2016-03-11 00:39:35 INFO  RoleFilter:59 - Request URI: /utilManager
+2016-03-11 00:39:35 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:39:41 INFO  RoleFilter:59 - Request URI: /view/AdminDir/RegManager.jsp
+2016-03-11 00:39:41 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:39:49 INFO  RoleFilter:59 - Request URI: /logout
+2016-03-11 00:39:49 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:39:49 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-11 00:39:49 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 00:39:49 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:40:22 INFO  RoleFilter:59 - Request URI: /register
+2016-03-11 00:40:22 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:40:23 INFO  UserDAOImp:36 - Created User with id: 9
+2016-03-11 00:40:23 INFO  RegisterServlet:45 - Created customer id and username: 9patachus
+2016-03-11 00:40:23 INFO  RegisterServlet:50 - Redirecting to SignInServlet.java for entering
+2016-03-11 00:40:23 INFO  SignInServlet:25 - User exists: patachus password: pfdnhfr040
+2016-03-11 00:40:23 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-11 00:42:53 INFO  RoleFilter:16 - Started Role Filter
+2016-03-11 00:42:53 INFO  EncodingFilter:28 - Encoding filter started
+2016-03-11 00:42:53 INFO  EncodingFilter:30 - Get incoding UTF-8
+2016-03-11 00:42:54 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 00:42:54 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:42:55 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 00:42:55 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:42:55 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 00:42:55 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:43:24 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 00:43:24 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:43:24 INFO  RoleFilter:59 - Request URI: /view/res/jquery/jquery-1.12.1.min.js
+2016-03-11 00:43:24 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/js/bootstrap.min.js
+2016-03-11 00:43:24 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:43:24 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/css/bootstrap.min.css
+2016-03-11 00:43:24 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:43:24 INFO  RoleFilter:59 - Request URI: /view/res/css/font-awesome.css
+2016-03-11 00:43:24 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:43:24 INFO  RoleFilter:59 - Request URI: /view/res/css/basic.css
+2016-03-11 00:43:24 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:43:24 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:43:24 INFO  RoleFilter:59 - Request URI: /view/res/css/custom.css
+2016-03-11 00:43:24 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:43:56 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 00:43:56 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:43:56 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/js/bootstrap.min.js
+2016-03-11 00:43:56 INFO  RoleFilter:59 - Request URI: /view/res/jquery/jquery-1.12.1.min.js
+2016-03-11 00:43:56 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:43:56 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/css/bootstrap.min.css
+2016-03-11 00:43:56 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:43:56 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:43:56 INFO  RoleFilter:59 - Request URI: /view/res/css/custom.css
+2016-03-11 00:43:56 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:43:56 INFO  RoleFilter:59 - Request URI: /view/res/css/basic.css
+2016-03-11 00:43:56 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:43:56 INFO  RoleFilter:59 - Request URI: /view/res/css/font-awesome.css
+2016-03-11 00:43:56 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:44:13 INFO  RoleFilter:16 - Started Role Filter
+2016-03-11 00:44:13 INFO  EncodingFilter:28 - Encoding filter started
+2016-03-11 00:44:13 INFO  EncodingFilter:30 - Get incoding UTF-8
+2016-03-11 00:44:14 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 00:44:14 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:44:15 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 00:44:15 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:44:15 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 00:44:15 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:44:23 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-11 00:44:23 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:44:23 INFO  DSHolder:27 - Making Data Source
+2016-03-11 00:44:23 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@4cb7c34c
+2016-03-11 00:44:23 INFO  SignInServlet:25 - User exists: ADMIN password: ADMIN
+2016-03-11 00:44:23 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-11 00:44:23 INFO  SignInServlet:33 - Setted locale: ru
+2016-03-11 00:44:23 INFO  SignInServlet:35 - Set a new session: org.apache.catalina.session.StandardSessionFacade@1317704f
+2016-03-11 00:44:23 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-11 00:44:23 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:44:23 INFO  CarListServlet:24 - Making list of Cars
+2016-03-11 00:44:26 INFO  RoleFilter:59 - Request URI: /userList
+2016-03-11 00:44:26 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:44:26 INFO  UserListServlet:21 - Started making users list
+2016-03-11 00:44:37 INFO  RoleFilter:59 - Request URI: /logout
+2016-03-11 00:44:37 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:44:37 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-11 00:44:37 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 00:44:37 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:45:08 INFO  RoleFilter:59 - Request URI: /register
+2016-03-11 00:45:08 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:45:08 INFO  UserDAOImp:36 - Created User with id: 10
+2016-03-11 00:45:08 INFO  RegisterServlet:45 - Created customer id and username: 10palestinec
+2016-03-11 00:45:08 INFO  RegisterServlet:50 - Redirecting to SignInServlet.java for entering
+2016-03-11 00:45:08 INFO  SignInServlet:25 - User exists: palestinec password: pfdnhfr040
+2016-03-11 00:45:08 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-11 00:45:08 INFO  SignInServlet:33 - Setted locale: ru
+2016-03-11 00:45:08 INFO  SignInServlet:35 - Set a new session: org.apache.catalina.session.StandardSessionFacade@7b4a6144
+2016-03-11 00:45:08 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-11 00:45:08 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:45:08 INFO  CarListServlet:24 - Making list of Cars
+2016-03-11 00:45:15 INFO  RoleFilter:59 - Request URI: /userOrders
+2016-03-11 00:45:15 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:45:15 INFO  UserOrderListServlet:38 - List of orders for palestinec, size - 0
+2016-03-11 00:45:16 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-11 00:45:16 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:45:16 INFO  CarListServlet:24 - Making list of Cars
+2016-03-11 00:45:29 INFO  RoleFilter:59 - Request URI: /logout
+2016-03-11 00:45:29 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:45:29 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-11 00:45:29 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 00:45:29 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:45:37 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-11 00:45:37 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:45:37 INFO  SignInServlet:25 - User exists: ADMIN password: ADMIN
+2016-03-11 00:45:37 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-11 00:45:37 INFO  SignInServlet:33 - Setted locale: ru
+2016-03-11 00:45:37 INFO  SignInServlet:35 - Set a new session: org.apache.catalina.session.StandardSessionFacade@e091d68
+2016-03-11 00:45:37 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-11 00:45:37 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:45:37 INFO  CarListServlet:24 - Making list of Cars
+2016-03-11 00:46:34 INFO  RoleFilter:16 - Started Role Filter
+2016-03-11 00:46:34 INFO  EncodingFilter:28 - Encoding filter started
+2016-03-11 00:46:34 INFO  EncodingFilter:30 - Get incoding UTF-8
+2016-03-11 00:46:35 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 00:46:35 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:46:36 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 00:46:36 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:46:36 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 00:46:36 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:46:43 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-11 00:46:43 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:46:43 INFO  DSHolder:27 - Making Data Source
+2016-03-11 00:46:43 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@429ba5a6
+2016-03-11 00:46:43 INFO  SignInServlet:25 - User exists: ADMIN password: ADMIN
+2016-03-11 00:46:43 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-11 00:46:43 INFO  SignInServlet:33 - Setted locale: ru
+2016-03-11 00:46:43 INFO  SignInServlet:35 - Set a new session: org.apache.catalina.session.StandardSessionFacade@31cbb8c9
+2016-03-11 00:46:43 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-11 00:46:43 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:46:43 INFO  CarListServlet:24 - Making list of Cars
+2016-03-11 00:47:05 INFO  RoleFilter:59 - Request URI: /logout
+2016-03-11 00:47:05 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:47:05 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-11 00:47:05 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 00:47:05 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:47:12 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 00:47:12 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:47:17 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-11 00:47:17 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:47:18 INFO  SignInServlet:25 - User exists: ADMIN password: ADMIN
+2016-03-11 00:47:18 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-11 00:47:18 INFO  SignInServlet:33 - Setted locale: en
+2016-03-11 00:47:18 INFO  SignInServlet:35 - Set a new session: org.apache.catalina.session.StandardSessionFacade@11fa72e0
+2016-03-11 00:47:18 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-11 00:47:18 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:47:18 INFO  CarListServlet:24 - Making list of Cars
+2016-03-11 00:47:21 INFO  RoleFilter:59 - Request URI: /logout
+2016-03-11 00:47:21 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:47:21 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-11 00:47:21 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 00:47:21 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:47:24 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 00:47:24 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:47:26 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 00:47:26 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:47:40 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-11 00:47:40 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:47:40 INFO  SignInServlet:25 - User exists: smallgaben password: pfdnhfr040
+2016-03-11 00:47:40 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-11 00:47:40 INFO  SignInServlet:33 - Setted locale: ru
+2016-03-11 00:47:40 INFO  SignInServlet:35 - Set a new session: org.apache.catalina.session.StandardSessionFacade@50a8fbba
+2016-03-11 00:47:40 INFO  RoleFilter:59 - Request URI: /orderList
+2016-03-11 00:47:40 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:47:50 INFO  RoleFilter:59 - Request URI: /orderList
+2016-03-11 00:47:50 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:47:53 INFO  RoleFilter:59 - Request URI: /orderList
+2016-03-11 00:47:53 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:47:55 INFO  RoleFilter:59 - Request URI: /orderList
+2016-03-11 00:47:55 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:47:58 INFO  RoleFilter:59 - Request URI: /logout
+2016-03-11 00:47:58 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:47:58 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-11 00:47:58 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 00:47:58 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:48:16 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 00:48:16 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:48:16 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/css/bootstrap.min.css
+2016-03-11 00:48:16 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/js/bootstrap.min.js
+2016-03-11 00:48:16 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:48:16 INFO  RoleFilter:59 - Request URI: /view/res/css/custom.css
+2016-03-11 00:48:16 INFO  RoleFilter:59 - Request URI: /view/res/css/font-awesome.css
+2016-03-11 00:48:16 INFO  RoleFilter:59 - Request URI: /view/res/css/basic.css
+2016-03-11 00:48:16 INFO  RoleFilter:59 - Request URI: /view/res/jquery/jquery-1.12.1.min.js
+2016-03-11 00:48:16 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:48:16 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:48:16 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:48:16 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:48:16 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:48:54 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 00:48:54 INFO  EncodingFilter:20 - Setting to null encoding: UTF-8
+2016-03-11 00:50:13 INFO  RoleFilter:16 - Started Role Filter
+2016-03-11 00:50:13 INFO  EncodingFilter:27 - Encoding filter started
+2016-03-11 00:50:13 INFO  EncodingFilter:29 - Get incoding UTF-8
+2016-03-11 00:50:14 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 00:50:15 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 00:50:15 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 00:50:35 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-11 00:50:35 INFO  DSHolder:27 - Making Data Source
+2016-03-11 00:50:35 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@2e06ce81
+2016-03-11 00:50:35 WARN  SignInServlet:55 - User blocked or password incorrect
+2016-03-11 12:40:36 INFO  RoleFilter:16 - Started Role Filter
+2016-03-11 12:40:36 INFO  EncodingFilter:27 - Encoding filter started
+2016-03-11 12:40:36 INFO  EncodingFilter:29 - Get incoding UTF-8
+2016-03-11 12:40:37 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 12:40:38 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 12:40:46 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 12:40:48 INFO  RoleFilter:59 - Request URI: /favicon.ico
+2016-03-11 12:40:48 INFO  RoleFilter:59 - Request URI: /favicon.ico
+2016-03-11 12:41:08 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-11 12:41:08 INFO  DSHolder:27 - Making Data Source
+2016-03-11 12:41:08 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@3020bda3
+2016-03-11 12:41:08 INFO  SignInServlet:25 - User exists: plotnikov password: plotnikov
+2016-03-11 12:41:08 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-11 12:41:08 INFO  SignInServlet:33 - Setted locale: ru
+2016-03-11 12:41:08 INFO  SignInServlet:35 - Set a new session: org.apache.catalina.session.StandardSessionFacade@4acd081f
+2016-03-11 12:41:08 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-11 12:41:08 INFO  CarListServlet:24 - Making list of Cars
+2016-03-11 12:41:27 INFO  RoleFilter:59 - Request URI: /filterUtils
+2016-03-11 12:41:27 INFO  UserSortServlet:23 - Starting to Sort Cars
+2016-03-11 12:41:54 INFO  RoleFilter:59 - Request URI: /filterUtils
+2016-03-11 12:41:54 INFO  UserSortServlet:23 - Starting to Sort Cars
+2016-03-11 12:41:54 INFO  RoleFilter:59 - Request URI: /view/res/css/basic.css
+2016-03-11 12:41:54 ERROR RoleFilter:39 - User can't see Admin and Manager pages
+2016-03-11 12:41:54 INFO  RoleFilter:59 - Request URI: /view/res/jquery/jquery-1.12.1.min.js
+2016-03-11 12:41:54 ERROR RoleFilter:39 - User can't see Admin and Manager pages
+2016-03-11 12:41:54 INFO  RoleFilter:59 - Request URI: /view/res/css/font-awesome.css
+2016-03-11 12:41:54 INFO  RoleFilter:59 - Request URI: /view/res/css/custom.css
+2016-03-11 12:41:54 ERROR RoleFilter:39 - User can't see Admin and Manager pages
+2016-03-11 12:41:54 ERROR RoleFilter:39 - User can't see Admin and Manager pages
+2016-03-11 12:41:54 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/js/bootstrap.min.js
+2016-03-11 12:41:54 ERROR RoleFilter:39 - User can't see Admin and Manager pages
+2016-03-11 12:41:54 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/css/bootstrap.min.css
+2016-03-11 12:41:54 ERROR RoleFilter:39 - User can't see Admin and Manager pages
+2016-03-11 12:41:54 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-11 12:41:54 INFO  CarListServlet:24 - Making list of Cars
+2016-03-11 12:41:54 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-11 12:41:54 INFO  CarListServlet:24 - Making list of Cars
+2016-03-11 12:41:54 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-11 12:41:54 INFO  CarListServlet:24 - Making list of Cars
+2016-03-11 12:41:54 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-11 12:41:54 INFO  CarListServlet:24 - Making list of Cars
+2016-03-11 12:41:54 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-11 12:41:54 INFO  CarListServlet:24 - Making list of Cars
+2016-03-11 12:41:54 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-11 12:41:54 INFO  CarListServlet:24 - Making list of Cars
+2016-03-11 12:42:00 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 12:42:00 ERROR RoleFilter:39 - User can't see Admin and Manager pages
+2016-03-11 12:42:00 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-11 12:42:00 INFO  CarListServlet:24 - Making list of Cars
+2016-03-11 12:42:00 INFO  RoleFilter:59 - Request URI: /view/res/jquery/jquery-1.12.1.min.js
+2016-03-11 12:42:00 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/js/bootstrap.min.js
+2016-03-11 12:42:00 ERROR RoleFilter:39 - User can't see Admin and Manager pages
+2016-03-11 12:42:00 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/css/bootstrap.min.css
+2016-03-11 12:42:00 ERROR RoleFilter:39 - User can't see Admin and Manager pages
+2016-03-11 12:42:00 ERROR RoleFilter:39 - User can't see Admin and Manager pages
+2016-03-11 12:42:00 INFO  RoleFilter:59 - Request URI: /view/res/css/basic.css
+2016-03-11 12:42:00 INFO  RoleFilter:59 - Request URI: /view/res/css/font-awesome.css
+2016-03-11 12:42:00 ERROR RoleFilter:39 - User can't see Admin and Manager pages
+2016-03-11 12:42:00 ERROR RoleFilter:39 - User can't see Admin and Manager pages
+2016-03-11 12:42:00 INFO  RoleFilter:59 - Request URI: /view/res/css/custom.css
+2016-03-11 12:42:00 ERROR RoleFilter:39 - User can't see Admin and Manager pages
+2016-03-11 12:42:00 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-11 12:42:00 INFO  CarListServlet:24 - Making list of Cars
+2016-03-11 12:42:00 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-11 12:42:00 INFO  CarListServlet:24 - Making list of Cars
+2016-03-11 12:42:00 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-11 12:42:00 INFO  CarListServlet:24 - Making list of Cars
+2016-03-11 12:42:00 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-11 12:42:00 INFO  CarListServlet:24 - Making list of Cars
+2016-03-11 12:42:00 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-11 12:42:00 INFO  CarListServlet:24 - Making list of Cars
+2016-03-11 12:42:00 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-11 12:42:00 INFO  CarListServlet:24 - Making list of Cars
+2016-03-11 12:42:26 INFO  RoleFilter:16 - Started Role Filter
+2016-03-11 12:42:26 INFO  EncodingFilter:27 - Encoding filter started
+2016-03-11 12:42:26 INFO  EncodingFilter:29 - Get incoding UTF-8
+2016-03-11 12:42:26 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 12:42:27 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 12:42:27 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 12:42:27 INFO  RoleFilter:59 - Request URI: /view/res/jquery/jquery-1.12.1.min.js
+2016-03-11 12:42:27 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/js/bootstrap.min.js
+2016-03-11 12:42:27 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/css/bootstrap.min.css
+2016-03-11 12:42:27 INFO  RoleFilter:59 - Request URI: /view/res/css/font-awesome.css
+2016-03-11 12:42:27 INFO  RoleFilter:59 - Request URI: /view/res/css/custom.css
+2016-03-11 12:42:27 INFO  RoleFilter:59 - Request URI: /view/res/css/basic.css
+2016-03-11 12:42:35 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-11 12:42:35 INFO  DSHolder:27 - Making Data Source
+2016-03-11 12:42:35 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@7695f446
+2016-03-11 12:42:35 INFO  SignInServlet:25 - User exists: plotnikov password: plotnikov
+2016-03-11 12:42:35 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-11 12:42:35 INFO  SignInServlet:33 - Setted locale: ru
+2016-03-11 12:42:35 INFO  SignInServlet:35 - Set a new session: org.apache.catalina.session.StandardSessionFacade@444e6255
+2016-03-11 12:42:35 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-11 12:42:35 INFO  CarListServlet:24 - Making list of Cars
+2016-03-11 12:42:39 INFO  RoleFilter:59 - Request URI: /userOrders
+2016-03-11 12:42:39 INFO  UserOrderListServlet:38 - List of orders for plotnikov, size - 4
+2016-03-11 12:43:46 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 12:43:46 ERROR RoleFilter:39 - User can't see Admin and Manager pages
+2016-03-11 12:43:46 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-11 12:43:46 INFO  CarListServlet:24 - Making list of Cars
+2016-03-11 12:43:48 INFO  RoleFilter:59 - Request URI: /logout
+2016-03-11 12:43:48 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-11 12:43:48 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 12:51:17 INFO  RoleFilter:16 - Started Role Filter
+2016-03-11 12:51:17 INFO  EncodingFilter:27 - Encoding filter started
+2016-03-11 12:51:17 INFO  EncodingFilter:29 - Get incoding UTF-8
+2016-03-11 12:51:18 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 12:51:19 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 12:51:19 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 12:51:42 INFO  RoleFilter:59 - Request URI: /register
+2016-03-11 12:51:42 ERROR RegisterServlet:60 - Bad values
+2016-03-11 12:51:42 INFO  DSHolder:27 - Making Data Source
+2016-03-11 12:51:42 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@3e83b1cb
+2016-03-11 12:51:42 INFO  UserDAOImp:36 - Created User with id: 11
+2016-03-11 12:51:42 INFO  RegisterServlet:48 - Created customer id and username: 11traver
+2016-03-11 12:51:42 ERROR RegisterServlet:60 - Bad values
+2016-03-11 13:14:39 INFO  RoleFilter:59 - Request URI: /register
+2016-03-11 13:14:39 INFO  UserDAOImp:36 - Created User with id: 12
+2016-03-11 13:14:39 INFO  RegisterServlet:48 - Created customer id and username: 12politruk
+2016-03-11 13:14:39 ERROR RegisterServlet:60 - Bad values
+2016-03-11 13:15:11 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-11 13:15:11 INFO  SignInServlet:25 - User exists: plotnikov password: plotnikov
+2016-03-11 13:15:11 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-11 13:15:11 INFO  SignInServlet:33 - Setted locale: ru
+2016-03-11 13:15:11 INFO  SignInServlet:35 - Set a new session: org.apache.catalina.session.StandardSessionFacade@3ce85cc5
+2016-03-11 13:15:11 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-11 13:15:11 INFO  CarListServlet:24 - Making list of Cars
+2016-03-11 13:15:35 INFO  RoleFilter:59 - Request URI: /rentCar
+2016-03-11 13:15:35 INFO  RentCarServlet:35 - Making order page
+2016-03-11 13:15:52 INFO  RoleFilter:59 - Request URI: /filterUtils
+2016-03-11 13:15:52 INFO  UserSortServlet:23 - Starting to Sort Cars
+2016-03-11 13:15:54 INFO  RoleFilter:59 - Request URI: /filterUtils
+2016-03-11 13:15:54 INFO  UserSortServlet:23 - Starting to Sort Cars
+2016-03-11 13:15:56 INFO  RoleFilter:59 - Request URI: /filterUtils
+2016-03-11 13:15:56 INFO  UserSortServlet:23 - Starting to Sort Cars
+2016-03-11 13:15:57 INFO  RoleFilter:59 - Request URI: /filterUtils
+2016-03-11 13:15:57 INFO  UserSortServlet:23 - Starting to Sort Cars
+2016-03-11 13:15:59 INFO  RoleFilter:59 - Request URI: /filterUtils
+2016-03-11 13:15:59 INFO  UserSortServlet:23 - Starting to Sort Cars
+2016-03-11 13:16:01 INFO  RoleFilter:59 - Request URI: /rentCar
+2016-03-11 13:16:01 INFO  RentCarServlet:35 - Making order page
+2016-03-11 13:42:37 INFO  RoleFilter:16 - Started Role Filter
+2016-03-11 13:42:37 INFO  EncodingFilter:27 - Encoding filter started
+2016-03-11 13:42:37 INFO  EncodingFilter:29 - Get incoding UTF-8
+2016-03-11 13:42:38 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 13:42:38 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 13:42:38 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 13:42:48 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-11 13:42:48 INFO  DSHolder:27 - Making Data Source
+2016-03-11 13:42:48 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@18d0477
+2016-03-11 13:42:48 INFO  SignInServlet:25 - User exists: plotnikov password: plotnikov
+2016-03-11 13:42:48 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-11 13:42:48 INFO  SignInServlet:33 - Setted locale: ru
+2016-03-11 13:42:48 INFO  SignInServlet:35 - Set a new session: org.apache.catalina.session.StandardSessionFacade@32e8674f
+2016-03-11 13:42:48 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-11 13:42:48 INFO  CarListServlet:24 - Making list of Cars
+2016-03-11 13:42:52 INFO  RoleFilter:59 - Request URI: /rentCar
+2016-03-11 13:42:52 INFO  RentCarServlet:35 - Making order page
+2016-03-11 13:43:22 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 13:43:22 INFO  RoleFilter:59 - Request URI: /view/res/jquery/jquery-1.12.1.min.js
+2016-03-11 13:43:22 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/js/bootstrap.min.js
+2016-03-11 13:43:22 INFO  RoleFilter:59 - Request URI: /view/res/css/custom.css
+2016-03-11 13:43:22 INFO  RoleFilter:59 - Request URI: /view/res/css/font-awesome.css
+2016-03-11 13:43:22 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/css/bootstrap.min.css
+2016-03-11 13:43:22 INFO  RoleFilter:59 - Request URI: /view/res/css/basic.css
+2016-03-11 13:43:23 INFO  RoleFilter:59 - Request URI: /favicon.ico
+2016-03-11 13:43:41 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-11 13:43:41 INFO  SignInServlet:25 - User exists: plotnikov password: plotnikov
+2016-03-11 13:43:41 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-11 13:43:41 INFO  SignInServlet:33 - Setted locale: ru
+2016-03-11 13:43:41 INFO  SignInServlet:35 - Set a new session: org.apache.catalina.session.StandardSessionFacade@254f5086
+2016-03-11 13:43:41 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-11 13:43:41 INFO  CarListServlet:24 - Making list of Cars
+2016-03-11 13:43:45 INFO  RoleFilter:59 - Request URI: /rentCar
+2016-03-11 13:43:45 INFO  RentCarServlet:35 - Making order page
+2016-03-11 13:44:42 INFO  RoleFilter:16 - Started Role Filter
+2016-03-11 13:44:42 INFO  EncodingFilter:27 - Encoding filter started
+2016-03-11 13:44:42 INFO  EncodingFilter:29 - Get incoding UTF-8
+2016-03-11 13:44:42 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 13:44:43 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 13:44:43 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 13:44:50 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 13:44:53 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-11 13:44:53 INFO  DSHolder:27 - Making Data Source
+2016-03-11 13:44:53 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@2f69b2fa
+2016-03-11 13:44:53 INFO  SignInServlet:25 - User exists: plotnikov password: plotnikov
+2016-03-11 13:44:53 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-11 13:44:53 INFO  SignInServlet:33 - Setted locale: ru
+2016-03-11 13:44:53 INFO  SignInServlet:35 - Set a new session: org.apache.catalina.session.StandardSessionFacade@3cfca8a7
+2016-03-11 13:44:53 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-11 13:44:53 INFO  CarListServlet:24 - Making list of Cars
+2016-03-11 13:44:56 INFO  RoleFilter:59 - Request URI: /rentCar
+2016-03-11 13:44:56 INFO  RentCarServlet:35 - Making order page
+2016-03-11 13:45:15 INFO  RoleFilter:59 - Request URI: /rentCar
+2016-03-11 13:45:15 INFO  RentCarServlet:30 - Making a new order
+2016-03-11 13:45:15 ERROR RentCarServlet:80 - Bad order values
+2016-03-11 13:45:15 INFO  CarListServlet:24 - Making list of Cars
+2016-03-11 13:45:52 INFO  RoleFilter:59 - Request URI: /rentCar
+2016-03-11 13:45:52 INFO  RentCarServlet:30 - Making a new order
+2016-03-11 13:45:52 ERROR RentCarServlet:80 - Bad order values
+2016-03-11 13:45:52 INFO  CarListServlet:24 - Making list of Cars
+2016-03-11 13:46:03 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 13:46:03 ERROR RoleFilter:39 - User can't see Admin and Manager pages
+2016-03-11 13:46:03 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-11 13:46:03 INFO  CarListServlet:24 - Making list of Cars
+2016-03-11 13:46:08 INFO  RoleFilter:59 - Request URI: /rentCar
+2016-03-11 13:46:08 INFO  RentCarServlet:35 - Making order page
+2016-03-11 13:46:19 INFO  RoleFilter:16 - Started Role Filter
+2016-03-11 13:46:19 INFO  EncodingFilter:27 - Encoding filter started
+2016-03-11 13:46:19 INFO  EncodingFilter:29 - Get incoding UTF-8
+2016-03-11 13:46:19 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 13:46:20 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 13:46:20 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 13:47:47 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 13:47:50 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-11 13:47:50 INFO  DSHolder:27 - Making Data Source
+2016-03-11 13:47:50 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@1eec8689
+2016-03-11 13:47:50 INFO  SignInServlet:25 - User exists: plotnikov password: plotnikov
+2016-03-11 13:47:50 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-11 13:47:50 INFO  SignInServlet:33 - Setted locale: ru
+2016-03-11 13:47:50 INFO  SignInServlet:35 - Set a new session: org.apache.catalina.session.StandardSessionFacade@78c6a98d
+2016-03-11 13:47:50 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-11 13:47:50 INFO  CarListServlet:24 - Making list of Cars
+2016-03-11 13:47:51 INFO  RoleFilter:59 - Request URI: /rentCar
+2016-03-11 13:47:51 INFO  RentCarServlet:35 - Making order page
+2016-03-11 13:48:07 INFO  RoleFilter:59 - Request URI: /rentCar
+2016-03-11 13:48:07 INFO  RentCarServlet:30 - Making a new order
+2016-03-11 13:48:07 ERROR RentCarServlet:80 - Bad order values
+2016-03-11 13:48:07 INFO  CarListServlet:24 - Making list of Cars
+2016-03-11 13:49:03 INFO  RoleFilter:16 - Started Role Filter
+2016-03-11 13:49:03 INFO  EncodingFilter:27 - Encoding filter started
+2016-03-11 13:49:03 INFO  EncodingFilter:29 - Get incoding UTF-8
+2016-03-11 13:49:03 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 13:49:04 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 13:49:04 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 13:49:14 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-11 13:49:14 INFO  DSHolder:27 - Making Data Source
+2016-03-11 13:49:14 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@7ee0220f
+2016-03-11 13:49:14 INFO  SignInServlet:25 - User exists: smallgaben password: pfdnhfr040
+2016-03-11 13:49:14 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-11 13:49:14 INFO  SignInServlet:33 - Setted locale: ru
+2016-03-11 13:49:14 INFO  SignInServlet:35 - Set a new session: org.apache.catalina.session.StandardSessionFacade@303ab424
+2016-03-11 13:49:14 INFO  RoleFilter:59 - Request URI: /orderList
+2016-03-11 13:49:20 INFO  RoleFilter:59 - Request URI: /orderList
+2016-03-11 13:49:48 INFO  RoleFilter:59 - Request URI: /cancelOrder
+2016-03-11 13:49:48 INFO  CancelOrderServlet:22 - Cancelling order
+2016-03-11 13:49:48 INFO  RoleFilter:59 - Request URI: /orderList
+2016-03-11 13:49:51 INFO  RoleFilter:59 - Request URI: /orderList
+2016-03-11 13:49:53 INFO  RoleFilter:59 - Request URI: /cancelOrder
+2016-03-11 13:49:53 INFO  CancelOrderServlet:22 - Cancelling order
+2016-03-11 13:49:53 INFO  RoleFilter:59 - Request URI: /orderList
+2016-03-11 13:49:55 INFO  RoleFilter:59 - Request URI: /orderList
+2016-03-11 13:49:56 INFO  RoleFilter:59 - Request URI: /cancelOrder
+2016-03-11 13:49:56 INFO  CancelOrderServlet:22 - Cancelling order
+2016-03-11 13:49:56 INFO  RoleFilter:59 - Request URI: /orderList
+2016-03-11 13:54:02 INFO  RoleFilter:16 - Started Role Filter
+2016-03-11 13:54:02 INFO  EncodingFilter:27 - Encoding filter started
+2016-03-11 13:54:02 INFO  EncodingFilter:29 - Get incoding UTF-8
+2016-03-11 13:54:02 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 13:54:03 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 13:54:03 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 13:54:09 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 13:54:09 INFO  RoleFilter:59 - Request URI: /favicon.ico
+2016-03-11 13:54:12 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-11 13:54:12 INFO  DSHolder:27 - Making Data Source
+2016-03-11 13:54:12 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@33fc987f
+2016-03-11 13:54:12 INFO  SignInServlet:25 - User exists: plotnikov password: plotnikov
+2016-03-11 13:54:12 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-11 13:54:12 INFO  SignInServlet:33 - Setted locale: ru
+2016-03-11 13:54:12 INFO  SignInServlet:35 - Set a new session: org.apache.catalina.session.StandardSessionFacade@65ea4a2f
+2016-03-11 13:54:12 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-11 13:54:12 INFO  CarListServlet:24 - Making list of Cars
+2016-03-11 13:54:14 INFO  RoleFilter:59 - Request URI: /rentCar
+2016-03-11 13:54:14 INFO  RentCarServlet:35 - Making order page
+2016-03-11 13:54:35 INFO  RoleFilter:59 - Request URI: /rentCar
+2016-03-11 13:54:35 INFO  RentCarServlet:30 - Making a new order
+2016-03-11 13:54:35 ERROR RentCarServlet:82 - Bad order values
+2016-03-11 13:55:56 INFO  RoleFilter:16 - Started Role Filter
+2016-03-11 13:55:56 INFO  EncodingFilter:27 - Encoding filter started
+2016-03-11 13:55:56 INFO  EncodingFilter:29 - Get incoding UTF-8
+2016-03-11 13:55:56 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 13:55:57 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 13:55:57 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 13:56:06 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-11 13:56:06 INFO  DSHolder:27 - Making Data Source
+2016-03-11 13:56:06 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@4badf0c7
+2016-03-11 13:56:06 INFO  SignInServlet:25 - User exists: smallgaben password: pfdnhfr040
+2016-03-11 13:56:06 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-11 13:56:06 INFO  SignInServlet:33 - Setted locale: ru
+2016-03-11 13:56:06 INFO  SignInServlet:35 - Set a new session: org.apache.catalina.session.StandardSessionFacade@236e97b7
+2016-03-11 13:56:06 INFO  RoleFilter:59 - Request URI: /orderList
+2016-03-11 13:56:09 INFO  RoleFilter:59 - Request URI: /orderList
+2016-03-11 13:56:11 INFO  RoleFilter:59 - Request URI: /logout
+2016-03-11 13:56:11 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-11 13:56:11 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 13:56:19 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 13:56:21 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-11 13:56:21 INFO  SignInServlet:25 - User exists: plotnikov password: plotnikov
+2016-03-11 13:56:21 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-11 13:56:21 INFO  SignInServlet:33 - Setted locale: ru
+2016-03-11 13:56:21 INFO  SignInServlet:35 - Set a new session: org.apache.catalina.session.StandardSessionFacade@37a8fe7d
+2016-03-11 13:56:21 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-11 13:56:21 INFO  CarListServlet:24 - Making list of Cars
+2016-03-11 13:56:24 INFO  RoleFilter:59 - Request URI: /userOrders
+2016-03-11 13:56:24 INFO  UserOrderListServlet:38 - List of orders for plotnikov, size - 7
+2016-03-11 13:56:27 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-11 13:56:27 INFO  CarListServlet:24 - Making list of Cars
+2016-03-11 13:56:29 INFO  RoleFilter:59 - Request URI: /rentCar
+2016-03-11 13:56:29 INFO  RentCarServlet:34 - Making order page
+2016-03-11 13:56:41 INFO  RoleFilter:59 - Request URI: /rentCar
+2016-03-11 13:56:41 INFO  RentCarServlet:30 - Making a new order
+2016-03-11 13:56:41 ERROR RentCarServlet:82 - Bad order values
+2016-03-11 13:56:41 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-11 13:56:41 INFO  CarListServlet:24 - Making list of Cars
+2016-03-11 13:56:51 INFO  RoleFilter:59 - Request URI: /userOrders
+2016-03-11 13:56:51 INFO  UserOrderListServlet:38 - List of orders for plotnikov, size - 7
+2016-03-11 13:57:01 INFO  RoleFilter:59 - Request URI: /logout
+2016-03-11 13:57:01 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-11 13:57:01 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 13:57:10 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-11 13:57:10 INFO  SignInServlet:25 - User exists: smallgaben password: pfdnhfr040
+2016-03-11 13:57:10 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-11 13:57:10 INFO  SignInServlet:33 - Setted locale: ru
+2016-03-11 13:57:10 INFO  SignInServlet:35 - Set a new session: org.apache.catalina.session.StandardSessionFacade@328a84f5
+2016-03-11 13:57:10 INFO  RoleFilter:59 - Request URI: /orderList
+2016-03-11 13:57:12 INFO  RoleFilter:59 - Request URI: /orderList
+2016-03-11 13:57:14 INFO  RoleFilter:59 - Request URI: /logout
+2016-03-11 13:57:14 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-11 13:57:14 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 13:57:54 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-11 13:57:54 INFO  SignInServlet:25 - User exists: plotnikov password: plotnikov
+2016-03-11 13:57:54 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-11 13:57:54 INFO  SignInServlet:33 - Setted locale: ru
+2016-03-11 13:57:54 INFO  SignInServlet:35 - Set a new session: org.apache.catalina.session.StandardSessionFacade@1e3c9ea
+2016-03-11 13:57:54 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-11 13:57:54 INFO  CarListServlet:24 - Making list of Cars
+2016-03-11 13:57:56 INFO  RoleFilter:59 - Request URI: /rentCar
+2016-03-11 13:57:56 INFO  RentCarServlet:34 - Making order page
+2016-03-11 13:58:08 INFO  RoleFilter:59 - Request URI: /rentCar
+2016-03-11 13:58:08 INFO  RentCarServlet:30 - Making a new order
+2016-03-11 13:58:08 INFO  RoleFilter:59 - Request URI: /userOrders
+2016-03-11 13:58:08 INFO  UserOrderListServlet:38 - List of orders for plotnikov, size - 8
+2016-03-11 13:58:19 INFO  RoleFilter:59 - Request URI: /logout
+2016-03-11 13:58:19 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-11 13:58:19 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 14:12:16 INFO  RoleFilter:16 - Started Role Filter
+2016-03-11 14:12:16 INFO  EncodingFilter:27 - Encoding filter started
+2016-03-11 14:12:16 INFO  EncodingFilter:29 - Get incoding UTF-8
+2016-03-11 14:12:17 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 14:12:18 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 14:12:18 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 14:12:22 INFO  RoleFilter:59 - Request URI: /
+2016-03-11 14:12:22 INFO  RoleFilter:59 - Request URI: /view/res/jquery/jquery-1.12.1.min.js
+2016-03-11 14:12:22 INFO  RoleFilter:59 - Request URI: /view/res/css/font-awesome.css
+2016-03-11 14:12:22 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/css/bootstrap.min.css
+2016-03-11 14:12:22 INFO  RoleFilter:59 - Request URI: /view/res/css/custom.css
+2016-03-11 14:12:22 INFO  RoleFilter:59 - Request URI: /view/res/css/basic.css
+2016-03-11 14:12:22 INFO  RoleFilter:59 - Request URI: /view/res/bootstrap-3.3.6-dist/js/bootstrap.min.js
+2016-03-11 14:12:24 INFO  RoleFilter:59 - Request URI: /signin
+2016-03-11 14:12:24 INFO  DSHolder:27 - Making Data Source
+2016-03-11 14:12:24 INFO  DSHolder:33 - The Data Source: org.apache.tomcat.dbcp.dbcp.BasicDataSource@2422e124
+2016-03-11 14:12:25 INFO  SignInServlet:25 - User exists: plotnikov password: plotnikov
+2016-03-11 14:12:25 INFO  SignInServlet:29 - User successfully got to the system
+2016-03-11 14:12:25 INFO  SignInServlet:33 - Setted locale: ru
+2016-03-11 14:12:25 INFO  SignInServlet:35 - Set a new session: org.apache.catalina.session.StandardSessionFacade@33621449
+2016-03-11 14:12:25 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-11 14:12:25 INFO  CarListServlet:24 - Making list of Cars
+2016-03-11 14:12:27 INFO  RoleFilter:59 - Request URI: /rentCar
+2016-03-11 14:12:27 INFO  RentCarServlet:34 - Making order page
+2016-03-11 14:12:38 INFO  RoleFilter:59 - Request URI: /rentCar
+2016-03-11 14:12:38 INFO  RentCarServlet:30 - Making a new order
+2016-03-11 14:12:38 ERROR RentCarServlet:82 - Bad order values
+2016-03-11 14:12:38 INFO  RoleFilter:59 - Request URI: /view/errorPages/BadValOrder.jsp
+2016-03-11 14:12:42 INFO  RoleFilter:59 - Request URI: /return
+2016-03-11 14:12:42 ERROR RoleFilter:39 - User can't see Admin and Manager pages
+2016-03-11 14:12:42 INFO  RoleFilter:59 - Request URI: /carList
+2016-03-11 14:12:42 INFO  CarListServlet:24 - Making list of Cars
+2016-03-11 14:12:47 INFO  RoleFilter:59 - Request URI: /logout
+2016-03-11 14:12:47 INFO  LogOutServlet:16 - Started LogOut Servlet
+2016-03-11 14:12:47 INFO  RoleFilter:59 - Request URI: /

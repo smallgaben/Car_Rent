@@ -1,13 +1,13 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@include file="/view/jspf/taglibs.jspf"%>
+
 <html>
 <%@ include file="/view/jspf/head.jspf" %>
 <body>
 <div id="wrapper">
     <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
         <div class="header-right">
-            <a  href="${pageContext.request.contextPath}/view/AdminDir/RegManager.jsp"><i class="btn btn-warning">Register Manager</i></a>
-            <a href="${pageContext.request.contextPath}/logout" class="btn btn-danger" title="Logout"><i class="btn-danger">Log Out</i></a>
+            <a  href="${pageContext.request.contextPath}/view/AdminDir/RegManager.jsp"><i class="btn btn-warning"><fmt:message key="admin.button.regManager"/></i></a>
+            <a href="${pageContext.request.contextPath}/logout" class="btn btn-danger" title="Logout"><i class="btn-danger"><fmt:message key="button.logout"/></i></a>
         </div>
     </nav>
     <!-- /. NAV TOP  -->
@@ -23,13 +23,13 @@
                 </li>
 
                 <li>
-                    <a href="${pageContext.request.contextPath}/carList"><i class="fa"></i>Cars List</a>
+                    <a href="${pageContext.request.contextPath}/carList"><i class="fa"></i><fmt:message key="admin.carlist"/></a>
                 </li>
                 <li>
-                    <a  href="${pageContext.request.contextPath}/utilManager"><i class="fa"></i>Managers List</a>
+                    <a  href="${pageContext.request.contextPath}/utilManager"><i class="fa"></i><fmt:message key="admin.managersList"/></a>
                 </li>
                 <li>
-                    <a  href="${pageContext.request.contextPath}/userList"><i class="fa"></i>Users List</a>
+                    <a  href="${pageContext.request.contextPath}/userList"><i class="fa"></i><fmt:message key="admin.usersList"/></a>
                 </li>
             </ul>
         </div>
@@ -42,23 +42,23 @@
                 <div class="panel-body row">
                     <form action="${pageContext.request.contextPath}/addCar" class="form-group inline">
                         <div class="col-md-2">
-                            <label for="mark">Mark: </label>
+                            <label for="mark"><fmt:message key="car.mark"/>: </label>
                             <input id="mark" type="text" class="form-control" name="mark">
                         </div>
                         <div class="col-md-2">
-                            <label for="name">Name: </label>
+                            <label for="name"><fmt:message key="car.name"/>: </label>
                             <input class="form-control" id="name" name="name" />
                         </div>
                         <div class="col-md-2">
-                            <label for="cost">Cost</label>
+                            <label for="cost"><fmt:message key="car.cost"/>: </label>
                             <input id="cost" name="cost" class="form-control" />
                         </div>
                         <div class="col-md-2">
-                            <label for="class">Class: </label>
+                            <label for="class"><fmt:message key="car.carClass"/>: </label>
                             <input id="class" name="class" class="form-control" />
                         </div>
                         <div class="col-md-2 list-inline">
-                            <button type="submit" class="btn btn-info">Add Car</button>
+                            <button type="submit" class="btn btn-info"><fmt:message key="admin.button.addCar"/></button>
                         </div>
                     </form>
                 </div>

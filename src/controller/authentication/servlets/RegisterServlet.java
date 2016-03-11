@@ -27,6 +27,9 @@ public class RegisterServlet extends HttpServlet {
         String firstName=req.getParameter("firstname");
         String lastName=req.getParameter("lastname");
 
+        if(firstName.matches("[0-9]*") || lastName.matches("[0-9]*")){
+            badValRedirect(req,resp);
+        }
 
         User user=new User();
         user.setUsername(username);
@@ -45,16 +48,17 @@ public class RegisterServlet extends HttpServlet {
         logger.info("Created customer id and username: "+user.getId() + user.getUsername());
 
         if(user!=null){
-            ServletContext context=getServletContext();
-            RequestDispatcher rq=context.getRequestDispatcher("/signin");
-            logger.info("Redirecting to SignInServlet.java for entering");
-            rq.forward(req,resp);
+            badValRedirect(req,resp);
         }
         else{
-            logger.error("Look at 'customerDAO.create' something went wrong");
-            req.setAttribute("checked", false);
-            req.getRequestDispatcher("/").forward(req,resp);
+
         }
 
+    }
+
+    public void badValRedirect(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException{
+        logger.error("Bad values");
+        req.setAttribute("checked", false);
+        req.getRequestDispatcher("/").forward(req,resp);
     }
 }
