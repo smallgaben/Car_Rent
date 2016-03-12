@@ -51,7 +51,6 @@ public class RegisterServlet extends HttpServlet {
 
     private void badValRegistr(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException{
         logger.error("Bad values");
-        req.setAttribute("checked", false);
-        req.getRequestDispatcher("/").forward(req,resp);
+        resp.sendRedirect("/view/errorPages/BadVal.jsp");
     }
 }

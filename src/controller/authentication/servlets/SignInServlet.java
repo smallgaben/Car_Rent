@@ -40,7 +40,7 @@ public class SignInServlet extends HttpServlet{
 
             switch(user.getRole().getName()){
                 case "ADMIN":
-                    resp.sendRedirect("/carList");
+                    resp.sendRedirect("/adminCarList");
                     break;
                 case "USER":
                     resp.sendRedirect("/carList");

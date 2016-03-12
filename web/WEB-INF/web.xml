@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
     <welcome-file-list>
-        <welcome-file>/WEB-INF/SignIn.jsp</welcome-file>
+        <welcome-file>carList</welcome-file>
     </welcome-file-list>
 
     <!-- SERVLETS-->
@@ -34,6 +34,15 @@
     <servlet-mapping>
         <servlet-name>CarList</servlet-name>
         <url-pattern>/carList</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AdminCarList</servlet-name>
+        <servlet-class>controller.adminactivities.car.AdminCarListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminCarList</servlet-name>
+        <url-pattern>/adminCarList</url-pattern>
     </servlet-mapping>
 
     <servlet>
@@ -211,7 +220,7 @@
         <url-pattern>/return</url-pattern>
     </servlet-mapping>
 
-    <!-- FILTERS-->
+     <!--FILTERS-->
     <filter>
         <filter-name>Authorization</filter-name>
         <filter-class>controller.authorization.RoleFilter</filter-class>

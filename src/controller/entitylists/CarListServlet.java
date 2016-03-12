@@ -25,14 +25,10 @@ public class CarListServlet extends HttpServlet {
         HashSet<Car> cars = new HashSet<>(carDAOImp.readAll());
         req.setAttribute("cars", cars);
 
-        if (req.getSession().getAttribute("role").equals("USER")) {
             setReqMarks(cars, req);
             setReqClasses(cars, req);
             req.getRequestDispatcher("/view/UserDir/UserPage.jsp").forward(req, resp);
-        }
-        if (req.getSession().getAttribute("role").equals("ADMIN")) {
-            req.getRequestDispatcher("/view/AdminDir/AdminPage.jsp").forward(req, resp);
-        }
+
     }
 
     /**

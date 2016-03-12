@@ -29,7 +29,7 @@ public class RoleFilter implements Filter {
             if(role!=null){
                 if(role.equals("ADMIN")){
                     logger.error("Admin can't see Manager and User pages");
-                    resp.sendRedirect("/carList");
+                    resp.sendRedirect("/adminCarList");
                 }
                 if(role.equals("MANAGER")){
                     logger.error("Manager can't see Admin and User pages");
@@ -82,9 +82,13 @@ public class RoleFilter implements Filter {
             }
 
         }else {
-            for(String s: PathUri.AnonymousUris){
-                if(uri.contains(s)){
-                    permission=true;
+            if(uri.equals(PathUri.DEFAULT_URI)){
+                permission=true;
+            }else {
+                for(String s: PathUri.AnonymousUris){
+                    if(uri.contains(s)){
+                        permission=true;
+                    }
                 }
             }
         }

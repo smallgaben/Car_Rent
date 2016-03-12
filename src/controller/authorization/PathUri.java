@@ -4,16 +4,20 @@ import java.util.HashSet;
 import java.util.Set;
 
 public abstract class PathUri {
+    public static final String DEFAULT_URI="/";
     public static final Set<String> UserUris=new HashSet<>();
     public static final Set<String> AdminUris=new HashSet<>();
     public static final Set<String> ManagerUris=new HashSet<>();
     public static final Set<String> AnonymousUris =new HashSet<>();
 
     static {
-        AnonymousUris.add("/");
         AnonymousUris.add("/signIn");
         AnonymousUris.add("/register");
         AnonymousUris.add("/return");
+        AnonymousUris.add("/view/res/");
+        AnonymousUris.add("/view/Registration/RegisterPage.jsp");
+        AnonymousUris.add("/view/errorPages/BadVal.jsp");
+        AnonymousUris.add("/404");
 
         UserUris.add("/carList");
         UserUris.add("/logout");
@@ -26,7 +30,7 @@ public abstract class PathUri {
         UserUris.add("/view/errorPages/BadVal.jsp");
         UserUris.add("/view/res/");
 
-        AdminUris.add("/carList");
+        AdminUris.add("/adminCarList");
         AdminUris.add("/logout");
         AdminUris.add("/editCar");
         AdminUris.add("/deleteCar");

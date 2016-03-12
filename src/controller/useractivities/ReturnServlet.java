@@ -19,7 +19,7 @@ public class ReturnServlet extends HttpServlet {
                     resp.sendRedirect("/carList");
                     break;
                 case "ADMIN":
-                    resp.sendRedirect("/carList");
+                    resp.sendRedirect("/adminCarList");
                     break;
                 case "Manager":
                     resp.sendRedirect("/orderList");
