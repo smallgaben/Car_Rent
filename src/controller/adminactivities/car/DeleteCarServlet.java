@@ -2,6 +2,7 @@ package controller.adminactivities.car;
 
 import model.DAO.CarDAO;
 import model.DAOImp.CarDAOImp;
+import model.DAOImp.OrderDAOImp;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -12,15 +13,19 @@ import java.io.IOException;
 
 public class DeleteCarServlet extends HttpServlet {
     private static final long serialVersionUID = 6935239549787613665L;
-    private static final Logger logger=Logger.getLogger(DeleteCarServlet.class);
+    private static final Logger logger = Logger.getLogger(DeleteCarServlet.class);
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         logger.info("Starting Delete Car Servlet");
-        int id=Integer.valueOf(req.getParameter("id"));
-        logger.info("Need to delete car with id: "+ id);
+        int id = Integer.valueOf(req.getParameter("id"));
+        logger.info("Need to delete car with id: " + id);
 
-        CarDAO carDAO=new CarDAOImp();
+        CarDAO carDAO = new CarDAOImp();
+        OrderDAOImp orderDAO = new OrderDAOImp();
+
+        orderDAO.deleteByCarId(id);
+
         carDAO.delete(id);
 
         resp.sendRedirect("/carList");

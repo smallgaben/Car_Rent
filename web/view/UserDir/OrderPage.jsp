@@ -1,4 +1,4 @@
-<%@include file="/view/jspf/taglibs.jspf"%>
+<%@include file="/view/jspf/taglibs.jspf" %>
 <html>
 <%@include file="/view/jspf/head.jspf" %>
 <body>
@@ -37,7 +37,8 @@
                     </div>
                 </div>
                 <div class="row list-inline">
-                    <label for="driver"><input type="checkbox" id="driver" class="form-control" name="driver"><fmt:message key="order.boolean.driver"/></label>
+                    <label for="driver"><input type="checkbox" id="driver" name="driver"><fmt:message
+                            key="order.boolean.driver"/></label>
                 </div>
                 <div class="row list-inline">
                     <div class="col-lg-3">
@@ -64,10 +65,10 @@
 
     </div>
     <div class="col-lg-3">
-    <a href="${pageContext.request.contextPath}/carList">
-        <button class="btn btn-danger"><fmt:message key="manager.button.return"/></button>
-    </a>
-</div>
+        <a href="${pageContext.request.contextPath}/carList">
+            <button class="btn btn-danger"><fmt:message key="manager.button.return"/></button>
+        </a>
+    </div>
 </div>
 </body>
 </html>

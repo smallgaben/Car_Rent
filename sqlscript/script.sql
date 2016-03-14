@@ -26,6 +26,7 @@ INSERT INTO Statuses VALUES (6,'canceled');
 INSERT INTO Statuses VALUES (7,'accepted');
 INSERT INTO Statuses VALUES (8,'success');
 INSERT INTO Statuses VALUES (9,'returned');
+INSERT INTO Statuses VALUES (10,'waiting');
 
 CREATE TABLE Roles(
   id INTEGER NOT NULL PRIMARY KEY,
@@ -97,6 +98,7 @@ CREATE TABLE Orders(
   id INTEGER NOT NULL auto_increment PRIMARY KEY,
   passport VARCHAR (12) NOT NULL,
   user_id INTEGER NOT NULL REFERENCES Users(id),
+  check_id INTEGER REFERENCES Checks(id),
   car INTEGER NOT NULL REFERENCES Cars(id),
   startdate DATE NOT NULL,
   finishdate DATE NOT NULL,
@@ -109,8 +111,7 @@ CREATE TABLE Checks(
   id INTEGER NOT NULL auto_increment PRIMARY KEY,
   date DATE NOT NULL DEFAULT CURRENT_DATE,
   description VARCHAR (300),
-  order_id INTEGER NOT NULL,
-  price INTEGER NOT NULL,
+  price INTEGER,
   status INTEGER NOT NULL REFERENCES Statuses(id)
 );
 

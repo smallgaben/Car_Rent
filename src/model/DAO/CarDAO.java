@@ -9,8 +9,6 @@ public interface CarDAO {
 
     Car readById(int id);
 
-    Car readByName(String name);
-
     Set<Car> readAll();
 
     void update(Car car);

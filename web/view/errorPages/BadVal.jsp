@@ -1,4 +1,4 @@
-<%@include file="/view/jspf/taglibs.jspf"%>
+<%@include file="/view/jspf/taglibs.jspf" %>
 <html>
 <%@ include file="/view/jspf/head.jspf" %>
 <body>

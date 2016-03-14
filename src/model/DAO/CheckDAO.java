@@ -6,8 +6,12 @@ import java.util.Set;
 
 public interface CheckDAO {
     Check create(Check check);
-    Check readByOrderId(int id);
+
+    Check read(int id);
+
     Set<Check> readAll();
+
     void update(Check check);
+
     void delete(int id);
 }

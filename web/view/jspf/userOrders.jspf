@@ -1,70 +1,125 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<c:forEach var="check" items="${checks}">
-    <div class="col-lg-12 panel panel-primary">
-        <div class="col-lg-8">
-            <div class="col-lg-6">
-                <p><fmt:message key="order"/>: ${check.order.id}</p>
-                <br/>
-                <fmt:message key="car.mark"/>: ${check.order.car.mark}<br/>
-                <fmt:message key="car.name"/>: ${check.order.car.name}<br/>
-                <fmt:message key="car.carClass"/>: ${check.order.car.carClass.name}<br/>
-                <fmt:message key="car.costPerDay"/>: ${check.order.car.cost}<br/>
-            </div>
-            <div class="col-lg-6">
-                <br/>
-                <fmt:message key="user"/> <fmt:message key="order.passport"/>: ${check.order.passport}<br/>
-                <fmt:message key="order.startDate"/>: ${check.order.startDate}<br/>
-                <fmt:message key="order.finishDate"/>: ${check.order.finishDate}<br/>
-                <fmt:message key="order.currentDate"/>: ${check.date}<br/>
-                <fmt:message key="order"/> <fmt:message key="global.status"/>: ${check.order.status.name}<br/>
-            </div>
-            <c:choose>
-                <c:when test="${check.status.name=='accepted'}">
-                    <c:choose>
-                        <c:when test="${check.order.status.name=='rent'}">
-                            <a href="${pageContext.request.contextPath}/payForCar?rent=true&id=${check.order.id}">
-                                <button class="btn btn-success"><fmt:message key="user.button.payRent"/></button>
-                            </a>
-                        </c:when>
-                        <c:when test="${check.order.status.name=='repair'}">
-                            <a href="${pageContext.request.contextPath}/payForCar?repair=true&id=${check.order.id}">
-                                <button class="btn btn-success"><fmt:message key="user.button.payRepair"/></button>
-                            </a>
-                        </c:when>
-                    </c:choose>
-                </c:when>
-                <c:when test="${check.status.name=='canceled'}">
-                    <div class="center-block">
-                        <p class="h2 bg-danger"><fmt:message key="user.info.orderCanceled"/></p>
-                    </div>
+<c:if test="${not empty waiting}">
+    <div class="panel panel-primary">
+        <p class="h3 panel-heading">
+            <fmt:message key="unfinshedOrders"/>
+        </p>
 
-                </c:when>
-                <c:when test="${check.status.name=='paid'}">
-                    <c:choose>
-                        <c:when test="${check.order.status.name=='rent'}">
-                            <a href="${pageContext.request.contextPath}/returnCar?id=${check.order.id}">
-                                <button class="btn btn-warning"><fmt:message key="user.button.returnCar"/></button>
-                            </a>
-                        </c:when>
-                        <c:when test="${check.order.status.name=='returned'}">
-                            <p class="h2 bg-info"><fmt:message key="user.info.carBroken"/></p>
-                        </c:when>
-                    </c:choose>
-                </c:when>
-            </c:choose>
-        </div>
-        <div class="col-lg-4 panel panel-primary">
+        <c:forEach var="waitorder" items="${waiting}">
             <div class="panel-body">
-                <h3><fmt:message key="check"/></h3><br/>
-                <fmt:message key="order.driver"/>: ${check.order.driver}<br/>
-                <fmt:message key="check"/> <fmt:message key="global.status"/>: ${check.status.name}<br/>
-                <fmt:message key="order"/> <fmt:message key="check.description"/>: ${check.description}<br/>
-
-                <div class="col-lg-12 bg-info h3">
-                    <fmt:message key="check.totalCost"/>: ${check.price}<br/>
+                <div class="col-lg-6">
+                    <fmt:message key="car.mark"/>: ${waitorder.car.mark}<br/>
+                    <fmt:message key="car.name"/>: ${waitorder.car.name}<br/>
+                    <fmt:message key="car.carClass"/>: ${waitorder.car.carClass.name}<br/>
+                    <fmt:message key="car.costPerDay"/>: ${waitorder.car.cost}<br/>
                 </div>
+                <div class="col-lg-6">
+                    <fmt:message key="user"/> <fmt:message key="order.passport"/>: ${waitorder.passport}<br/>
+                    <fmt:message key="order.startDate"/>: ${waitorder.startDate}<br/>
+                    <fmt:message key="order.finishDate"/>: ${waitorder.finishDate}<br/>
+                    <fmt:message key="order.driver"/>: ${waitorder.driver}<br/>
+                    <fmt:message key="order"/> <fmt:message key="global.status"/>: ${waitorder.status.name}<br/>
+                </div>
+            </div>
+        </c:forEach>
+        <div class="row">
+            <div class="col-lg-2">
+                <form method="post" action="${pageContext.request.contextPath}/makeCheck">
+                    <button type="submit" class="btn btn-warning"><fmt:message key="makeCheck.button"/></button>
+                </form>
+            </div>
+            <div class="col-lg-2">
+                <form action="${pageContext.request.contextPath}/deleteTempOrders" method="post">
+                    <button type="submit" class="btn btn-danger"><fmt:message key="admin.button.delete"/></button>
+                </form>
             </div>
         </div>
     </div>
 
-</c:forEach>
+</c:if>
+<c:if test="${not empty checks}">
+    <p class="h3">
+        <fmt:message key="listOfOrders"/>
+    </p>
+    <c:forEach var="check" items="${checks}">
+        <div class="panel panel-success">
+            <div class="panel-body">
+                <div class="col-lg-6">
+                    <p class="h4"><fmt:message key="order"/></p>
+                    <c:forEach var="order" items="${check.orders}">
+                        <div class="panel-body">
+                            <c:set var="status" value="${order.status.name}"/>
+                            <div class="col-lg-6">
+                                <fmt:message key="car.mark"/>: ${order.car.mark}<br/>
+                                <fmt:message key="car.name"/>: ${order.car.name}<br/>
+                                <fmt:message key="car.carClass"/>: ${order.car.carClass.name}<br/>
+                                <fmt:message key="car.costPerDay"/>: ${order.car.cost}<br/>
+                            </div>
+                            <div class="col-lg-6">
+                                <fmt:message key="user"/> <fmt:message key="order.passport"/>: ${order.passport}<br/>
+                                <fmt:message key="order.startDate"/>: ${order.startDate}<br/>
+                                <fmt:message key="order.finishDate"/>: ${order.finishDate}<br/>
+                                <fmt:message key="order.driver"/>: ${order.driver}<br/>
+                                <fmt:message key="order"/> <fmt:message key="global.status"/>: ${order.status.name}<br/>
+                            </div>
+                        </div>
+                    </c:forEach>
+                </div>
+                <div class="col-lg-6">
+                    <p class="h4"><fmt:message key="check"/>: ${check.id}</p><br/>
+                    <fmt:message key="order.currentDate"/>: ${check.date}<br/>
+                    <fmt:message key="check.description"/>: ${check.description}<br/>
+                    <fmt:message key="global.status"/>: ${check.status.name}<br/>
+
+                    <div class="h3">
+                        <fmt:message key="check.totalCost"/>: ${check.price}
+                    </div>
+                </div>
+                <c:choose>
+                    <c:when test="${check.status.name=='accepted'}">
+                        <c:choose>
+                            <c:when test="${status=='rent'}">
+                                <form action="${pageContext.request.contextPath}/payForCar" method="post">
+                                    <input name="id" value="${check.id}" hidden>
+                                    <input name="rent" value="true" hidden>
+                                    <button type="submit" class="btn btn-success"><fmt:message
+                                            key="user.button.payRent"/></button>
+                                </form>
+                            </c:when>
+                            <c:when test="${status=='repair'}">
+                                <form method="post" action="${pageContext.request.contextPath}/payForCar">
+                                    <input name="repair" value="true" hidden>
+                                    <input name="id" value="${check.id}" hidden>
+                                    <button type="submit" class="btn btn-success"><fmt:message
+                                            key="user.button.payRepair"/></button>
+                                </form>
+                            </c:when>
+                        </c:choose>
+                    </c:when>
+                    <c:when test="${check.status.name=='canceled'}">
+                        <div class="col-lg-offset-5 col-lg-2">
+                            <p class="h2" style="color: red"><fmt:message key="user.info.orderCanceled"/></p>
+                        </div>
+
+                    </c:when>
+                    <c:when test="${check.status.name=='paid'}">
+                        <c:choose>
+                            <c:when test="${status=='rent'}">
+                                <form action="${pageContext.request.contextPath}/returnCar" method="post">
+                                    <input name="id" value="${check.id}" hidden>
+                                    <button type="submit" class="btn btn-warning"><fmt:message
+                                            key="user.button.returnCar"/></button>
+                                </form>
+                            </c:when>
+                            <c:when test="${status=='returned'}">
+                                <p class="h2 bg-info"><fmt:message key="user.info.carBroken"/></p>
+                            </c:when>
+                        </c:choose>
+                    </c:when>
+                </c:choose>
+            </div>
+        </div>
+    </c:forEach>
+</c:if>
+
+

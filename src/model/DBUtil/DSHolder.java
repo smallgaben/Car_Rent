@@ -12,28 +12,28 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class DSHolder {
-    private static final Logger logger=Logger.getLogger(DSHolder.class);
+    private static final Logger logger = Logger.getLogger(DSHolder.class);
     private static DSHolder instance;
     private DataSource ds;
 
-    public static synchronized DSHolder getInstance(){
-        if(instance==null){
+    public static synchronized DSHolder getInstance() {
+        if (instance == null) {
             instance = new DSHolder();
         }
         return instance;
     }
 
-    private DSHolder(){
+    private DSHolder() {
         logger.info("Making Data Source");
-        try{
-            Context initContext=new InitialContext();
-            Context envContext=(Context) initContext.lookup("java:/comp/env");
+        try {
+            Context initContext = new InitialContext();
+            Context envContext = (Context) initContext.lookup("java:/comp/env");
 
-            ds=(DataSource) envContext.lookup("jdbc/CarRent");
-            logger.info("The Data Source: "+ ds);
+            ds = (DataSource) envContext.lookup("jdbc/CarRent");
+            logger.info("The Data Source: " + ds);
 
-        }catch (NamingException e){
-            logger.error("Can't name the Data Source: "+ e);
+        } catch (NamingException e) {
+            logger.error("Can't name the Data Source: " + e);
             e.printStackTrace();
         }
 
@@ -42,15 +42,16 @@ public class DSHolder {
     /**
      * This method returns the database connection
      * from Data Source
+     *
      * @return DB Connection
      */
-    public Connection getConnection(){
-        Connection connection=null;
+    public Connection getConnection() {
+        Connection connection = null;
 
-        try{
+        try {
             connection = ds.getConnection();
-        }catch(SQLException e){
-            logger.error("Connection failed "+ e);
+        } catch (SQLException e) {
+            logger.error("Connection failed " + e);
             e.printStackTrace();
         }
         return connection;
@@ -65,7 +66,7 @@ public class DSHolder {
             try {
                 con.close();
             } catch (SQLException e) {
-                logger.error("Unable to close connection "+e);
+                logger.error("Unable to close connection " + e);
                 e.printStackTrace();
             }
         }
@@ -79,7 +80,7 @@ public class DSHolder {
             try {
                 statement.close();
             } catch (SQLException e) {
-               logger.error("Can't close statement "+ e);
+                logger.error("Can't close statement " + e);
                 e.printStackTrace();
             }
         }
@@ -93,7 +94,7 @@ public class DSHolder {
             try {
                 rs.close();
             } catch (SQLException e) {
-                logger.error("Can't close ResultSet "+e);
+                logger.error("Can't close ResultSet " + e);
                 e.printStackTrace();
             }
         }
@@ -102,15 +103,14 @@ public class DSHolder {
     /**
      * Rollbacks a connection.
      *
-     * @param con
-     *            Connection for rollback
+     * @param con Connection for rollback
      */
     public static void rollback(Connection con) {
         if (con != null) {
             try {
                 con.rollback();
             } catch (SQLException e) {
-                logger.error("Can't rollback connection "+e);
+                logger.error("Can't rollback connection " + e);
                 e.printStackTrace();
             }
         }

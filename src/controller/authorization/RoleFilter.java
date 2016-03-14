@@ -1,6 +1,5 @@
 package controller.authorization;
 
-import jdk.nashorn.internal.ir.RuntimeNode;
 import org.apache.log4j.Logger;
 
 import javax.servlet.*;
@@ -9,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public class RoleFilter implements Filter {
-    private static final Logger logger=Logger.getLogger(RoleFilter.class);
+    private static final Logger logger = Logger.getLogger(RoleFilter.class);
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
@@ -23,24 +22,23 @@ public class RoleFilter implements Filter {
 
         String role = (String) req.getSession().getAttribute("role");
 
-        if(checkPermission(req)){
-            filterChain.doFilter(req,resp);
-        }else{
-            if(role!=null){
-                if(role.equals("ADMIN")){
+        if (checkPermission(req)) {
+            filterChain.doFilter(req, resp);
+        } else {
+            if (role != null) {
+                if (role.equals("ADMIN")) {
                     logger.error("Admin can't see Manager and User pages");
                     resp.sendRedirect("/adminCarList");
                 }
-                if(role.equals("MANAGER")){
+                if (role.equals("MANAGER")) {
                     logger.error("Manager can't see Admin and User pages");
                     resp.sendRedirect("/orderList");
                 }
-                if(role.equals("USER")){
+                if (role.equals("USER")) {
                     logger.error("User can't see Admin and Manager pages");
                     resp.sendRedirect("/carList");
                 }
-            }
-            else {
+            } else {
                 logger.error("Unauthorized attempt");
                 resp.sendRedirect("/");
             }
@@ -49,45 +47,45 @@ public class RoleFilter implements Filter {
 
     }
 
-    public boolean checkPermission(ServletRequest request){
-        HttpServletRequest req=(HttpServletRequest) request;
-        String username=(String) req.getSession().getAttribute("username");
+    public boolean checkPermission(ServletRequest request) {
+        HttpServletRequest req = (HttpServletRequest) request;
+        String username = (String) req.getSession().getAttribute("username");
         String role = (String) req.getSession().getAttribute("role");
-        String uri=req.getRequestURI();
+        String uri = req.getRequestURI();
 
-        boolean permission=false;
-        logger.info("Request URI: "+uri);
+        boolean permission = false;
+        logger.info("Request URI: " + uri);
 
-        if(username!=null){
-            if(role.equals("ADMIN")){
-                for(String s: PathUri.AdminUris){
-                    if(uri.contains(s)){
+        if (username != null) {
+            if (role.equals("ADMIN")) {
+                for (String s : PathUri.AdminUris) {
+                    if (uri.contains(s)) {
                         permission = true;
                     }
                 }
             }
-            if(role.equals("MANAGER")){
-                for(String s: PathUri.ManagerUris){
-                    if(uri.contains(s)){
-                        permission=true;
+            if (role.equals("MANAGER")) {
+                for (String s : PathUri.ManagerUris) {
+                    if (uri.contains(s)) {
+                        permission = true;
                     }
                 }
             }
-            if(role.equals("USER")){
-                for(String s: PathUri.UserUris){
-                    if(uri.contains(s)){
+            if (role.equals("USER")) {
+                for (String s : PathUri.UserUris) {
+                    if (uri.contains(s)) {
                         permission = true;
                     }
                 }
             }
 
-        }else {
-            if(uri.equals(PathUri.DEFAULT_URI)){
-                permission=true;
-            }else {
-                for(String s: PathUri.AnonymousUris){
-                    if(uri.contains(s)){
-                        permission=true;
+        } else {
+            if (uri.equals(PathUri.DEFAULT_URI)) {
+                permission = true;
+            } else {
+                for (String s : PathUri.AnonymousUris) {
+                    if (uri.contains(s)) {
+                        permission = true;
                     }
                 }
             }

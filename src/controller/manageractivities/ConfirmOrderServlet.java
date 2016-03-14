@@ -1,6 +1,7 @@
 package controller.manageractivities;
 
 import model.DAO.CheckDAO;
+import model.DAO.StatusDAO;
 import model.DAOImp.CheckDAOImp;
 import model.DAOImp.StatusDAOImp;
 import model.entities.Check;
@@ -15,22 +16,18 @@ import java.io.IOException;
 
 public class ConfirmOrderServlet extends HttpServlet {
     private static final long serialVersionUID = -8752051292881288815L;
-    private static final Logger logger=Logger.getLogger(ConfirmOrderServlet.class);
+    private static final Logger logger = Logger.getLogger(ConfirmOrderServlet.class);
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        logger.info("Confirming order");
-        int id=Integer.valueOf(req.getParameter("id"));
-        String description=req.getParameter("description");
-        CheckDAO checkDAO=new CheckDAOImp();
-        Check check=checkDAO.readByOrderId(id);
-        check.setStatus(new StatusDAOImp().read(Status.ACCEPTED_CHECK_STATUS));
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        logger.info("Confirming check");
+        int id = Integer.valueOf(req.getParameter("id"));
+        CheckDAO checkDAO = new CheckDAOImp();
+        StatusDAO statusDAO = new StatusDAOImp();
+        Check check = checkDAO.read(id);
+        check.setStatus(statusDAO.read(Status.ACCEPTED_CHECK_STATUS));
 
-        if(description==null || description.equals(Check.ADD_CHECK_DESCR) || description.isEmpty()){
-            description = Check.ACCEPTED_CHECK_DESCR;
-        }
-
-        check.setDescription(description);
+        check.setDescription(Check.ACCEPTED_CHECK_DESCR);
 
         checkDAO.update(check);
 

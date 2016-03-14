@@ -1,44 +1,39 @@
-﻿<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<div class="center-block h3">
-    <fmt:message key="heading.orderList"/>
-</div>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <div class="container col-lg-12">
     <c:forEach var="check" items="${checks}">
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-                <fmt:message key="order"/>: ${check.order.id}
-            </div>
+        <div class="panel panel-success">
             <div class="panel-body">
-                <div class="col-lg-3">
-                    <p class="h3"><fmt:message key="user"/></p><br/>
-                    <p><fmt:message key="user.username"/>: ${check.order.user.username}</p><br/>
-                    <p><fmt:message key="user.password"/>: ${check.order.user.password}</p><br/>
-                    <p><fmt:message key="user.firstname"/>: ${check.order.user.firstName}</p><br/>
-                    <p><fmt:message key="user.lastname"/>: ${check.order.user.lastName}</p><br/>
-                </div>
-                <div class="col-lg-3">
-                    <p class="h3"><fmt:message key="car"/></p>
-                    <p><fmt:message key="car.mark"/>: ${check.order.car.mark}</p><br/>
-                    <p><fmt:message key="car.name"/>: ${check.order.car.name}</p><br/>
-                    <p><fmt:message key="car.carClass"/>: ${check.order.car.carClass.name}</p><br>
-                    <p><fmt:message key="car.cost"/>: ${check.order.car.cost}</p><br/>
-                </div>
-                <div class="col-lg-3">
-                    <p class="h3"><fmt:message key="order"/></p><br/>
-                    <p><fmt:message key="order.startDate"/>: ${check.order.startDate}</p><br/>
-                    <p><fmt:message key="order.finishDate"/>: ${check.order.finishDate}</p><br/>
-                    <p><fmt:message key="order.currentDate"/>: ${check.date}</p><br/>
-				<p><fmt:message key="order"/>: ${check.order.status.name}</p><br/>
-                </div>
-                    <div class="col-lg-3">
-                        <p class="h3"><fmt:message key="check"/></p><br/>
-                        <p><fmt:message key="check.description"/>: </p><br/>
-                        <p>${check.description}</p><br/>
-				<p><fmt:message key="global.status"/>: ${check.status.name}</p><br/>
-                        <div class="col-lg-12 bg-info h3">
-                            <fmt:message key="check.totalCost"/>: ${check.price}<br/>
+                <div class="col-lg-6">
+                    <p class="h4"><fmt:message key="order"/></p>
+                    <c:forEach var="order" items="${check.orders}">
+                        <div class="panel-body">
+                            <c:set var="status" value="${order.status.name}"/>
+                            <div class="col-lg-6">
+                                <fmt:message key="car.mark"/>: ${order.car.mark}<br/>
+                                <fmt:message key="car.name"/>: ${order.car.name}<br/>
+                                <fmt:message key="car.carClass"/>: ${order.car.carClass.name}<br/>
+                                <fmt:message key="car.costPerDay"/>: ${order.car.cost}<br/>
+                            </div>
+                            <div class="col-lg-6">
+                                <fmt:message key="user"/> <fmt:message key="order.passport"/>: ${order.passport}<br/>
+                                <fmt:message key="order.startDate"/>: ${order.startDate}<br/>
+                                <fmt:message key="order.finishDate"/>: ${order.finishDate}<br/>
+                                <fmt:message key="order.driver"/>: ${order.driver}<br/>
+                                <fmt:message key="order"/> <fmt:message key="global.status"/>: ${order.status.name}<br/>
+                            </div>
                         </div>
+                    </c:forEach>
+                </div>
+                <div class="col-lg-6">
+                    <p class="h4"><fmt:message key="check"/>: ${check.id}</p><br/>
+                    <fmt:message key="order.currentDate"/>: ${check.date}<br/>
+                    <fmt:message key="check.description"/>: ${check.description}<br/>
+                    <fmt:message key="global.status"/>: ${check.status.name}<br/>
+
+                    <div class="h3">
+                        <fmt:message key="check.totalCost"/>: ${check.price}
                     </div>
+                </div>
             </div>
         </div>
     </c:forEach>

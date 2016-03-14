@@ -15,6 +15,7 @@ public class Status implements Serializable {
     public static final int CANCELED_CHECK_STATUS=6;
     public static final int ACCEPTED_CHECK_STATUS=7;
     public static final int SUCCESS_CHECK_STATUS=8;
+    public static final int WAIT_ORDER_STATUS=10;
 
 
     private int id;

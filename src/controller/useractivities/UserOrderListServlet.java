@@ -17,25 +17,35 @@ import java.util.HashSet;
 
 public class UserOrderListServlet extends HttpServlet {
     private static final long serialVersionUID = 7131289524120179971L;
-    public static final Logger logger=Logger.getLogger(UserOrderListServlet.class);
+    public static final Logger logger = Logger.getLogger(UserOrderListServlet.class);
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String username= (String) req.getSession().getAttribute("username");
-        OrderDAO orderDAO=new OrderDAOImp();
-        CheckDAO checkDAO=new CheckDAOImp();
-        HashSet<Check> checks=new HashSet<>();
+        String username = (String) req.getSession().getAttribute("username");
+        OrderDAO orderDAO = new OrderDAOImp();
+        CheckDAO checkDAO = new CheckDAOImp();
 
-        HashSet<Order> orders=new HashSet<>(orderDAO.readAll());
+        HashSet<Check> checks = new HashSet<>();
+        HashSet<Order> waitList = new HashSet<>();
 
-        for (Order r : orders) {
+        for (Order r : orderDAO.readAll()) {
             if (r.getUser().getUsername().equals(username)) {
-                checks.add(checkDAO.readByOrderId(r.getId()));
+                if (r.getStatus().getName().equals("waiting")) {
+                    waitList.add(r);
+                } else {
+                    checks.add(r.getCheck());
+                }
             }
         }
 
-        req.setAttribute("checks",checks);
-        logger.info("List of orders for "+username+", size - "+checks.size());
-        req.getRequestDispatcher("/view/UserDir/UserPage.jsp").forward(req,resp);
+        for (Check c : checks) {
+            c.setOrders((HashSet<Order>) orderDAO.readByCheck(c.getId()));
+        }
+
+        req.setAttribute("checks", checks);
+        req.setAttribute("waiting", waitList);
+        logger.info("List of checks for " + username + ", size - " + checks.size());
+        logger.info("List of orders for making check, size - " + waitList.size());
+        req.getRequestDispatcher("/view/UserDir/UserPage.jsp").forward(req, resp);
     }
 }

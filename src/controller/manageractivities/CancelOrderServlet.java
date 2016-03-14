@@ -15,20 +15,20 @@ import java.io.IOException;
 
 public class CancelOrderServlet extends HttpServlet {
     private static final long serialVersionUID = -9098929579581688696L;
-    private static final Logger logger=Logger.getLogger(CancelOrderServlet.class);
+    private static final Logger logger = Logger.getLogger(CancelOrderServlet.class);
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        logger.info("Cancelling order");
-        int id=Integer.valueOf(req.getParameter("id"));
-        String description=req.getParameter("description");
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        logger.info("Cancelling check");
+        int id = Integer.valueOf(req.getParameter("id"));
+        String description = req.getParameter("description");
 
-        if(description==null || description.equals(Check.ADD_CHECK_DESCR) || description.isEmpty()){
-            description=Check.CANCEL_CHECK_DESCR;
+        if (description == null || description.equals(Check.ADD_CHECK_DESCR) || description.isEmpty()) {
+            description = Check.CANCEL_CHECK_DESCR;
         }
 
-        CheckDAO checkDAO=new CheckDAOImp();
-        Check check=checkDAO.readByOrderId(id);
+        CheckDAO checkDAO = new CheckDAOImp();
+        Check check = checkDAO.read(id);
         check.setStatus(new StatusDAOImp().read(Status.CANCELED_CHECK_STATUS));
         check.setDescription(description);
 

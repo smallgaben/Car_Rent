@@ -21,14 +21,18 @@
                     <c:choose>
                         <c:when test="${user.role.name=='BLOCKED'}">
                             <a href="${pageContext.request.contextPath}/setBlocked?id=${user.id}&blocked=true">
-                                <button type="button" class="btn btn-success"><fmt:message key="admin.button.unblock"/></button>
+                                <button type="button" class="btn btn-success"><fmt:message
+                                        key="admin.button.unblock"/></button>
                             </a>
-                            <button type="button" class="btn btn-danger" disabled><fmt:message key="admin.button.block"/></button>
+                            <button type="button" class="btn btn-danger" disabled><fmt:message
+                                    key="admin.button.block"/></button>
                         </c:when>
                         <c:otherwise>
-                            <button type="button" class="btn btn-success" disabled><fmt:message key="admin.button.unblock"/></button>
+                            <button type="button" class="btn btn-success" disabled><fmt:message
+                                    key="admin.button.unblock"/></button>
                             <a href="${pageContext.request.contextPath}/setBlocked?id=${user.id}&blocked=false">
-                                <button type="submit" class="btn btn-danger"><fmt:message key="admin.button.block"/></button>
+                                <button type="submit" class="btn btn-danger"><fmt:message
+                                        key="admin.button.block"/></button>
                             </a>
                         </c:otherwise>
                     </c:choose>

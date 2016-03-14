@@ -10,35 +10,35 @@ import javax.servlet.http.*;
 import java.io.IOException;
 import java.util.Locale;
 
-public class SignInServlet extends HttpServlet{
+public class SignInServlet extends HttpServlet {
 
     private static final long serialVersionUID = -6283348820572815893L;
-    private static final Logger logger=Logger.getLogger(SignInServlet.class);
+    private static final Logger logger = Logger.getLogger(SignInServlet.class);
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        UserDAO userDAOImp=new UserDAOImp();
-        User user=null;
-        user=userDAOImp.readByName(req.getParameter("username"));
+        UserDAO userDAOImp = new UserDAOImp();
+        User user;
+        user = userDAOImp.readByName(req.getParameter("username"));
 
-        if(user!=null){
-            logger.info("User exists: "+user.getUsername()+ " password: "+user.getPassword());
+        if (user != null) {
+            logger.info("User exists: " + user.getUsername() + " password: " + user.getPassword());
         }
 
-        if(user!=null && req.getParameter("password").equals(user.getPassword()) && !user.getRole().getName().equals("BLOCKED")){
+        if (user != null && req.getParameter("password").equals(user.getPassword()) && !user.getRole().getName().equals("BLOCKED")) {
             logger.info("User successfully got to the system");
 
-            Locale locale=new Locale(req.getParameter("locale"));
+            Locale locale = new Locale(req.getParameter("locale"));
             HttpSession session = req.getSession();
-            logger.info("Setted locale: "+locale.getLanguage());
-            session.setAttribute("locale",locale);
+            logger.info("Setted locale: " + locale.getLanguage());
+            session.setAttribute("locale", locale);
             logger.info("Set a new session: " + session);
             session.setAttribute("username", user.getUsername());
             session.setAttribute("role", user.getRole().getName());
             Cookie cookie = new Cookie("username", user.getUsername());
             resp.addCookie(cookie);
 
-            switch(user.getRole().getName()){
+            switch (user.getRole().getName()) {
                 case "ADMIN":
                     resp.sendRedirect("/adminCarList");
                     break;
@@ -49,11 +49,9 @@ public class SignInServlet extends HttpServlet{
                     resp.sendRedirect("/orderList");
                     break;
             }
-        }
-        else {
-            req.setAttribute("checked",false);
+        } else {
             logger.warn("User blocked or password incorrect");
-            req.getRequestDispatcher("/").forward(req,resp);
+            resp.sendRedirect("/view/errorPages/BadVal.jsp");
         }
     }
 }

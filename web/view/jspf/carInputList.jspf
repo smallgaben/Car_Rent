@@ -4,10 +4,12 @@
             <div class="col-md-12">
                 <form class="form-group" action="${pageContext.request.contextPath}/editCar" method="post">
                     <div class="col-md-2">
-                            <input name="id" value="${car.id}" hidden/>
+                        <input name="id" value="${car.id}" hidden/>
+
                         <div class="col-md-6">
                             <label for="mark"><fmt:message key="car.mark"/>: </label>
-                            <input id="mark" required="" type="text" class="form-control" value="${car.mark}" name="mark">
+                            <input id="mark" required="" type="text" class="form-control" value="${car.mark}"
+                                   name="mark">
                         </div>
                     </div>
                     <div class="col-md-2">
@@ -21,7 +23,8 @@
                     <div class="col-md-2">
                         <div class="col-md-6">
                             <label for="class"><fmt:message key="car.carClass"/>: </label>
-                            <input id="class" name="class" value="${car.carClass.id}" required="" class="form-control list-inline"/>
+                            <input id="class" name="class" value="${car.carClass.id}" required=""
+                                   class="form-control list-inline"/>
                         </div>
                         <div class="col-md-6">
                             <p>${car.carClass.name}</p>
@@ -30,7 +33,8 @@
                     <div class="col-md-2">
                         <div class="col-md-6">
                             <label for="status"><fmt:message key="global.status"/>: </label>
-                            <input class="form-control list-inline" id="status" name="status" required="" value="${car.status.id}"/>
+                            <input class="form-control list-inline" id="status" name="status" required=""
+                                   value="${car.status.id}"/>
                         </div>
                         <div class="col-md-6">
                             <p>${car.status.name}</p>
@@ -41,9 +45,11 @@
                     </div>
                 </form>
                 <div class="col-md-2">
-                    <a href="${pageContext.request.contextPath}/deleteCar?id=${car.id}">
-                        <button name="rent" class="btn btn-danger"><fmt:message key="admin.button.delete"/></button>
-                    </a>
+                    <form method="post" action="${pageContext.request.contextPath}/deleteCar">
+                        <input name="id" value="${car.id}">
+                        <button type="submit" name="rent" class="btn btn-danger"><fmt:message
+                                key="admin.button.delete"/></button>
+                    </form>
                 </div>
             </div>
         </div>

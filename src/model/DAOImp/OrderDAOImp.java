@@ -2,51 +2,46 @@ package model.DAOImp;
 
 import model.DAO.*;
 import model.DBUtil.DSHolder;
-import model.entities.Check;
 import model.entities.Order;
-import model.entities.Status;
 import org.apache.log4j.Logger;
 
 import java.sql.*;
-import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
 
 public class OrderDAOImp implements OrderDAO {
-    private static final Logger logger=Logger.getLogger(OrderDAOImp.class);
+    private static final Logger logger = Logger.getLogger(OrderDAOImp.class);
 
     @Override
     public Order create(Order order) {
-        PreparedStatement ps=null;
-        Connection connection=null;
-        ResultSet resultSet=null;
+        PreparedStatement ps = null;
+        Connection connection = null;
+        ResultSet resultSet = null;
 
-        String sql="INSERT INTO Orders(passport, user_id, car, startdate, finishdate, driver, status) VALUES (?, ?, ?, ?, ?, ?, ?)";
-        CheckDAO checkDAOImp=new CheckDAOImp();
-        try{
+        String sql = "INSERT INTO Orders(passport, user_id, car, startdate, finishdate, driver, status) VALUES (?, ?, ?, ?, ?, ?, ?)";
+        try {
             connection = DSHolder.getInstance().getConnection();
-            ps=connection.prepareStatement(sql, PreparedStatement.RETURN_GENERATED_KEYS);
+            ps = connection.prepareStatement(sql, PreparedStatement.RETURN_GENERATED_KEYS);
             ps.setString(1, order.getPassport());
             ps.setInt(2, order.getUser().getId());
-            ps.setInt(3,order.getCar().getId());
+            ps.setInt(3, order.getCar().getId());
             ps.setDate(4, order.getStartDate());
             ps.setDate(5, order.getFinishDate());
-            ps.setBoolean(6,order.isDriver());
-            ps.setInt(7,order.getStatus().getId());
+            ps.setBoolean(6, order.isDriver());
+            ps.setInt(7, order.getStatus().getId());
             ps.executeUpdate();
 
-            resultSet=ps.getGeneratedKeys();
-            if(resultSet.next()){
-                int id=resultSet.getInt(1);
-                logger.debug("Created Order with id: "+id);
+            resultSet = ps.getGeneratedKeys();
+            if (resultSet.next()) {
+                int id = resultSet.getInt(1);
+                logger.info("Created Order with id: " + id);
                 order.setId(id);
-                checkDAOImp.create(createCheck(order));
             }
-        }catch (SQLException e){
-            logger.error("Can't add order "+e);
+        } catch (SQLException e) {
+            logger.error("Can't add order " + e);
             DSHolder.rollback(connection);
             e.printStackTrace();
-        }finally {
+        } finally {
             DSHolder.close(ps);
             DSHolder.close(connection);
             DSHolder.close(resultSet);
@@ -56,24 +51,24 @@ public class OrderDAOImp implements OrderDAO {
 
     @Override
     public Order readById(int id) {
-        PreparedStatement ps=null;
-        ResultSet resultSet=null;
-        Connection connection=null;
+        PreparedStatement ps = null;
+        ResultSet resultSet = null;
+        Connection connection = null;
 
-        Order order=null;
-        String sql="SELECT *FROM Orders WHERE id=?";
-        try{
-            connection=DSHolder.getInstance().getConnection();
-            ps=connection.prepareStatement(sql);
-            ps.setInt(1,id);
-            resultSet=ps.executeQuery();
-            if(resultSet.next()){
-                order=executeOrder(resultSet);
+        Order order = null;
+        String sql = "SELECT *FROM Orders WHERE id=?";
+        try {
+            connection = DSHolder.getInstance().getConnection();
+            ps = connection.prepareStatement(sql);
+            ps.setInt(1, id);
+            resultSet = ps.executeQuery();
+            if (resultSet.next()) {
+                order = executeOrder(resultSet);
             }
-        }catch (SQLException e){
-            logger.error("Can't read Order "+e);
+        } catch (SQLException e) {
+            logger.error("Can't read Order " + e);
             e.printStackTrace();
-        }finally {
+        } finally {
             DSHolder.close(connection);
             DSHolder.close(resultSet);
             DSHolder.close(ps);
@@ -81,54 +76,53 @@ public class OrderDAOImp implements OrderDAO {
         return order;
     }
 
-
     @Override
-    public Order readByName(String name) {
-        PreparedStatement ps=null;
-        Connection connection=null;
-        ResultSet resultSet=null;
+    public Set<Order> readByCheck(int id) {
+        PreparedStatement ps = null;
+        Connection connection = null;
+        ResultSet resultSet = null;
 
-        Order order=null;
-        String sql="SELECT *FROM Orders WHERE name=?";
-        try{
-            connection=DSHolder.getInstance().getConnection();
-            ps=connection.prepareStatement(sql);
-            ps.setString(1, name);
-            resultSet=ps.executeQuery();
-            if(resultSet.next()){
-                order=executeOrder(resultSet);
+        HashSet<Order> orders = new HashSet<>();
+        String sql = "SELECT *FROM Orders WHERE check_id=?";
+        try {
+            connection = DSHolder.getInstance().getConnection();
+            ps = connection.prepareStatement(sql);
+            ps.setInt(1, id);
+            resultSet = ps.executeQuery();
+            while (resultSet.next()) {
+                orders.add(executeOrder(resultSet));
             }
-        }catch (SQLException e){
-            logger.error("Can't read Order "+e);
+        } catch (SQLException e) {
+            logger.error("Can't read Order " + e);
             e.printStackTrace();
-        }finally {
+        } finally {
             DSHolder.close(connection);
             DSHolder.close(resultSet);
             DSHolder.close(ps);
         }
-        return order;
+        return orders;
     }
 
     @Override
     public Set<Order> readAll() {
-        PreparedStatement ps=null;
-        Connection connection=null;
-        ResultSet resultSet=null;
+        PreparedStatement ps = null;
+        Connection connection = null;
+        ResultSet resultSet = null;
 
-        String sql="SELECT * FROM Orders";
-        Set<Order> orders=null;
-        try{
-            connection=DSHolder.getInstance().getConnection();
-            ps=connection.prepareStatement(sql);
-            resultSet=ps.executeQuery();
-            orders= new HashSet<>();
-            while(resultSet.next()){
+        String sql = "SELECT * FROM Orders";
+        Set<Order> orders = null;
+        try {
+            connection = DSHolder.getInstance().getConnection();
+            ps = connection.prepareStatement(sql);
+            resultSet = ps.executeQuery();
+            orders = new HashSet<>();
+            while (resultSet.next()) {
                 orders.add(executeOrder(resultSet));
             }
-        }catch (SQLException e){
+        } catch (SQLException e) {
             logger.error("Can't read all Orders");
             e.printStackTrace();
-        }finally {
+        } finally {
             DSHolder.close(connection);
             DSHolder.close(ps);
             DSHolder.close(resultSet);
@@ -138,27 +132,28 @@ public class OrderDAOImp implements OrderDAO {
 
     @Override
     public void update(Order order) {
-        PreparedStatement ps=null;
-        Connection connection=null;
+        PreparedStatement ps = null;
+        Connection connection = null;
 
-        String sql="UPDATE Orders Set passport=?, user_id=?, car=?, startdate=?, finishdate=?, driver=?, status=? WHERE id=?";
-        try{
-            connection=DSHolder.getInstance().getConnection();
-            ps=connection.prepareStatement(sql);
+        String sql = "UPDATE Orders Set passport=?, user_id=?, check_id=?, car=?, startdate=?, finishdate=?, driver=?, status=? WHERE id=?";
+        try {
+            connection = DSHolder.getInstance().getConnection();
+            ps = connection.prepareStatement(sql);
             ps.setString(1, order.getPassport());
             ps.setInt(2, order.getUser().getId());
-            ps.setInt(3, order.getCar().getId());
-            ps.setDate(4, new Date(order.getStartDate().getTime()));
-            ps.setDate(5, new Date(order.getFinishDate().getTime()));
-            ps.setBoolean(6, order.isDriver());
-            ps.setInt(7, order.getStatus().getId());
-            ps.setInt(8,order.getId());
+            ps.setInt(3, order.getCheck().getId());
+            ps.setInt(4, order.getCar().getId());
+            ps.setDate(5, new Date(order.getStartDate().getTime()));
+            ps.setDate(6, new Date(order.getFinishDate().getTime()));
+            ps.setBoolean(7, order.isDriver());
+            ps.setInt(8, order.getStatus().getId());
+            ps.setInt(9, order.getId());
             ps.executeUpdate();
-        }catch (SQLException e){
-            logger.error("Can't update the car "+ e);
+        } catch (SQLException e) {
+            logger.error("Can't update the car " + e);
             DSHolder.rollback(connection);
             e.printStackTrace();
-        }finally {
+        } finally {
             DSHolder.close(connection);
             DSHolder.close(ps);
         }
@@ -167,138 +162,67 @@ public class OrderDAOImp implements OrderDAO {
 
     @Override
     public void delete(int id) {
-        PreparedStatement ps=null;
-        Connection connection=null;
+        PreparedStatement ps = null;
+        Connection connection = null;
 
-        String sql="DELETE FROM Orders WHERE id=?";
-        CheckDAO checkDAOImp=new CheckDAOImp();
-        try{
-            connection=DSHolder.getInstance().getConnection();
-            ps=connection.prepareStatement(sql);
-            ps.setInt(1,id);
+        String sql = "DELETE FROM Orders WHERE id=?";
+        try {
+            connection = DSHolder.getInstance().getConnection();
+            ps = connection.prepareStatement(sql);
+            ps.setInt(1, id);
             ps.executeUpdate();
-            checkDAOImp.delete(id);
-        }catch (SQLException e){
-            logger.error("Can't delete Order "+ e);
+        } catch (SQLException e) {
+            logger.error("Can't delete Order " + e);
             DSHolder.rollback(connection);
-        }finally {
+        } finally {
             DSHolder.close(connection);
             DSHolder.close(ps);
         }
-
     }
 
 
     /**
      * This method deletes all orders that is connect with car need to delete
+     *
      * @param id the id of car
      */
-    public void deleteByCarId(int id){
-        PreparedStatement ps=null;
-        Connection connection=null;
+    public void deleteByCarId(int id) {
+        PreparedStatement ps = null;
+        Connection connection = null;
+        String sql = "DELETE FROM Orders WHERE car=?";
 
-        String sql="DELETE FROM Orders WHERE car=?";
-        CheckDAO checkDAOImp=new CheckDAOImp();
-        try{
-            Set<Integer> del=readOrdersByCarId(id);
-            connection=DSHolder.getInstance().getConnection();
-            ps=connection.prepareStatement(sql);
-            ps.setInt(1,id);
-
-            for(Integer i: del){
-                checkDAOImp.delete(i);
-            }
-
+        try {
+            connection = DSHolder.getInstance().getConnection();
+            ps = connection.prepareStatement(sql);
+            ps.setInt(1, id);
             ps.executeUpdate();
-        }catch (SQLException e){
-            logger.error("Can't delete Order "+ e);
+
+        } catch (SQLException e) {
+            logger.error("Can't delete Order " + e);
             DSHolder.rollback(connection);
-        }finally {
+        } finally {
             DSHolder.close(connection);
             DSHolder.close(ps);
         }
 
     }
 
-    public Order executeOrder(ResultSet resultSet) throws SQLException{
-        CarDAO carDAOImp=new CarDAOImp();
-        StatusDAO statusDAOImp=new StatusDAOImp();
-        UserDAO userDAOImp=new UserDAOImp();
-        Order order=new Order();
+    public Order executeOrder(ResultSet resultSet) throws SQLException {
+        CarDAO carDAOImp = new CarDAOImp();
+        StatusDAO statusDAOImp = new StatusDAOImp();
+        UserDAO userDAOImp = new UserDAOImp();
+        CheckDAO checkDAO = new CheckDAOImp();
+        Order order = new Order();
         order.setId(resultSet.getInt(1));
         order.setPassport(resultSet.getString(2));
         order.setUser(userDAOImp.readById(resultSet.getInt(3)));
-        order.setCar(carDAOImp.readById(resultSet.getInt(4)));
-        order.setStartDate(resultSet.getDate(5));
-        order.setFinishDate(resultSet.getDate(6));
-        order.setDriver(resultSet.getBoolean(7));
-        order.setStatus(statusDAOImp.read(resultSet.getInt(8)));
+        order.setCheck(checkDAO.read(resultSet.getInt(4)));
+        order.setCar(carDAOImp.readById(resultSet.getInt(5)));
+        order.setStartDate(resultSet.getDate(6));
+        order.setFinishDate(resultSet.getDate(7));
+        order.setDriver(resultSet.getBoolean(8));
+        order.setStatus(statusDAOImp.read(resultSet.getInt(9)));
 
         return order;
-    }
-
-    public Check createCheck(Order order){
-        StatusDAO statusDAOImp=new StatusDAOImp();
-        Check check = new Check();
-        check.setDate(new Date(System.currentTimeMillis()));
-        check.setOrder(order);
-        check.setPrice(makeCheckPrice(order));
-        check.setDescription(Check.ADD_CHECK_DESCR);
-        check.setStatus(statusDAOImp.read(Status.DEFAULT_CHECK_STATUS));
-        return check;
-    }
-
-    /**
-     * This method reading all order ids to delete checks by car id.
-     * @param id the car id
-     * @return set of check ids need to delete
-     */
-    public Set<Integer> readOrdersByCarId(int id){
-        PreparedStatement ps=null;
-        Connection connection=null;
-        ResultSet resultSet=null;
-
-        String sql="SELECT *FROM Orders WHERE car=?";
-        Set<Integer>integers=null;
-        try{
-            connection=DSHolder.getInstance().getConnection();
-            ps=connection.prepareStatement(sql);
-            ps.setInt(1,id);
-            resultSet = ps.executeQuery();
-            integers=new HashSet<>();
-            while (resultSet.next()){
-                integers.add(resultSet.getInt(1));
-            }
-        }catch (SQLException e){
-            logger.error("Can't read Orders by car id"+ e);
-            e.printStackTrace();
-        }finally {
-            DSHolder.close(connection);
-            DSHolder.close(ps);
-            DSHolder.close(resultSet);
-        }
-        return integers;
-    }
-
-
-    /**
-     * Method for making total cost from the mount of days
-     * @param order
-     * @return total sum
-     */
-    public int makeCheckPrice(Order order){
-        int orderCost=order.getCar().getCost();
-        LocalDate startDate=order.getStartDate().toLocalDate();
-        LocalDate finishDate=order.getFinishDate().toLocalDate();
-
-        int rez=((finishDate.getYear()-startDate.getYear())*360)
-                +((finishDate.getMonth().getValue()-startDate.getMonth().getValue())*30)
-                +((finishDate.getDayOfMonth()-startDate.getDayOfMonth()));
-
-        rez+=orderCost*rez;
-        if(order.isDriver()){
-            rez+=700;
-        }
-        return rez;
     }
 }

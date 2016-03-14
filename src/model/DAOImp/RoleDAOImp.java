@@ -5,35 +5,38 @@ import model.DBUtil.DSHolder;
 import model.entities.Role;
 import org.apache.log4j.Logger;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.HashSet;
 import java.util.Set;
 
 public class RoleDAOImp implements RoleDAO {
-    private static final Logger logger=Logger.getLogger(RoleDAOImp.class);
+    private static final Logger logger = Logger.getLogger(RoleDAOImp.class);
 
     @Override
     public Role create(Role role) {
-        PreparedStatement ps=null;
-        Connection connection=null;
-        ResultSet resultSet=null;
+        PreparedStatement ps = null;
+        Connection connection = null;
+        ResultSet resultSet = null;
 
-        String sql="INSERT INTO Roles VALUES(?,?)";
-        try{
+        String sql = "INSERT INTO Roles VALUES(?,?)";
+        try {
             connection = DSHolder.getInstance().getConnection();
-            ps=connection.prepareStatement(sql, PreparedStatement.RETURN_GENERATED_KEYS);
-            ps.setInt(1,readAll().size());
+            ps = connection.prepareStatement(sql, PreparedStatement.RETURN_GENERATED_KEYS);
+            ps.setInt(1, readAll().size());
             ps.setString(2, role.getName());
             ps.executeUpdate();
             resultSet = ps.executeQuery();
-            if(resultSet.next()){
+            if (resultSet.next()) {
                 role.setId(resultSet.getInt(1));
             }
-        }catch (SQLException e){
-            logger.error("Can't add new Role "+ e);
+        } catch (SQLException e) {
+            logger.error("Can't add new Role " + e);
             DSHolder.rollback(connection);
             e.printStackTrace();
-        }finally {
+        } finally {
             DSHolder.close(connection);
             DSHolder.close(resultSet);
             DSHolder.close(ps);
@@ -43,26 +46,26 @@ public class RoleDAOImp implements RoleDAO {
 
     @Override
     public Role read(int id) {
-        PreparedStatement ps=null;
-        Connection connection=null;
-        ResultSet resultSet=null;
+        PreparedStatement ps = null;
+        Connection connection = null;
+        ResultSet resultSet = null;
 
-        String sql="SELECT *FROM Roles WHERE id=?";
-        Role role=null;
-        try{
-            connection=DSHolder.getInstance().getConnection();
-            ps=connection.prepareStatement(sql);
-            ps.setInt(1,id);
-            resultSet=ps.executeQuery();
-            role=new Role();
-            if(resultSet.next()){
+        String sql = "SELECT *FROM Roles WHERE id=?";
+        Role role = null;
+        try {
+            connection = DSHolder.getInstance().getConnection();
+            ps = connection.prepareStatement(sql);
+            ps.setInt(1, id);
+            resultSet = ps.executeQuery();
+            role = new Role();
+            if (resultSet.next()) {
                 role.setId(resultSet.getInt(1));
                 role.setName(resultSet.getString(2));
             }
-        }catch (SQLException e){
-            logger.error("Can't read Role "+e);
+        } catch (SQLException e) {
+            logger.error("Can't read Role " + e);
             e.printStackTrace();
-        }finally{
+        } finally {
             DSHolder.close(connection);
             DSHolder.close(ps);
             DSHolder.close(resultSet);
@@ -72,24 +75,24 @@ public class RoleDAOImp implements RoleDAO {
 
     @Override
     public Set<Role> readAll() {
-        PreparedStatement ps=null;
-        ResultSet resultSet=null;
-        Connection connection=null;
+        PreparedStatement ps = null;
+        ResultSet resultSet = null;
+        Connection connection = null;
 
-        Set<Role> roles=null;
-        String sql="SELECT * FROM Roles";
-        try{
-            connection=DSHolder.getInstance().getConnection();
-            ps=connection.prepareStatement(sql);
-            resultSet=ps.executeQuery();
-            roles=new HashSet<>();
-            while(resultSet.next()){
+        Set<Role> roles = null;
+        String sql = "SELECT * FROM Roles";
+        try {
+            connection = DSHolder.getInstance().getConnection();
+            ps = connection.prepareStatement(sql);
+            resultSet = ps.executeQuery();
+            roles = new HashSet<>();
+            while (resultSet.next()) {
                 roles.add(executeRole(resultSet));
             }
-        }catch (SQLException e){
-            logger.error("Can't read all Roles "+e);
+        } catch (SQLException e) {
+            logger.error("Can't read all Roles " + e);
             e.printStackTrace();
-        }finally {
+        } finally {
             DSHolder.close(connection);
             DSHolder.close(ps);
             DSHolder.close(resultSet);
@@ -99,21 +102,21 @@ public class RoleDAOImp implements RoleDAO {
 
     @Override
     public void update(Role role) {
-        PreparedStatement ps=null;
-        Connection connection=null;
+        PreparedStatement ps = null;
+        Connection connection = null;
 
-        String sql="UPDATE Roles SET name=? WHERE id=?";
-        try{
-            connection=DSHolder.getInstance().getConnection();
-            ps=connection.prepareStatement(sql);
+        String sql = "UPDATE Roles SET name=? WHERE id=?";
+        try {
+            connection = DSHolder.getInstance().getConnection();
+            ps = connection.prepareStatement(sql);
             ps.setString(1, role.getName());
             ps.setInt(2, role.getId());
             ps.executeUpdate();
-        }catch (SQLException e){
-            logger.error("Can't update Role "+e);
+        } catch (SQLException e) {
+            logger.error("Can't update Role " + e);
             DSHolder.rollback(connection);
             e.printStackTrace();
-        }finally {
+        } finally {
             DSHolder.close(connection);
             DSHolder.close(ps);
         }
@@ -140,8 +143,8 @@ public class RoleDAOImp implements RoleDAO {
         }
     }
 
-    public Role executeRole(ResultSet resultSet) throws SQLException{
-        Role role=new Role();
+    public Role executeRole(ResultSet resultSet) throws SQLException {
+        Role role = new Role();
         role.setId(resultSet.getInt(1));
         role.setName(resultSet.getString(2));
         return role;

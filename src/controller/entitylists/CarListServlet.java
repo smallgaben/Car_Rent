@@ -25,9 +25,9 @@ public class CarListServlet extends HttpServlet {
         HashSet<Car> cars = new HashSet<>(carDAOImp.readAll());
         req.setAttribute("cars", cars);
 
-            setReqMarks(cars, req);
-            setReqClasses(cars, req);
-            req.getRequestDispatcher("/view/UserDir/UserPage.jsp").forward(req, resp);
+        setReqMarks(cars, req);
+        setReqClasses(cars, req);
+        req.getRequestDispatcher("/view/UserDir/UserPage.jsp").forward(req, resp);
 
     }
 

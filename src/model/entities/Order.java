@@ -10,6 +10,7 @@ public class Order implements Serializable {
     private String passport;
     private User user;
     private Car car;
+    private Check check;
     private Date startDate;
     private Date finishDate;
     private boolean driver;
@@ -49,6 +50,14 @@ public class Order implements Serializable {
 
     public void setCar(Car car) {
         this.car = car;
+    }
+
+    public Check getCheck() {
+        return check;
+    }
+
+    public void setCheck(Check check) {
+        this.check = check;
     }
 
     public Date getStartDate() {
@@ -117,14 +126,15 @@ public class Order implements Serializable {
     @Override
     public String toString() {
         return "Order{" +
-                "id=" + id +"\n"+
-                ", passport='" + passport + '\'' +"\n"+
-                ", user=" + user +"\n"+
-                ", car=" + car +"\n"+
-                ", startDate=" + startDate +"\n"+
-                ", finishDate=" + finishDate +"\n"+
-                ", driver=" + driver +"\n"+
-                ", status=" + status +"\n"+
+                "id=" + id +
+                ", passport='" + passport + '\'' +
+                ", user=" + user +
+                ", car=" + car +
+                ", check=" + check +
+                ", startDate=" + startDate +
+                ", finishDate=" + finishDate +
+                ", driver=" + driver +
+                ", status=" + status +
                 '}';
     }
 }

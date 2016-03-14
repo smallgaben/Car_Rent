@@ -23,6 +23,6 @@ public class AdminCarListServlet extends HttpServlet {
         HashSet<Car> cars = new HashSet<>(carDAOImp.readAll());
         req.setAttribute("cars", cars);
 
-        req.getRequestDispatcher("/view/AdminDir/AdminPage.jsp").forward(req,resp);
+        req.getRequestDispatcher("/view/AdminDir/AdminPage.jsp").forward(req, resp);
     }
 }

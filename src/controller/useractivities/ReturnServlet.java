@@ -11,10 +11,10 @@ public class ReturnServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String role= (String) req.getSession().getAttribute("role");
+        String role = (String) req.getSession().getAttribute("role");
 
-        if(role!=null){
-            switch(role){
+        if (role != null) {
+            switch (role) {
                 case "User":
                     resp.sendRedirect("/carList");
                     break;
@@ -25,7 +25,7 @@ public class ReturnServlet extends HttpServlet {
                     resp.sendRedirect("/orderList");
                     break;
             }
-        }else{
+        } else {
             resp.sendRedirect("/");
         }
     }

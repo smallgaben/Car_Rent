@@ -15,23 +15,23 @@ import java.util.Iterator;
 
 public class ManagerList extends HttpServlet {
     private static final long serialVersionUID = 7622332064482365883L;
-    private static final Logger logger=Logger.getLogger(ManagerList.class);
+    private static final Logger logger = Logger.getLogger(ManagerList.class);
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        UserDAO userDAO=new UserDAOImp();
-        HashSet<User> managers=new HashSet<>(userDAO.readAll());
-        Iterator<User> iterator=managers.iterator();
+        UserDAO userDAO = new UserDAOImp();
+        HashSet<User> managers = new HashSet<>(userDAO.readAll());
+        Iterator<User> iterator = managers.iterator();
 
-        while(iterator.hasNext()){
-            User s=iterator.next();
-            if(!s.getRole().getName().equals("MANAGER")){
+        while (iterator.hasNext()) {
+            User s = iterator.next();
+            if (!s.getRole().getName().equals("MANAGER")) {
                 iterator.remove();
             }
         }
 
         req.setAttribute("managers", managers);
 
-        req.getRequestDispatcher("/view/AdminDir/AdminPage.jsp").forward(req,resp);
+        req.getRequestDispatcher("/view/AdminDir/AdminPage.jsp").forward(req, resp);
     }
 }

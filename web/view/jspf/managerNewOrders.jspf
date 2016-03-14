@@ -1,99 +1,112 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <div class="container col-lg-12">
-    <c:forEach var="check" items="${checks}">
-        <c:if test="${check.status.name=='not paid'}">
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    <fmt:message key="heading.orderForConfrim"/>
+    <c:forEach var="check" items="${accepting}">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <fmt:message key="heading.orderForConfrim"/>
+            </div>
+            <div class="panel-body">
+                <c:forEach var="order" items="${check.orders}">
+                    <c:set var="Norder" value="${order}"/>
+                    <div class="panel-body">
+                        <div class="col-lg-4">
+                            <fmt:message key="car.mark"/>: ${order.car.mark}<br/>
+                            <fmt:message key="car.name"/>: ${order.car.name}<br/>
+                            <fmt:message key="car.carClass"/>: ${order.car.carClass.name}<br/>
+                            <fmt:message key="car.costPerDay"/>: ${order.car.cost}<br/>
+                        </div>
+                        <div class="col-lg-4">
+                            <fmt:message key="user"/> <fmt:message key="order.passport"/>: ${order.passport}<br/>
+                            <fmt:message key="order.startDate"/>: ${order.startDate}<br/>
+                            <fmt:message key="order.finishDate"/>: ${order.finishDate}<br/>
+                            <fmt:message key="order.driver"/>: ${order.driver}<br/>
+                            <fmt:message key="order"/> <fmt:message key="global.status"/>: ${order.status.name}<br/>
+                        </div>
+                    </div>
+                </c:forEach>
+                <div class="col-lg-3">
+                    <p class="h3"><fmt:message key="user"/></p><br/>
+
+                    <p><fmt:message key="user.username"/>: ${Norder.user.username}</p><br/>
+
+                    <p><fmt:message key="user.password"/>: ${Norder.user.password}</p><br/>
+
+                    <p><fmt:message key="user.firstname"/>: ${Norder.user.firstName}</p><br/>
+
+                    <p><fmt:message key="user.lastname"/>: ${Norder.user.lastName}</p><br/>
                 </div>
-                <div class="panel-body">
+
+                <form class="form-group" action="${pageContext.request.contextPath}/cancelOrder" method="post">
                     <div class="col-lg-3">
-                        <p class="h3"><fmt:message key="user"/></p><br/>
-
-                        <p><fmt:message key="user.username"/>: ${check.order.user.username}</p><br/>
-
-                        <p><fmt:message key="user.password"/>: ${check.order.user.password}</p><br/>
-
-                        <p><fmt:message key="user.firstname"/>: ${check.order.user.firstName}</p><br/>
-
-                        <p><fmt:message key="user.lastname"/>: ${check.order.user.lastName}</p><br/>
-                    </div>
-                    <div class="col-lg-3">
-                        <p class="h3"><fmt:message key="car"/></p>
-
-                        <p><fmt:message key="car.mark"/>: ${check.order.car.mark}</p><br/>
-
-                        <p><fmt:message key="car.name"/>: ${check.order.car.name}</p><br/>
-
-                        <p><fmt:message key="car.carClass"/>: ${check.order.car.carClass.name}</p><br>
-
-                        <p><fmt:message key="car.cost"/>: ${check.order.car.cost}</p><br/>
-                    </div>
-                    <div class="col-lg-3">
-                        <p class="h3"><fmt:message key="order"/></p><br/>
-
-                        <p><fmt:message key="order.startDate"/>: ${check.order.startDate}</p><br/>
-
-                        <p><fmt:message key="order.finishDate"/>: ${check.order.finishDate}</p><br/>
-
-                        <p><fmt:message key="order.currentDate"/>: ${check.date}</p>
-                    </div>
-                    <form class="form-group" action="${pageContext.request.contextPath}/cancelOrder">
-                        <div class="col-lg-3">
-                            <p class="h3"><fmt:message key="check"/>: <input type="number" name="id"
-                                                         value="${check.order.id}" hidden/></p><br/>
-                            <label for="desc"><fmt:message key="check.description"/>: </label><br/>
+                        <p class="h3"><fmt:message key="check"/>: <input type="number" name="id"
+                                                                         value="${check.id}" hidden/></p><br/>
+                        <label for="desc"><fmt:message key="check.description"/>: </label><br/>
                             <textarea class="form-control" name="description" rows="2"
                                       id="desc">${check.description}</textarea>
 
-                            <div class="col-lg-12 bg-info h3">
-                                <fmt:message key="check.totalCost"/>: ${check.price}<br/>
-                            </div>
+                        <div class="h3">
+                            <fmt:message key="check.totalCost"/>: ${check.price}<br/>
                         </div>
-                        <button type="submit" class="btn btn-danger"><fmt:message key="manager.button.cancel"/></button>
+                    </div>
+                    <button type="submit" class="btn btn-danger"><fmt:message key="manager.button.cancel"/></button>
+                </form>
+                <form method="post" action="${pageContext.request.contextPath}confirmCheck">
+                    <input name="id" value="${check.id}" hidden>
+                    <button type="submit" class="btn btn-success"><fmt:message key="manager.button.confirm"/></button>
+                </form>
+            </div>
+        </div>
+    </c:forEach>
+
+    <c:forEach var="check" items="${returned}">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <fmt:message key="heading.returnedCar"/>
+            </div>
+            <div class="panel-body">
+                <c:forEach var="order" items="${check.orders}">
+                    <div class="panel-body">
+                        <c:set var="status" value="${order.status.name}"/>
+                        <c:set var="Norder" value="${order}"/>
+                        <div class="col-lg-3">
+                            <fmt:message key="car.mark"/>: ${order.car.mark}<br/>
+                            <fmt:message key="car.name"/>: ${order.car.name}<br/>
+                        </div>
+                        <div class="col-lg-3">
+                            <fmt:message key="user"/> <fmt:message key="order.passport"/>: ${order.passport}<br/>
+                            <fmt:message key="order.startDate"/>: ${order.startDate}<br/>
+                            <fmt:message key="order.finishDate"/>: ${order.finishDate}<br/>
+                            <fmt:message key="order.driver"/>: ${order.driver}<br/>
+                            <fmt:message key="order"/> <fmt:message key="global.status"/>: ${order.status.name}<br/>
+                        </div>
+                        <div class="col-lg-3">
+                            <c:if test="${order.status.name=='returned'}">
+                                <a href="${pageContext.request.contextPath}/makeRepairPage?id=${order.id}">
+                                    <button class="btn btn-warning"><fmt:message key="manager.button.repair"/></button>
+                                </a>
+                            </c:if>
+                        </div>
+                    </div>
+                </c:forEach>
+                <div class="col-lg-3">
+                    <p class="h3"><fmt:message key="user"/></p><br/>
+
+                    <p><fmt:message key="user.username"/>: ${Norder.user.username}</p><br/>
+
+                    <p class="h3"><fmt:message key="check"/></p><br/>
+
+                    <p><fmt:message key="check.description"/>: ${check.description}</p><br/>
+
+                    <p><fmt:message key="check.totalCost"/>: ${check.price}</p>
+
+                    <form method="post" action="${pageContext.request.contextPath}/finishOrder">
+                        <input name="id" value="${check.id}" hidden>
+                        <button type="submit" class="btn btn-primary"><fmt:message
+                                key="manager.button.accept"/></button>
                     </form>
-                    <a href="${pageContext.request.contextPath}/confirmOrder?id=${check.order.id}">
-                        <button class="btn btn-success"><fmt:message key="manager.button.confirm"/></button>
-                    </a>
                 </div>
             </div>
-        </c:if>
-        <c:if test="${check.order.status.name=='returned' && check.status.name=='success'}">
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    <fmt:message key="heading.returnedCar"/>
-                </div>
-                <div class="panel-body">
-                    <div class="col-lg-4">
-                        <p class="h3"><fmt:message key="car"/></p><br/>
-                        <p><fmt:message key="car.mark"/>: ${check.order.car.mark}</p><br/>
-
-                        <p><fmt:message key="car.name"/>: ${check.order.car.name}</p><br/>
-
-                        <p><fmt:message key="car.carClass"/>: ${check.order.car.carClass.name}</p><br>
-
-                    </div>
-                    <div class="col-lg-4">
-                        <p class="h3"> <fmt:message key="user"/></p><br/>
-
-                        <p><fmt:message key="user.username"/>: ${check.order.user.username}</p><br/>
-                    </div>
-                    <div class="col-lg-4">
-                        <p class="h3"><fmt:message key="order"/></p><br/>
-
-                        <p><fmt:message key="order.orderStatus"/>: ${check.order.status.name}</p><br/>
-                        <a href="${pageContext.request.contextPath}/finishOrder?id=${check.order.id}">
-                            <button class="btn btn-primary"><fmt:message key="manager.button.accept"/></button>
-                        </a>
-                        <a href="${pageContext.request.contextPath}/makeRepairPage?id=${check.order.id}">
-                            <button class="btn btn-warning"><fmt:message key="manager.button.repair"/></button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-        </c:if>
-
+        </div>
     </c:forEach>
 </div>

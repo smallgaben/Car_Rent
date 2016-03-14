@@ -2,7 +2,8 @@
     <div class="container">
         <div class="col-lg-3">
             <div class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><fmt:message key="car.setMark"/><span
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><fmt:message
+                        key="car.setMark"/><span
                         class="caret"></span></button>
                 <ul class="dropdown-menu">
                     <c:forEach var="mark" items="${marks}">
@@ -13,7 +14,8 @@
         </div>
         <div class="col-lg-3">
             <div class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><fmt:message key="car.setCarClass"/><span
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><fmt:message
+                        key="car.setCarClass"/><span
                         class="caret"></span></button>
                 <ul class="dropdown-menu">
                     <c:forEach var="carClass" items="${classes}">

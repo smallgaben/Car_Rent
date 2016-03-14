@@ -148,12 +148,36 @@
         <url-pattern>/userOrders</url-pattern>
     </servlet-mapping>
     <servlet>
+        <servlet-name>MakeCheck</servlet-name>
+        <servlet-class>controller.useractivities.MakeCheckServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MakeCheck</servlet-name>
+        <url-pattern>/makeCheck</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>DeleteTempOrders</servlet-name>
+        <servlet-class>controller.useractivities.DeleteTempOrdersServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteTempOrders</servlet-name>
+        <url-pattern>/deleteTempOrders</url-pattern>
+    </servlet-mapping>
+    <servlet>
         <servlet-name>OrderList</servlet-name>
         <servlet-class>controller.entitylists.OrderListServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>OrderList</servlet-name>
         <url-pattern>/orderList</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>NewOrderList</servlet-name>
+        <servlet-class>controller.manageractivities.NewOrderListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NewOrderList</servlet-name>
+        <url-pattern>/newOrderList</url-pattern>
     </servlet-mapping>
     <servlet>
         <servlet-name>CancelOrder</servlet-name>
@@ -169,7 +193,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>ConfirmOrder</servlet-name>
-        <url-pattern>/confirmOrder</url-pattern>
+        <url-pattern>/confirmCheck</url-pattern>
     </servlet-mapping>
     <servlet>
         <servlet-name>PayForCar</servlet-name>
@@ -243,10 +267,14 @@
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 
+    <!-- Error Pages-->
+
     <error-page>
         <error-code>404</error-code>
         <location>/view/errorPages/404.jsp</location>
     </error-page>
+
+    <!-- JSP-->
 
     <jsp-config>
         <jsp-property-group>

@@ -9,37 +9,46 @@ import model.DAOImp.CheckDAOImp;
 import model.DAOImp.OrderDAOImp;
 import model.DAOImp.StatusDAOImp;
 import model.entities.Check;
+import model.entities.Order;
 import model.entities.Status;
 import org.apache.log4j.Logger;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.HashSet;
 
 
 public class FinishOrderServlet extends HttpServlet {
     private static final long serialVersionUID = -2888943039571734066L;
-    private static final Logger logger=Logger.getLogger(FinishOrderServlet.class);
+    private static final Logger logger = Logger.getLogger(FinishOrderServlet.class);
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         logger.info("Finishing order");
 
-        int id=Integer.valueOf(req.getParameter("id"));
-        CheckDAO checkDAO=new CheckDAOImp();
-        StatusDAO statusDAO=new StatusDAOImp();
-        OrderDAO orderDAO=new OrderDAOImp();
-        CarDAO carDAO=new CarDAOImp();
+        int id = Integer.valueOf(req.getParameter("id"));
+        CheckDAO checkDAO = new CheckDAOImp();
+        StatusDAO statusDAO = new StatusDAOImp();
+        OrderDAO orderDAO = new OrderDAOImp();
+        CarDAO carDAO = new CarDAOImp();
 
-        Check check=checkDAO.readByOrderId(id);
-        check.getOrder().getCar().setStatus(statusDAO.read(Status.DEFAULT_CAR_STATUS));
+        Check check = checkDAO.read(id);
+        check.setOrders((HashSet<Order>) orderDAO.readByCheck(id));
+
+        for (Order r : check.getOrders()) {
+            if (!r.getStatus().getName().equals("repair")) {
+                r.getCar().setStatus(statusDAO.read(Status.DEFAULT_CAR_STATUS));
+                carDAO.update(r.getCar());
+                r.setStatus(statusDAO.read(Status.RENT_ORDER_STATUS));
+                orderDAO.update(r);
+            }
+        }
+
         check.setStatus(statusDAO.read(Status.SUCCESS_CHECK_STATUS));
-        check.getOrder().setStatus(statusDAO.read(Status.RENT_ORDER_STATUS));
         check.setDescription(Check.SUCCESS_FINISH_CHECK_DESCR);
-
-        orderDAO.update(check.getOrder());
-        carDAO.update(check.getOrder().getCar());
         checkDAO.update(check);
 
         resp.sendRedirect("/orderList");

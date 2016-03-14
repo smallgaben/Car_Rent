@@ -6,7 +6,6 @@ import model.DAOImp.CarDAOImp;
 import model.entities.Car;
 import org.apache.log4j.Logger;
 
-import javax.servlet.Servlet;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
